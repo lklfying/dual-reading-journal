@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>共读札记 · 双人读书输出记录</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 登录层 -->
+  <div id="loginOverlay" class="overlay">
+    <div class="login-card paper">
+      <div class="seal-lg">共读</div>
+      <h1 class="login-title">共读札记</h1>
+      <p class="login-subtitle">双人读书输出 · 以书会友</p>
+      <p class="login-hint">选择你的身份进入（本地记录，无真实注册）</p>
+      <div class="login-buttons">
+        <button class="btn btn-primary" data-user="我">我是「我」</button>
+        <button class="btn btn-secondary" data-user="同伴">我是「同伴」</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 主应用 -->
+  <div id="app" class="app hidden">
+    <header class="app-header paper">
+      <div class="brand">
+        <span class="seal">共读</span>
+        <div>
+          <h1>共读札记</h1>
+          <p class="brand-sub">双人读书输出记录 · 读书 · 交流 · 同进</p>
+        </div>
+      </div>
+      <nav class="tabs" id="mainTabs">
+        <button class="tab active" data-tab="write">写作面板</button>
+        <button class="tab" data-tab="wall">读书墙</button>
+        <button class="tab" data-tab="stats">进度统计</button>
+        <button class="tab" data-tab="weread">微信读书</button>
+        <button class="tab" data-tab="settings">设置</button>
+      </nav>
+      <div class="user-box">
+        <span class="user-chip" id="currentUserChip">我</span>
+        <button class="btn btn-ghost btn-sm" id="switchUserBtn">切换身份</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- 写作面板 -->
+      <section id="tab-write" class="tab-panel active">
+        <div class="grid two-col">
+          <div class="panel paper">
+            <h2 class="panel-title">✒ 写作面板</h2>
+            <p class="panel-desc">写下今天的读书输出，书名自动加载封面。</p>
+            <form id="writeForm">
+              <div class="field">
+                <label for="bookTitle">书名</label>
+                <input type="text" id="bookTitle" placeholder="输入书名，如：红楼梦" autocomplete="off">
+              </div>
+              <div class="cover-row">
+                <div id="coverPreview" class="cover-preview">
+                  <span class="cover-placeholder">封面预览</span>
+                </div>
+                <div class="cover-meta" id="coverMeta"></div>
+              </div>
+              <div class="field">
+                <label for="readDate">读书日期（年月日）</label>
+                <input type="date" id="readDate">
+              </div>
+              <div class="field">
+                <label for="content">读书输出内容</label>
+                <textarea id="content" rows="6" placeholder="写下你的感悟、摘录、思考……"></textarea>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">提交输出</button>
+                <span class="form-hint" id="writeHint"></span>
+              </div>
+            </form>
+          </div>
+
+          <div class="panel paper">
+            <h2 class="panel-title">📖 本周目标</h2>
+            <p class="panel-desc">每日至少 3 条 · 每周至少 3 天写作</p>
+            <div class="goal-days" id="goalDays"></div>
+            <div class="goal-progress">
+              <div class="progress-label"><span>本周写作天数</span><span id="goalDaysText">0 / 3 天</span></div>
+              <div class="progress-track"><div class="progress-fill" id="goalDaysBar" style="width:0%"></div></div>
+              <div class="progress-label"><span>本周总条数</span><span id="goalEntriesText">0 条</span></div>
+              <div class="progress-track"><div class="progress-fill" id="goalEntriesBar" style="width:0%"></div></div>
+            </div>
+            <div class="goal-tip" id="goalTip"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 读书墙 -->
+      <section id="tab-wall" class="tab-panel">
+        <div class="panel paper">
+          <div class="wall-toolbar">
+            <h2 class="panel-title">🖋 读书墙</h2>
+            <div class="wall-filter">
+              <label><input type="checkbox" id="filterMine" checked> 我的</label>
+              <label><input type="checkbox" id="filterPeer" checked> 同伴</label>
+            </div>
+          </div>
+          <div id="wallList" class="wall-list"></div>
+        </div>
+      </section>
+
+      <!-- 进度统计 -->
+      <section id="tab-stats" class="tab-panel">
+        <div class="panel paper">
+          <h2 class="panel-title">🗓 进度统计</h2>
+          <div class="stats-nav">
+            <button class="btn btn-ghost btn-sm" id="prevMonth">‹ 上月</button>
+            <span class="stats-month" id="statsMonthLabel"></span>
+            <button class="btn btn-ghost btn-sm" id="nextMonth">下月 ›</button>
+          </div>
+          <div class="legend">
+            <span><i class="dot dot-full"></i> 达标（当日 ≥3 条）</span>
+            <span><i class="dot dot-part"></i> 有写作（1-2 条）</span>
+            <span><i class="dot dot-none"></i> 未写作</span>
+          </div>
+          <div class="calendar-wrap">
+            <table class="calendar" id="calendar">
+              <thead><tr><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th><th>日</th></tr></thead>
+              <tbody id="calendarBody"></tbody>
+            </table>
+          </div>
+          <div class="monthly-summary" id="monthlySummary"></div>
+        </div>
+      </section>
+
+      <!-- 微信读书 -->
+      <section id="tab-weread" class="tab-panel">
+        <div class="grid two-col">
+          <div class="panel paper">
+            <h2 class="panel-title">📚 微信读书书架</h2>
+            <p class="panel-desc">导入你的微信读书书架，与同伴对比重合书籍。</p>
+            <div class="weread-cookie-box">
+              <label for="wereadCookie">微信读书 Cookie</label>
+              <textarea id="wereadCookie" rows="4" placeholder="在 weread.qq.com 打开 F12 → Console，输入 document.cookie 复制粘贴到这里"></textarea>
+              <div class="form-actions">
+                <button class="btn btn-primary" id="wereadFetchBtn">拉取我的书架</button>
+                <button class="btn btn-secondary" id="wereadManualBtn">手动添加书籍</button>
+                <button class="btn btn-ghost" id="wereadBatchBtn">批量导入</button>
+              </div>
+              <p class="safety-tip">⚠ 安全提示：Cookie 仅保存在你的浏览器 localStorage 中，绝不发送到任何服务器。若接口不可用请使用手动添加。</p>
+            </div>
+            <div id="wereadResult" class="weread-result"></div>
+          </div>
+
+          <div class="panel paper">
+            <h2 class="panel-title">⚖ 重合书籍对比</h2>
+            <p class="panel-desc">两人书架交集一目了然。</p>
+            <div class="venn" id="venn">
+              <div class="venn-left" id="vennMineLabel"><span class="venn-name">我</span><span class="venn-count" id="vennMineCount">0</span></div>
+              <div class="venn-right" id="vennPeerLabel"><span class="venn-name">同伴</span><span class="venn-count" id="vennPeerCount">0</span></div>
+              <div class="venn-center" id="vennCenter"><span class="venn-count" id="vennOverlapCount">0</span><span class="venn-sub">重合</span></div>
+            </div>
+            <div class="overlap-info" id="overlapInfo"></div>
+            <div class="overlap-list" id="overlapList"></div>
+          </div>
+        </div>
+
+        <!-- 手动添加 / 批量导入弹层 -->
+        <div id="bookModal" class="modal hidden">
+          <div class="modal-card paper">
+            <button class="modal-close" id="bookModalClose">×</button>
+            <div id="bookModalBody"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 设置 -->
+      <section id="tab-settings" class="tab-panel">
+        <div class="panel paper">
+          <h2 class="panel-title">⚙ 设置与数据</h2>
+          <p class="panel-desc">所有数据保存在本浏览器 localStorage。两人同步：一方导出 JSON 发给另一方导入。</p>
+          <div class="settings-row">
+            <div>
+              <h3>导出数据备份</h3>
+              <p>导出全部数据（读书输出、评论、书架）为 JSON 文件。</p>
+              <button class="btn btn-primary" id="exportDataBtn">导出 JSON</button>
+            </div>
+            <div>
+              <h3>导入数据备份</h3>
+              <p>导入同伴发来的 JSON，合并双方数据。</p>
+              <input type="file" id="importDataInput" accept=".json" class="file-input">
+              <button class="btn btn-secondary" id="importDataBtn">选择并导入</button>
+            </div>
+            <div>
+              <h3>清空数据</h3>
+              <p>删除本浏览器中的全部数据（不可恢复）。</p>
+              <button class="btn btn-danger" id="clearDataBtn">清空全部数据</button>
+            </div>
+          </div>
+          <div class="settings-sync-guide">
+            <h3>两人同步使用说明</h3>
+            <ol>
+              <li>「我」写作并提交输出后，进入「设置」→「导出 JSON」。</li>
+              <li>将 JSON 文件发送给「同伴」（微信 / QQ / 邮件均可）。</li>
+              <li>「同伴」在自己的浏览器打开本页面 →「设置」→「导入数据备份」选择该文件，即可看到我的输出并回复。</li>
+              <li>反向同理：同伴导出后发回给我导入，即可互相看到对方的读书输出、回复与书架。</li>
+              <li>书架导入在各自浏览器独立保存，导入数据时会一并合并。</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <span>共读札记 · 数据仅存于本机浏览器</span>
+    </footer>
+  </div>
+
+  <!-- 评论弹层 -->
+  <div id="commentModal" class="modal hidden">
+    <div class="modal-card paper modal-wide">
+      <button class="modal-close" id="commentModalClose">×</button>
+      <h3 id="commentModalTitle">评论</h3>
+      <div id="commentList" class="comment-list"></div>
+      <div class="comment-input-row">
+        <textarea id="commentInput" rows="2" placeholder="写下你的回复…"></textarea>
+        <button class="btn btn-primary" id="commentSubmit">回复</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 导出面板弹层 -->
+  <div id="exportModal" class="modal hidden">
+    <div class="modal-card paper">
+      <button class="modal-close" id="exportModalClose">×</button>
+      <h3>导出读书笔记为 DOCX</h3>
+      <div class="field">
+        <label>选择用户</label>
+        <select id="exportUser">
+          <option value="我">我</option>
+          <option value="同伴">同伴</option>
+          <option value="all">两人全部</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>开始日期</label>
+        <input type="date" id="exportStart">
+      </div>
+      <div class="field">
+        <label>结束日期</label>
+        <input type="date" id="exportEnd">
+      </div>
+      <div class="form-actions">
+        <button class="btn btn-primary" id="exportDocxBtn">生成并下载 DOCX</button>
+      </div>
+      <p class="safety-tip">使用浏览器端 docx.js 库生成，数据不出本地。</p>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="js/app.js"></script>
+  <script src="js/weread.js"></script>
+  <script src="js/export.js"></script>
+</body>
+</html>
