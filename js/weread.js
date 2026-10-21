@@ -8,8 +8,8 @@
   const GD = window.GD;
   const $ = GD.$;
 
-  // 当前书架操作对象（'我' / '同伴'）
-  let shelfUser = '我';
+  // 当前书架操作对象（'H' / 'Q'）
+  let shelfUser = 'H';
 
   /* ---------------- 微信读书书架接口 ---------------- */
   async function fetchWereadShelf(cookie) {
@@ -45,18 +45,18 @@
     if (!resultEl) return;
 
     // 展示两个书架概要 + 当前操作书架的书本网格
-    const mine = GD.data.shelves['我'] || [];
-    const peer = GD.data.shelves['同伴'] || [];
+    const mine = GD.data.shelves['H'] || [];
+    const peer = GD.data.shelves['Q'] || [];
     const active = shelfUser;
 
     // 顶部操作栏：切换谁的书架
     const switcher = `
       <div class="form-actions" style="margin-bottom:14px">
-        <button class="btn ${active === '我' ? 'btn-primary' : 'btn-ghost'}" data-shelf-user="我">我的书架（${mine.length}）</button>
-        <button class="btn ${active === '同伴' ? 'btn-primary' : 'btn-ghost'}" data-shelf-user="同伴">同伴书架（${peer.length}）</button>
+        <button class="btn ${active === 'H' ? 'btn-primary' : 'btn-ghost'}" data-shelf-user="H">H 的书架（${mine.length}）</button>
+        <button class="btn ${active === 'Q' ? 'btn-primary' : 'btn-ghost'}" data-shelf-user="Q">Q 的书架（${peer.length}）</button>
       </div>`;
 
-    const list = active === '我' ? mine : peer;
+    const list = active === 'H' ? mine : peer;
     const booksHTML = list.length
       ? `<div class="shelf-grid">${list.map((b, i) => {
           const safeTitle = GD.esc(b.title).replace(/'/g, '');
@@ -73,7 +73,7 @@
       : `<div class="empty-tip">「${active}」的书架还是空的，用 Cookie 拉取或手动添加书籍。</div>`;
 
     resultEl.innerHTML = `
-      <div class="weread-summary">我 ${mine.length} 本 · 同伴 ${peer.length} 本</div>
+      <div class="weread-summary">H ${mine.length} 本 · Q ${peer.length} 本</div>
       ${switcher}
       ${booksHTML}`;
 
@@ -120,8 +120,8 @@
   }
 
   function calcOverlap() {
-    const mine = GD.data.shelves['我'] || [];
-    const peer = GD.data.shelves['同伴'] || [];
+    const mine = GD.data.shelves['H'] || [];
+    const peer = GD.data.shelves['Q'] || [];
     const peerSet = new Map();
     peer.forEach(b => peerSet.set(normalizeTitle(b.title), b));
     const overlap = [];

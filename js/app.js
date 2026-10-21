@@ -8,18 +8,18 @@
 
   /* ---------------- 常量 ---------------- */
   const STORAGE_KEY = 'gongdu_journal_v1';
-  const USERS = ['我', '同伴'];
+  const USERS = ['H', 'Q'];
   const DAILY_TARGET = 3;   // 每日至少 3 条
   const WEEKLY_TARGET = 3;  // 每周至少 3 天
 
   /* ---------------- 数据层 ---------------- */
   function defaultData() {
     return {
-      currentUser: '我',
+      currentUser: 'H',
       entries: [],      // {id, user, bookTitle, coverUrl, coverKind, date, content, createdAt}
       comments: [],     // {id, entryId, user, content, createdAt}
-      shelves: { '我': [], '同伴': [] },  // 书架: [{title, author, coverUrl, isbn, source}]
-      wereadCookie: { '我': '', '同伴': '' }
+      shelves: { 'H': [], 'Q': [] },  // 书架: [{title, author, coverUrl, isbn, source}]
+      wereadCookie: { 'H': '', 'Q': '' }
     };
   }
 
@@ -33,8 +33,8 @@
       // 合并默认结构，防止旧数据缺字段
       const base = defaultData();
       return Object.assign(base, parsed, {
-        shelves: Object.assign({ '我': [], '同伴': [] }, parsed.shelves),
-        wereadCookie: Object.assign({ '我': '', '同伴': '' }, parsed.wereadCookie)
+        shelves: Object.assign({ 'H': [], 'Q': [] }, parsed.shelves),
+        wereadCookie: Object.assign({ 'H': '', 'Q': '' }, parsed.wereadCookie)
       });
     } catch (e) {
       console.warn('数据读取失败，使用默认数据', e);
@@ -426,7 +426,7 @@
     // 按日期倒序聚合
     const byDate = {};
     data.entries.forEach(e => {
-      const show = (e.user === '我' && showMine) || (e.user === '同伴' && showPeer);
+      const show = (e.user === 'H' && showMine) || (e.user === 'Q' && showPeer);
       if (!show) return;
       (byDate[e.date] = byDate[e.date] || []).push(e);
     });
@@ -465,10 +465,10 @@
           </div>
         </div>`;
       }).join('');
-      const myN = userCountOn('我', date);
-      const peerN = userCountOn('同伴', date);
+      const myN = userCountOn('H', date);
+      const peerN = userCountOn('Q', date);
       return `<div class="wall-day-group">
-        <div class="wall-day-head">${date} · 我 ${myN} 条 / 同伴 ${peerN} 条</div>
+        <div class="wall-day-head">${date} · H ${myN} 条 / Q ${peerN} 条</div>
         ${entriesHTML}
       </div>`;
     }).join('');
@@ -574,8 +574,8 @@
     }
     for (let d = 1; d <= daysInMonth; d++) {
       const dateStr = `${statsYear}-${String(statsMonth).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
-      const mineN = userCountOn('我', dateStr);
-      const peerN = userCountOn('同伴', dateStr);
+      const mineN = userCountOn('H', dateStr);
+      const peerN = userCountOn('Q', dateStr);
       const bothOk = mineN >= DAILY_TARGET && peerN >= DAILY_TARGET;
       const eitherOk = mineN >= DAILY_TARGET || peerN >= DAILY_TARGET;
       const any = mineN + peerN > 0;
@@ -587,7 +587,7 @@
       }
       if (dateStr === today) cls += ' today-mark';
       const stateHTML = any
-        ? `<span class="cal-day-state mine">我 ${mineN}条${mineN >= DAILY_TARGET ? ' ✓' : ''}</span><span class="cal-day-state peer">同伴 ${peerN}条${peerN >= DAILY_TARGET ? ' ✓' : ''}</span>`
+        ? `<span class="cal-day-state mine">H ${mineN}条${mineN >= DAILY_TARGET ? ' ✓' : ''}</span><span class="cal-day-state peer">Q ${peerN}条${peerN >= DAILY_TARGET ? ' ✓' : ''}</span>`
         : '';
       cells += `<td class="${cls}"><span class="cal-day-num">${d}</span>${stateHTML}</td>`;
     }
@@ -603,19 +603,19 @@
     let mineDays = 0, mineTotal = 0, peerDays = 0, peerTotal = 0;
     for (let d = 1; d <= daysInMonth; d++) {
       const dateStr = `${statsYear}-${String(statsMonth).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
-      if (userCountOn('我', dateStr) > 0) mineDays++;
-      if (userCountOn('同伴', dateStr) > 0) peerDays++;
-      mineTotal += userCountOn('我', dateStr);
-      peerTotal += userCountOn('同伴', dateStr);
+      if (userCountOn('H', dateStr) > 0) mineDays++;
+      if (userCountOn('Q', dateStr) > 0) peerDays++;
+      mineTotal += userCountOn('H', dateStr);
+      peerTotal += userCountOn('Q', dateStr);
     }
     const monthFirst = `${statsYear}-${String(statsMonth).padStart(2, '0')}-01`;
     const monthLast = `${statsYear}-${String(statsMonth).padStart(2, '0')}-${String(daysInMonth).padStart(2, '0')}`;
-    const mineWeeks = countWeeksWithTarget('我', monthFirst, monthLast);
-    const peerWeeks = countWeeksWithTarget('同伴', monthFirst, monthLast);
+    const mineWeeks = countWeeksWithTarget('H', monthFirst, monthLast);
+    const peerWeeks = countWeeksWithTarget('Q', monthFirst, monthLast);
 
     $('monthlySummary').innerHTML = `
       <div class="ms-card"><h4>📖 我 · 本月</h4>共 ${mineTotal} 条 · 写作 ${mineDays} 天 · 达标周 ${mineWeeks} 个</div>
-      <div class="ms-card"><h4>📖 同伴 · 本月</h4>共 ${peerTotal} 条 · 写作 ${peerDays} 天 · 达标周 ${peerWeeks} 个</div>
+      <div class="ms-card"><h4>📖 Q · 本月</h4>共 ${peerTotal} 条 · 写作 ${peerDays} 天 · 达标周 ${peerWeeks} 个</div>
       <div class="ms-card"><h4>🏅 双人合计</h4>共 ${mineTotal + peerTotal} 条 · 覆盖 ${new Set(data.entries.filter(e => e.date >= monthFirst && e.date <= monthLast).map(e => e.date)).size} 天</div>
     `;
   }
@@ -713,7 +713,7 @@
 
   // 切换身份
   $('switchUserBtn') && $('switchUserBtn').addEventListener('click', () => {
-    data.currentUser = (data.currentUser === '我') ? '同伴' : '我';
+    data.currentUser = (data.currentUser === 'H') ? 'Q' : 'H';
     save();
     renderCurrentUser();
     renderWrite(); renderWall(); renderStats(); renderWeread();
