@@ -17,7 +17,7 @@
       <div class="seal-lg">共读</div>
       <h1 class="login-title">共读札记</h1>
       <p class="login-subtitle">双人读书输出 · 以书会友</p>
-      <p class="login-hint">选择你的身份进入（数据保存在本机浏览器）</p>
+      <p class="login-hint">选择你的身份进入（双人数据经 CloudBase 云端自动互见）</p>
       <div class="login-buttons">
         <button class="btn btn-primary" data-user="H">我是「H」</button>
         <button class="btn btn-secondary" data-user="Q">我是「Q」</button>
@@ -140,7 +140,7 @@
         <div class="grid two-col">
           <div class="panel paper">
             <h2 class="panel-title">📚 微信读书书架</h2>
-            <p class="panel-desc">书架数据来自自动同步的静态文件，与 Q 对比重合书籍。</p>
+            <p class="panel-desc" id="shelfDesc">书架数据来自自动同步的静态文件，与 <span id="shelfDescPeer">Q</span> 对比重合书籍。</p>
             <div class="form-actions">
               <button class="btn btn-secondary" id="wereadManualBtn">手动添加书籍</button>
               <button class="btn btn-ghost" id="wereadBatchBtn">批量导入</button>
@@ -174,7 +174,7 @@
       <section id="tab-settings" class="tab-panel">
         <div class="panel paper">
           <h2 class="panel-title">⚙ 设置与数据</h2>
-          <p class="panel-desc">数据保存在本浏览器 localStorage（本地缓存），可导出备份。</p>
+          <p class="panel-desc">数据双写：本浏览器 localStorage（离线缓存）+ CloudBase 云端表（自动同步）。</p>
           <div class="settings-row">
             <div>
               <h3>导出数据备份</h3>
@@ -183,22 +183,38 @@
             </div>
             <div>
               <h3>导入数据备份</h3>
-              <p>导入 JSON，合并双方数据。</p>
+              <p>导入 JSON，合并双方数据并上传云端。</p>
               <input type="file" id="importDataInput" accept=".json" class="file-input">
               <button class="btn btn-secondary" id="importDataBtn">选择并导入</button>
             </div>
             <div>
+              <h3>云端数据</h3>
+              <p>立即从云端拉取最新数据 / 清空云端全部数据。</p>
+              <button class="btn btn-secondary" id="cloudPullBtn">从云端拉取</button>
+              <button class="btn btn-ghost" id="cloudClearBtn">清空云端</button>
+            </div>
+            <div>
               <h3>清空数据</h3>
-              <p>删除本浏览器中的全部数据（不可恢复）。</p>
+              <p>删除本浏览器中的全部数据（云端同步清空，不可恢复）。</p>
               <button class="btn btn-danger" id="clearDataBtn">清空全部数据</button>
             </div>
+          </div>
+          <div class="settings-sync-guide">
+            <h3>两人同步使用说明</h3>
+            <ol>
+              <li>双方使用同一个 CloudBase 环境（zhhhhh-d7g3gofzia26c76c3），打开页面即匿名登录云端。</li>
+              <li>H 写作 / 评论 / 书架变更后自动写入云端，Q 端通过轮询自动同步（约 15 秒，页面聚焦时立即刷新）。</li>
+              <li>离线时仍可本地编辑，云端恢复后自动补传，不丢数据。</li>
+              <li>「从云端拉取」可手动强制同步；「清空云端」会删除云端全部数据（本地保留，之后自动重新上传）。</li>
+              <li>JSON 导入导出仍可用作备份 / 迁移。</li>
+            </ol>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="app-footer">
-      <span>共读札记 · 本地数据存储</span>
+      <span>共读札记 · 本地缓存 + CloudBase 云端自动同步</span>
     </footer>
   </div>
 
@@ -244,7 +260,11 @@
   </div>
 
   <div id="toast" class="toast hidden"></div>
+  <div id="cloudBanner" class="cloud-banner error">云端未连接：仍可本地编辑，云端恢复后自动同步</div>
 
+  <!-- CloudBase Web SDK（静态引入失败时 cloud.js 会动态回退备选 CDN） -->
+  <script src="https://static.cloudbase.net/cloudbase-js-sdk/latest/cloudbase.full.js" onerror="window.__SDK_LOAD_FAILED=true"></script>
+  <script src="js/cloud.js"></script>
   <script src="js/app.js"></script>
   <script src="js/weread.js"></script>
   <script src="js/export.js"></script>

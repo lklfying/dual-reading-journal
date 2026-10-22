@@ -753,3 +753,34 @@ textarea { resize: vertical; }
   color: var(--cinnabar, #a94442);
   margin-right: 2px;
 }
+
+/* ---------- CloudBase 云端同步 ---------- */
+.settings-sync-guide {
+  border: 1px dashed var(--line);
+  border-radius: 6px;
+  padding: 16px 20px;
+  background: var(--white);
+}
+.settings-sync-guide h3 { margin-bottom: 8px; }
+.settings-sync-guide ol { padding-left: 22px; font-size: 14px; color: var(--ink-soft); }
+.settings-sync-guide li { margin-bottom: 4px; }
+
+.cloud-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 8px 14px;
+  font-size: 12px;
+  text-align: center;
+  z-index: 99;
+  border-top: 1px solid rgba(0, 0, 0, .12);
+}
+.cloud-banner.ok {
+  background: #f3f7ee;
+  color: #3a7d3a;
+}
+.cloud-banner.error {
+  background: #fdf3f3;
+  color: #a94442;
+}

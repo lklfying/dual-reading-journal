@@ -156,6 +156,16 @@
 
   function renderCurrentUser() {
     $('currentUserChip').textContent = data.currentUser;
+    updateIdentityCopy();
+  }
+
+  // 身份文案随当前身份动态变化：书架区「与 X 对比重合书籍」中 X 恒为对方
+  // （H 视角与 Q 对比，Q 视角与 H 对比），切换身份后立即更新
+  function updateIdentityCopy() {
+    const peer = data.currentUser === 'H' ? 'Q' : 'H';
+    const peerEl = $('shelfDescPeer');
+    if (peerEl) peerEl.textContent = peer;
+    // 重合书籍对比区域标题/标签由 weread.js 渲染时按 GD.data.currentUser 动态生成
   }
 
   /* ---------------- Tab 切换 ---------------- */
@@ -485,6 +495,7 @@
       };
       data.entries.push(entry);
       save();
+      if (window.CLOUD) window.CLOUD.pushEntry(entry).catch(function () { });
 
       // 异步补封面（不阻塞提交；已从书架候选选中封面则跳过）
       if (!entry.coverUrl) fetchCover(bookTitle).then(cover => {
@@ -494,6 +505,7 @@
           found.coverUrl = cover.url;
           found.coverKind = cover.kind;
           save();
+          if (window.CLOUD) window.CLOUD.updateEntry(entry.id, { coverUrl: cover.url, coverKind: cover.kind }).catch(function () { });
           renderWall();
           renderStats();
         }
@@ -639,6 +651,7 @@
           data.entries = data.entries.filter(e => e.id !== entryId);
           data.comments = data.comments.filter(c => c.entryId !== entryId);
           save();
+          if (window.CLOUD) window.CLOUD.deleteEntry(entryId).catch(function () { });
           renderWall();
           renderWrite();
           renderStats();
@@ -676,14 +689,16 @@
     $('commentSubmit').addEventListener('click', () => {
       const content = $('commentInput').value.trim();
       if (!commentEntryId || !content) { toast('请输入回复内容', true); return; }
-      data.comments.push({
+      const comment = {
         id: uid(),
         entryId: commentEntryId,
         user: data.currentUser,
         content,
         createdAt: Date.now()
-      });
+      };
+      data.comments.push(comment);
       save();
+      if (window.CLOUD) window.CLOUD.pushComment(comment).catch(function () { });
       renderComments(commentEntryId);
       renderWall();
       toast('回复成功');
@@ -847,6 +862,7 @@
             }
           });
           save();
+          if (window.CLOUD) window.CLOUD.syncAllLocalToCloud().catch(function () { });
           renderWrite(); renderWall(); renderStats(); renderWeread();
           toast(`导入成功：${imported.entries.length} 条输出已并入`);
         } catch (err) {
@@ -857,12 +873,29 @@
       e.target.value = '';
     });
 
+    // 云端数据：手动拉取 / 清空云端
+    $('cloudPullBtn').addEventListener('click', () => {
+      if (!window.CLOUD) { toast('云端未连接', true); return; }
+      window.CLOUD.pullAll().then(() => {
+        renderWrite(); renderWall(); renderStats(); renderWeread();
+        toast('已从云端拉取最新数据');
+      }).catch(() => toast('拉取失败，请稍后重试', true));
+    });
+    $('cloudClearBtn').addEventListener('click', () => {
+      if (!window.CLOUD) { toast('云端未连接', true); return; }
+      if (confirm('确定清空云端全部数据？（本地数据保留，之后会自动重新上传）')) {
+        window.CLOUD.clearAllCloud().then(() => toast('已清空云端数据')).catch(() => toast('清空失败，请稍后重试', true));
+      }
+    });
+
     // 清空数据
     $('clearDataBtn').addEventListener('click', () => {
       if (confirm('确定清空本浏览器中的全部数据？此操作不可恢复！建议先导出备份。')) {
         if (confirm('再次确认：全部读书输出、评论、书架将被删除。确定继续？')) {
           data = defaultData();
+          window.GD.data = data;   // 整体重置后同步引用，防止其他模块读到旧对象
           save();
+          if (window.CLOUD) window.CLOUD.clearAllCloud().catch(function () { });
           renderWrite(); renderWall(); renderStats(); renderWeread();
           toast('已清空全部数据');
         }
@@ -876,6 +909,8 @@
     save();
     renderCurrentUser();
     renderWrite(); renderWall(); renderStats(); renderWeread();
+    // 重合对比区标签随身份即时刷新（左=当前身份、右=对方）
+    window.renderOverlap && window.renderOverlap();
     toast(`已切换为「${data.currentUser}」`);
   });
 
@@ -939,6 +974,13 @@
     initSettings();
     initExportModal();
     addExportButton();
+
+    // 启动 CloudBase 云同步：匿名登录 + 云端拉取 + 轮询互见 + 聚焦即时刷新
+    if (window.CLOUD) {
+      window.CLOUD.bootstrap();
+      document.addEventListener('visibilitychange', () => { if (!document.hidden) window.CLOUD.onTabSwitch(); });
+      window.addEventListener('focus', () => window.CLOUD.onTabSwitch());
+    }
 
     // 过滤条件变化时刷新读书墙
     $('filterMine').addEventListener('change', renderWall);

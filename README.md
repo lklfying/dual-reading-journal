@@ -2,12 +2,14 @@
 AIGC:
     Label: "1"
     ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: ee08f8ed85974cf172a08fc54fd0f487_06f4bcb5cd7111f1b659525400cd780f
-    ReservedCode1: MJxfP+lXSUY4IJMlIZGsbXb+yTEsWnFi5hxtlI6kmAMjz2+1UDarOJFP3Rmu+TI727G12Eneedx2P4onTMKrn6e7scIFZBUtPr9sOskq04osa1iZ2et1YtKiwEuT9GEyYR7eeklaGEz5O+Qmoie7vj6NrzF3QofHChIvYxQjpvmXDRwbk9w9UEuW4s0=
+    ProduceID: ee08f8ed85974cf172a08fc54fd0f487_a06ea964ce1711f18de0525400de85a5
+    ReservedCode1: T1BBvIOrrXb5m45lCrHTbgMq3Ky1CYCu28C6LO4qRhowZO9oofoTlVtE9DooToWIBLeZ6kKvZwvTGYzgUExs8sh1+ct9G4iN9xq4doaEYI/tIOO0ernf3elRDyN1wtShcDyoqJFfMxGwrWhDiEZVcvLHzJMesnN9tgn8pVP0ObxUqL1pQUumGtW4iJw=
     ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: ee08f8ed85974cf172a08fc54fd0f487_06f4bcb5cd7111f1b659525400cd780f
-    ReservedCode2: MJxfP+lXSUY4IJMlIZGsbXb+yTEsWnFi5hxtlI6kmAMjz2+1UDarOJFP3Rmu+TI727G12Eneedx2P4onTMKrn6e7scIFZBUtPr9sOskq04osa1iZ2et1YtKiwEuT9GEyYR7eeklaGEz5O+Qmoie7vj6NrzF3QofHChIvYxQjpvmXDRwbk9w9UEuW4s0=
+    PropagateID: ee08f8ed85974cf172a08fc54fd0f487_a06ea964ce1711f18de0525400de85a5
+    ReservedCode2: T1BBvIOrrXb5m45lCrHTbgMq3Ky1CYCu28C6LO4qRhowZO9oofoTlVtE9DooToWIBLeZ6kKvZwvTGYzgUExs8sh1+ct9G4iN9xq4doaEYI/tIOO0ernf3elRDyN1wtShcDyoqJFfMxGwrWhDiEZVcvLHzJMesnN9tgn8pVP0ObxUqL1pQUumGtW4iJw=
 ---
+
+
 
 # 共读札记 · 双人读书输出记录
 
@@ -52,4 +54,5 @@ dual-reading-journal/
 - 设置页可导出全部数据（读书输出、评论、书架）为 JSON 文件；
 - 可导入 JSON 合并双方数据；
 - 清空数据为不可逆操作，建议先导出备份。
+*（内容由AI生成，仅供参考）*
 *（内容由AI生成，仅供参考）*

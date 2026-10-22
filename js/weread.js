@@ -85,6 +85,7 @@
           if (!confirm(`从「${u}」书架中移除《${GD.data.shelves[u][idx].title}》？`)) return;
           GD.data.shelves[u].splice(idx, 1);
           GD.save();
+          if (window.CLOUD) window.CLOUD.updateShelf(u).catch(function () { });
           renderWeread();
           renderOverlap();
           GD.toast('已移除');
@@ -145,6 +146,13 @@
 
   function renderOverlap() {
     const { mine, peer, overlap, rate } = calcOverlap();
+    // 重合对比标签随当前身份动态变化：左侧为当前身份，右侧为对方
+    const me = GD.data.currentUser || 'H';
+    const them = me === 'H' ? 'Q' : 'H';
+    const mineNameEl = document.querySelector('#vennMineLabel .venn-name');
+    const peerNameEl = document.querySelector('#vennPeerLabel .venn-name');
+    if (mineNameEl) mineNameEl.textContent = me;
+    if (peerNameEl) peerNameEl.textContent = them;
     $('vennMineCount').textContent = mine;
     $('vennPeerCount').textContent = peer;
     $('vennOverlapCount').textContent = overlap.length;
@@ -186,10 +194,11 @@
         };
         if (!book.coverUrl) {
           // 尝试按书名取封面（不阻塞添加）
-          fetchCoverForManual(book);
+          fetchCoverForManual(book, shelfUser);
         }
         GD.data.shelves[shelfUser].push(book);
         GD.save();
+        if (window.CLOUD) window.CLOUD.updateShelf(shelfUser).catch(function () { });
         closeModal();
         renderWeread();
         renderOverlap();
@@ -214,6 +223,7 @@
         if (!books.length) { GD.toast('未能解析出任何书籍', true); return; }
         books.forEach(b => GD.data.shelves[shelfUser].push(b));
         GD.save();
+        if (window.CLOUD) window.CLOUD.updateShelf(shelfUser).catch(function () { });
         closeModal();
         renderWeread();
         renderOverlap();
@@ -276,6 +286,10 @@
         }
       });
       GD.save();
+      if (window.CLOUD) {
+        window.CLOUD.updateShelf('H').catch(function () { });
+        window.CLOUD.updateShelf('Q').catch(function () { });
+      }
       renderWeread();
       renderOverlap();
     } catch (e) {
@@ -284,7 +298,7 @@
     }
   }
 
-  async function fetchCoverForManual(book) {
+  async function fetchCoverForManual(book, user) {
     try {
       // 复用 app.js 的封面接口逻辑（简化版：Google Books）
       const r = await fetch('https://www.googleapis.com/books/v1/volumes?q=intitle:' + encodeURIComponent(book.title) + '&maxResults=1');
@@ -293,6 +307,7 @@
       if (img && img.thumbnail) {
         book.coverUrl = normalizeCover(img.thumbnail.replace(/^http:/, 'https:'));
         GD.save();
+        if (window.CLOUD) window.CLOUD.updateShelf(user || 'H').catch(function () { });
         renderWeread();
         renderOverlap();
       }
