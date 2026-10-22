@@ -14,7 +14,7 @@
   var API_BASE = 'https://' + CLOUD_ENV + '.api.tcloudbasegateway.com/v1/rdb/rest/';
   var AUTH_BASE = 'https://' + CLOUD_ENV + '.api.tcloudbasegateway.com';
   var DEVICE_ID_KEY = 'cloudbase_device_id'; // 设备 ID 决定匿名用户身份，必须持久化
-  var POLL_INTERVAL = 15000;   // SQL 型数据库无 watch，轮询间隔
+  var POLL_INTERVAL = 300000;  // 节省 SQL 算力：轮询间隔 5 分钟（页面不可见时暂停）
   var BATCH = 1000;            // 单次分页拉取行数上限
 
   // SDK CDN 备选（按优先级）。static.cloudbase.net 为官方 CDN（国内可访问）；
@@ -29,6 +29,7 @@
     ready: false,        // 云是否可用（仅当实际数据请求成功后置 true）
     authed: false,       // 匿名登录是否成功（不等于云可用，banner 以此区分失败原因）
     connecting: false,   // 是否正在重连
+    paused: false,       // 页面不可见/离线时暂停轮询与重试
     pendingSync: false,  // 降级期间有本地写入，恢复后需同步
     token: null,         // 匿名登录 access_token（JWT），用于 REST 请求
     tokenExpiresAt: 0,   // token 过期时间戳
@@ -142,7 +143,7 @@
     var el = document.getElementById('cloudBanner');
     if (!el) return;
     if (state.ready) {
-      el.textContent = '云端已连接：数据自动同步（SQL 型数据库，每 15 秒轮询）';
+      el.textContent = '云端已连接：每 5 分钟自动同步，页面不可见时暂停';
       el.className = 'cloud-banner ok';
     } else if (state.authed) {
       el.textContent = '云端未连接：认证成功但数据请求失败（401/网络异常），请检查环境配置';
@@ -267,26 +268,26 @@
     return row;
   }
 
-  /* ---------------- 全量拉取（云端优先，保留本地孤儿待上传） ---------------- */
-  function pullAll() {
+  /* ---------------- 按表拉取（云端优先，保留本地孤儿待上传） ---------------- */
+  // tables 传入要拉取的表（entries/comments/shelves）；常规同步只用 entries/comments
+  function pullTables(tables) {
     var d = GD();
-    return Promise.all([
-      fetchAll('entries'),
-      fetchAll('comments'),
-      fetchAll('shelves')
-    ]).then(function (results) {
-      var ents = results[0], cmts = results[1], shelv = results[2];
+    return Promise.all(tables.map(function (t) { return fetchAll(t); })).then(function (results) {
       var cloudKeys = { entries: new Set(), comments: new Set(), shelves: new Set() };
       var cloudEntries = [], cloudComments = [], cloudShelves = {};
 
-      ents.forEach(function (x) {
-        if (x && x.doc_key) { cloudKeys.entries.add(x.doc_key); cloudEntries.push(stripEntry(x)); }
-      });
-      cmts.forEach(function (x) {
-        if (x && x.doc_key) { cloudKeys.comments.add(x.doc_key); cloudComments.push(stripComment(x)); }
-      });
-      shelv.forEach(function (x) {
-        if (x && x.doc_key && x.user) { cloudKeys.shelves.add(x.doc_key); cloudShelves[x.user] = x; }
+      results.forEach(function (rows, i) {
+        var table = tables[i];
+        rows.forEach(function (x) {
+          if (!x || !x.doc_key) return;
+          if (table === 'entries') {
+            cloudKeys.entries.add(x.doc_key); cloudEntries.push(stripEntry(x));
+          } else if (table === 'comments') {
+            cloudKeys.comments.add(x.doc_key); cloudComments.push(stripComment(x));
+          } else if (table === 'shelves' && x.user) {
+            cloudKeys.shelves.add(x.doc_key); cloudShelves[x.user] = x;
+          }
+        });
       });
 
       // 云端 + 本地孤儿（云端还没有的业务 id）合并，避免覆盖本地刚写入但未同步的数据
@@ -314,6 +315,16 @@
       state.cloudKeys = cloudKeys;
       d.save();
     });
+  }
+
+  // 常规自动同步：仅双方笔记（entries/comments），书架不参与轮询
+  function pullNotes() {
+    return pullTables(['entries', 'comments']);
+  }
+
+  // 全量拉取（含书架），供手动刷新等场景使用
+  function pullAll() {
+    return pullTables(['entries', 'comments', 'shelves']);
   }
 
   /* ---------------- upsert：doc_key 存在则更新，否则新增 ---------------- */
@@ -401,18 +412,17 @@
     (d.data.comments || []).forEach(function (c) {
       if (!state.cloudKeys.comments.has(c.id)) jobs.push(pushComment(c));
     });
-    USERS.forEach(function (u) {
-      if (!state.cloudKeys.shelves.has('shelf_' + u)) jobs.push(updateShelf(u));
-    });
+    // 书架不参与自动同步（靠 data/shelves.json 静态文件 + 手动刷新），仅笔记自动上传
     return Promise.all(jobs).then(function () { state.pendingSync = false; });
   }
 
   /* ---------------- 轮询（SQL 型数据库无 watch，替代实时监听） ---------------- */
   var failCount = 0; // 连续拉取失败计数（>=3 时降级为未连接）
+  // 常规轮询只同步双方笔记（entries/comments），书架不参与轮询
   function pollOnce() {
-    if (!state.ready || pulling) return;
+    if (!state.ready || pulling || state.paused) return;
     pulling = true;
-    pullAll().then(function () {
+    pullNotes().then(function () {
       failCount = 0;
       refreshAll();
     }).catch(function (e) {
@@ -428,11 +438,38 @@
   }
 
   function startPolling() {
+    if (state.paused) return; // 暂停态不启动定时器
     if (pollTimer) clearInterval(pollTimer);
     pollTimer = setInterval(function () {
-      // 页面隐藏时不轮询，聚焦时由 onTabSwitch 立即拉取
+      // 页面隐藏时不轮询（另有 visibility/offline 监听彻底暂停），聚焦/恢复时立即同步
       if (document.visibilityState !== 'hidden') pollOnce();
     }, POLL_INTERVAL);
+  }
+
+  /* ---------------- 暂停 / 恢复（节省 SQL 算力） ---------------- */
+  function pausePolling() {
+    if (state.paused) return;
+    state.paused = true;
+    if (pollTimer) { clearInterval(pollTimer); pollTimer = null; }
+  }
+
+  // 恢复可见/上线：先立即同步一次，再恢复 5 分钟轮询；从未连上则触发重连
+  function resumePolling() {
+    if (!state.paused) return;
+    state.paused = false;
+    if (!state.ready) { retryConnect(); return; }
+    pollOnce();
+    startPolling();
+  }
+
+  function initLifecycleListeners() {
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) pausePolling();
+      else resumePolling();
+    });
+    window.addEventListener('pagehide', pausePolling);
+    window.addEventListener('offline', pausePolling);
+    window.addEventListener('online', resumePolling);
   }
 
   /* ---------------- 刷新渲染 ---------------- */
@@ -455,13 +492,13 @@
     return init().then(function (ok) {
       if (!ok) return;
       // 首次真实数据请求成功后才标记云可用（banner 才显示已连接）
-      return pullAll().then(function () {
+      return pullNotes().then(function () {
         state.ready = true;
         updateBanner();
         return syncLocalToCloud();
       }).then(function () {
         // 上传后再拉一次，刷新已上传标记
-        return pullAll();
+        return pullNotes();
       }).then(function () {
         startPolling();
         refreshAll();
@@ -478,11 +515,11 @@
     state.connecting = true;
     return init().then(function (ok) {
       if (!ok) return false;
-      return pullAll().then(function () {
+      return pullNotes().then(function () {
         state.ready = true;
         updateBanner();
         return syncLocalToCloud();
-      }).then(function () { return pullAll(); })
+      }).then(function () { return pullNotes(); })
         .then(function () { startPolling(); refreshAll(); return true; });
     }).catch(function (e) {
       state.ready = false;
@@ -495,7 +532,7 @@
   }
 
   function onTabSwitch() {
-    if (state.connecting) return;
+    if (state.connecting || state.paused) return;
     if (state.ready) {
       pollOnce(); // 聚焦 / 切回页面立即拉取，不等待轮询间隔
     } else {
@@ -523,6 +560,9 @@
     });
     return chain.catch(function () {});
   }
+
+  /* ---------------- 生命周期监听（页面不可见/离线暂停，恢复可见/在线继续） ---------------- */
+  initLifecycleListeners();
 
   /* ---------------- 导出 ---------------- */
   window.CLOUD = {
