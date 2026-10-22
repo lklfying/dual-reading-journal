@@ -315,6 +315,41 @@
     });
   }
 
+  /* ---------------- 静态同步文件合并（GitHub Actions 生成 data/shelves.json） ---------------- */
+  // 成功时将微信读书来源数据优先覆盖对应 user 的书架并刷新渲染/重合度；失败静默降级
+  async function loadStaticShelves() {
+    try {
+      const res = await fetch('./data/shelves.json', { cache: 'no-store' });
+      if (!res.ok) return;
+      const json = await res.json();
+      if (!json || typeof json !== 'object') return;
+      ['H', 'Q'].forEach(user => {
+        const remote = json[user];
+        if (!remote || !Array.isArray(remote.books)) return;
+        GD.data.shelves[user] = GD.data.shelves[user] || [];
+        // 优先覆盖：移除旧的 weread 来源书籍，再合并远端数据（保留手动/批量导入的书）
+        GD.data.shelves[user] = GD.data.shelves[user].filter(b => b.source !== 'weread');
+        const existing = GD.data.shelves[user];
+        const seen = new Set(existing.map(b => normalizeTitle(b.title)));
+        remote.books.forEach(b => {
+          const key = normalizeTitle(b.title);
+          if (key && !seen.has(key)) { existing.push(b); seen.add(key); }
+        });
+        // 阅读时长 stats 同步进 GD.data.readStats 并展示
+        if (remote.stats && typeof remote.stats === 'object') {
+          GD.data.readStats = GD.data.readStats || {};
+          GD.data.readStats[user] = remote.stats;
+        }
+      });
+      GD.save();
+      renderWeread();
+      renderOverlap();
+    } catch (e) {
+      // 静态同步文件不存在/不可用时静默降级，不影响现有功能
+      console.warn('[weread] data/shelves.json 不可用，使用现有数据', e);
+    }
+  }
+
   async function fetchCoverForManual(book) {
     try {
       // 复用 app.js 的封面接口逻辑（简化版：Google Books）
@@ -348,6 +383,8 @@
     // DOM 就绪后再绑定关闭按钮
     $('bookModalClose') && $('bookModalClose').addEventListener('click', closeModal);
     renderOverlap();
+    // 尝试加载 GitHub Actions 自动生成的静态同步文件（失败静默降级）
+    loadStaticShelves();
   }
 
   if (document.readyState === 'loading') {

@@ -1,0 +1,28 @@
+name: sync-weread
+
+on:
+  schedule:
+    # 每 6 小时自动同步一次（UTC）
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # 支持仓库 Actions 页面手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 配置 Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: 运行微信读书同步脚本
+        env:
+          WEREAD_API_KEY_H: ${{ secrets.WEREAD_API_KEY_H }}
+          WEREAD_API_KEY_Q: ${{ secrets.WEREAD_API_KEY_Q }}
+        run: node scripts/sync-weread.js

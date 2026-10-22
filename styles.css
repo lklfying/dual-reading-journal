@@ -14,6 +14,10 @@
   --line: #d8cdb4;
   --white: #fffdf7;
   --shadow: rgba(80, 60, 30, 0.18);
+  /* 古典主题字体栈：方正小标宋优先，逐级回退至系统宋体 */
+  --font-classical: "FZXiaoBiaoSong-B05S", "方正小标宋简体", "Source Han Serif SC", "Noto Serif SC", "Songti SC", "SimSun", serif;
+  /* 正文辅助楷体 */
+  --font-kai: "Kaiti SC", "楷体", "KaiTi", serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -23,7 +27,7 @@ html, body {
 }
 
 body {
-  font-family: "Noto Serif SC", "Songti SC", "SimSun", "STSong", serif;
+  font-family: var(--font-classical);
   color: var(--ink);
   background-color: var(--paper);
   background-image:
@@ -88,7 +92,7 @@ body {
 
 /* ---------- 按钮 ---------- */
 .btn {
-  font-family: inherit;
+  font-family: var(--font-classical);
   font-size: 15px;
   padding: 9px 22px;
   border-radius: 4px;
@@ -411,6 +415,7 @@ textarea { resize: vertical; }
   word-break: break-word;
   font-size: 15px;
   color: var(--ink);
+  font-family: var(--font-kai);
   margin-bottom: 6px;
 }
 .wall-entry .entry-actions { display: flex; gap: 12px; }
@@ -636,7 +641,7 @@ textarea { resize: vertical; }
 }
 .cmt-item .cmt-head { display: flex; gap: 10px; margin-bottom: 4px; color: var(--ink-soft); font-size: 12px; }
 .cmt-item .cmt-head b { color: var(--cinnabar); }
-.cmt-item .cmt-content { white-space: pre-wrap; word-break: break-word; }
+.cmt-item .cmt-content { white-space: pre-wrap; word-break: break-word; font-family: var(--font-kai); }
 
 .comment-input-row { display: flex; gap: 10px; }
 .comment-input-row textarea { flex: 1; font-family: inherit; font-size: 14px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 4px; }
