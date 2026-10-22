@@ -570,10 +570,16 @@
     const startWeekday = (first.getDay() + 6) % 7; // 周一=0
 
     const today = todayStr();
-    let cells = '';
+    let cells = '<tr>';   // 单元格按每 7 个闭合一行，保证按星期对齐成表格网格
+    let col = 0;
+    function pushCell(td) {
+      cells += td;
+      col++;
+      if (col % 7 === 0) cells += '</tr><tr>';
+    }
     // 前置空格
     for (let i = 0; i < startWeekday; i++) {
-      cells += '<td class="cal-day empty"></td>';
+      pushCell('<td class="cal-day empty"></td>');
     }
     for (let d = 1; d <= daysInMonth; d++) {
       const dateStr = `${statsYear}-${String(statsMonth).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
@@ -592,14 +598,17 @@
       const stateHTML = any
         ? `<span class="cal-day-state mine">H ${mineN}条${mineN >= DAILY_TARGET ? ' ✓' : ''}</span><span class="cal-day-state peer">Q ${peerN}条${peerN >= DAILY_TARGET ? ' ✓' : ''}</span>`
         : '';
-      cells += `<td class="${cls}"><span class="cal-day-num">${d}</span>${stateHTML}</td>`;
+      pushCell(`<td class="${cls}"><span class="cal-day-num">${d}</span>${stateHTML}</td>`);
     }
     // 尾部补足
     const total = startWeekday + daysInMonth;
     const pad = total % 7 === 0 ? 0 : 7 - (total % 7);
     for (let i = 0; i < pad; i++) {
-      cells += '<td class="cal-day empty"></td>';
+      pushCell('<td class="cal-day empty"></td>');
     }
+    // 收尾：去除恰好满行时多出的 <tr>，补上未满行的闭合
+    if (cells.endsWith('</tr><tr>')) cells = cells.slice(0, -9) + '</tr>';
+    else if (cells.endsWith('<tr>')) cells += '</tr>';
     $('calendarBody').innerHTML = cells;
 
     // 月度总结
