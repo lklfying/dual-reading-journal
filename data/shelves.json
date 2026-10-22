@@ -1,0 +1,1774 @@
+{
+  "updatedAt": "2026-10-22T08:10:34.159Z",
+  "H": {
+    "books": [
+      {
+        "title": "性学三论（果麦经典）",
+        "author": "[奥]弗洛伊德",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/56/YueWen_568791/t6_YueWen_568791.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "性格修正：如何突破你的原生性格",
+        "author": "本杰明·哈迪",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/61/3300015161/t6_3300015161.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "焦虑症的自救：从神经系统角度出发治愈焦虑症",
+        "author": "克莱尔·威克斯 ",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/83/3300015083/t6_3300015083.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "活在此时此刻",
+        "author": "[法]一行禅师",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/914/24282914/t6_24282914.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "内在动机：自主掌控人生的力量",
+        "author": "爱德华·L.德西 理查德·弗拉斯特",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/226/33357226/t6_33357226.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "学会去爱：给新人类的恋爱成长课",
+        "author": "满堂",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/20/cpplatform_vunpsevp7tqjfrcddzuscx/t6_cpplatform_vunpsevp7tqjfrcddzuscx1770087301.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "为什么我们总是在防御",
+        "author": "约瑟夫·布尔戈",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/73/cpplatform_333k5xdpfqutmr9xflkf7w/t6_cpplatform_333k5xdpfqutmr9xflkf7w1681817760.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "冥想：唤醒内心强大的力量",
+        "author": "肖文键",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/1/cpPlatform_3300003214/t6_cpPlatform_3300003214.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "幸福的勇气：“自我启发之父”阿德勒的哲学课2",
+        "author": "岸见一郎 古贺史健",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/647/32486647/t6_32486647.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "长期关系中最令人下头的伴侣特质，却经常被误以为是优点（轻心理）",
+        "author": "KnowYourself知我心理",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/55/cpplatform_gai7jzk5vsgdphzkxrjgtd/t6_cpplatform_gai7jzk5vsgdphzkxrjgtd1790669162.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "成瘾：在放纵中寻找平衡",
+        "author": "安娜·伦布克",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/48/cpplatform_2snyvh3uqxd5ppjq1txyyk/t6_cpplatform_2snyvh3uqxd5ppjq1txyyk1681110456.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "亲密关系（第6版）",
+        "author": "[美]罗兰·米勒",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/24/3300014124/t6_3300014124.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "不原谅也没关系",
+        "author": "[美]皮特·沃克",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/89/cpplatform_5m7j6mw2t6q8xamtgbr4eh/t6_cpplatform_5m7j6mw2t6q8xamtgbr4eh1675067330.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "坚持，一种可以养成的习惯",
+        "author": "古川武士",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/52/YueWen_909886/t6_YueWen_909886.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "早安，怪物",
+        "author": "[加]凯瑟琳·吉尔迪纳",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/97/cpplatform_hre43m7tloyfetmcyqwrgu/t6_cpplatform_hre43m7tloyfetmcyqwrgu1714270637.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "内驱式学习",
+        "author": "张文渊",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/87/cpplatform_7zoytctrba9utxmkum3tvj/t6_cpplatform_7zoytctrba9utxmkum3tvj1786615182.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "清醒地活：超越自我的生命之旅",
+        "author": "[美]迈克尔·辛格",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/84/YueWen_40381455/t6_YueWen_40381455.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "正义之心：为什么人们总是坚持“我对你错”",
+        "author": "乔纳森·海特",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/363/713363/t6_713363.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "变态心理学（第11版）",
+        "author": "[美]杰弗里·S. 尼维德  [美]斯潘塞·A. 拉瑟斯  [美]贝弗利·格林",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/24/cpplatform_uj6sfrz6qdowpr7nlqbvlf/t6_cpplatform_uj6sfrz6qdowpr7nlqbvlf1777017099.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "走出人格陷阱",
+        "author": "武志红",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/58/YueWen_29998638/t6_YueWen_29998638.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "4点起床：最养生和高效的时间管理",
+        "author": "中岛孝志",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/52/YueWen_31595333/t6_YueWen_31595333.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "心流：最优体验心理学",
+        "author": "米哈里·契克森米哈赖",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/826/921826/t6_921826.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "认知觉醒：开启自我改变的原动力",
+        "author": "周岭",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/86/YueWen_33628204/t6_YueWen_33628204.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "梦的解析",
+        "author": "[奥]弗洛伊德",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/43/cpplatform_hwseazezmv9bxg8nw5xknw/t6_cpplatform_hwseazezmv9bxg8nw5xknw1736155790.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "福格行为模型：你会越来越有能量",
+        "author": "B.J.福格",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/39/YueWen_41147996/t6_YueWen_41147996.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "刻意练习：如何从新手到大师",
+        "author": "[美]安德斯·艾利克森 [英]罗伯特·普尔",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/95/YueWen_843464/t6_YueWen_843464.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "深度关系",
+        "author": "武志红",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/87/cpplatform_43qcgdhifxnzixexv7bekp/t6_cpplatform_43qcgdhifxnzixexv7bekp1698825144.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "简单的逻辑学：清晰思考的起点",
+        "author": "D.Q.麦克伦尼",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/45/cpplatform_ktzrcrwh9ftrdgiu2sxkrm/t6_cpplatform_ktzrcrwh9ftrdgiu2sxkrm1684812979.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "稀缺：我们是如何陷入贫穷与忙碌的",
+        "author": "塞德希尔·穆来纳森",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/46/YueWen_853426/t6_YueWen_853426.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "禅与摩托车维修艺术",
+        "author": "罗伯特·M.波西格",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/1/yuewen_33810356/t6_yuewen_338103561689835422.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "人性的弱点",
+        "author": "[美]戴尔·卡耐基",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/28/cpplatform_ipiqxlasqypwwbdptqa163/t6_cpplatform_ipiqxlasqypwwbdptqa1631789382231.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "重塑杏仁核：情绪修复脑科学",
+        "author": "[美]凯瑟琳·M. 皮特曼",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/75/cpplatform_f8nqyjadruqecj4euuj6jj/t6_cpplatform_f8nqyjadruqecj4euuj6jj1727434091.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "数学觉醒：学会更清晰地思考",
+        "author": "[法]戴维·贝西",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/78/cpplatform_w9dbcslensnfpwn7jdupam/t6_cpplatform_w9dbcslensnfpwn7jdupam1773398615.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "允许爱情消失",
+        "author": "杜素娟",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/71/cpplatform_hdfhq8fukgwdmrzldfodxy/t6_cpplatform_hdfhq8fukgwdmrzldfodxy1748574405.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "思考，快与慢（第二版）",
+        "author": "[美]丹尼尔·卡尼曼",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/33/cpplatform_wr55yrqcgu1th4myjwezqj/t6_cpplatform_wr55yrqcgu1th4myjwezqj1745822239.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "谈谈方法",
+        "author": "[法]勒内·笛卡尔",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/57/cpplatform_skgwdem4u6rrqkwmg4u5mm/t6_cpplatform_skgwdem4u6rrqkwmg4u5mm1720598151.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "被讨厌的勇气：“自我启发之父”阿德勒的哲学课",
+        "author": "岸见一郎 古贺史健",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/385/25615385/t6_25615385.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "认知驱动：做成一件对他人很有用的事",
+        "author": "周岭",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/88/YueWen_40649986/t6_YueWen_40649986.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "精神分析引论（果麦经典）",
+        "author": "西格蒙德·弗洛伊德 徐胤译",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/67/YueWen_831423/t6_YueWen_831423.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "我们如何面对痛苦、疾病与死亡：雷曼医生的治愈故事",
+        "author": "瑞秋·娜奥米·雷曼",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/90/cpplatform_ktjcexperx3ccteqesodza/t6_cpplatform_ktjcexperx3ccteqesodza1725000343.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "美好的人生",
+        "author": "卡耐基",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/765/791765/t6_791765.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "一年顶十年",
+        "author": "剽悍一只猫",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/7/YueWen_30182760/t6_YueWen_30182760.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "超越自卑",
+        "author": "阿尔弗雷德·阿德勒",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/83/YueWen_918887/t6_YueWen_918887.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "性心理学：亲密关系",
+        "author": "[英]霭理士 著 潘光旦 译",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/29/cpplatform_bmyrqgcb6qqbuhamhc8p5t/t6_cpplatform_bmyrqgcb6qqbuhamhc8p5t1724235505.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "思维的囚徒",
+        "author": "亚历克斯·佩塔克斯 伊莱恩·丹顿",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/813/25995813/t6_25995813.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "掌控习惯：如何养成好习惯并戒除坏习惯（《原子习惯》中文版）（新版）",
+        "author": "詹姆斯·克利尔",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/25/yuewen_26934843/t6_yuewen_269348431702464198.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "她的过去为什么会刺痛你",
+        "author": "淼淼",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/67/cpplatform_pdsmei559zzjejfcf4mxrx/t6_cpplatform_pdsmei559zzjejfcf4mxrx1781771728.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "噪声：《思考快与慢》作者全新力作",
+        "author": "[美]丹尼尔·卡尼曼 [法]奥利维耶·西博尼 [美]卡斯·R.桑斯坦",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/633/40638633/t6_40638633.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "回避型依恋：“越爱越想逃”的人（轻心理）",
+        "author": "远叔 弈文文化",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/53/cpplatform_irgrtkynwcukmih84axaac/t6_cpplatform_irgrtkynwcukmih84axaac1780373053.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "停止你的内在战争",
+        "author": "黄仕明",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/3/3300018303/t6_3300018303.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "有这种特质的伴侣，会永远令人「上头」（轻心理）",
+        "author": "KnowYourself知我心理",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/22/cpplatform_834tx24emxahjydlhtcl1x/t6_cpplatform_834tx24emxahjydlhtcl1x1770119347.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "被爱是一种能力：6堂课，创造你想要的关系",
+        "author": "丛非从",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/81/cpplatform_sgszk5qausolgxrvwfb92e/t6_cpplatform_sgszk5qausolgxrvwfb92e1769763570.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "中国石窟寺研究",
+        "author": "宿白 著",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/18/cpplatform_wpshqyncqjf4t8vic6en7a/t6_cpplatform_wpshqyncqjf4t8vic6en7a1708918494.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "圆圈正义：作为自由前提的信念",
+        "author": "罗翔",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/732/40457732/t6_40457732.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "海绵阅读法：如何吸收一本书的精华",
+        "author": "李小墨",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "高敏感是种天赋（套装共3册）",
+        "author": "[丹]伊尔斯·桑德",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/61/YueWen_40425664/t6_YueWen_40425664.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "活出自己的勇气（阿德勒心理学精要）",
+        "author": "[奥]阿尔弗雷德·阿德勒",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/84/cpplatform_x3mbjxmtewpeohjn1dqryi/t6_cpplatform_x3mbjxmtewpeohjn1dqryi1768534652.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "不教养的勇气：“自我启发之父”阿德勒的育儿心理学",
+        "author": "岸见一郎",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/38/cpPlatform_hFYL9MRdUpFUqXs1Z4uf1w/t6_cpPlatform_hFYL9MRdUpFUqXs1Z4uf1w.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "不计较的勇气：“自我启发之父”阿德勒的生活哲学课",
+        "author": "岸见一郎",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/65/cpplatform_ot2vcab816brnd3ymwwf4c/t6_cpplatform_ot2vcab816brnd3ymwwf4c1688043207.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "无畏的勇气：“自我启发之父”阿德勒的生命哲学课",
+        "author": "[日]岸见一郎",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/85/cpPlatform_rQFXdAvYGNkbSnWYkDiMgT/t6_cpPlatform_rQFXdAvYGNkbSnWYkDiMgT.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "自控力",
+        "author": "凯利·麦格尼格尔",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/9/YueWen_837618/t6_YueWen_837618.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "少爷（果麦经典）",
+        "author": "夏目漱石",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/82/YueWen_850812/t6_YueWen_850812.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "雪国",
+        "author": "[日]川端康成",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/70/cpPlatform_bDr8V4xkSCSCkHV87JSy93/t6_cpPlatform_bDr8V4xkSCSCkHV87JSy93.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "1Q84 BOOK 2（7月-9月）",
+        "author": "[日]村上春树",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/48/YueWen_22485614/t6_YueWen_22485614.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "潮骚",
+        "author": "三岛由纪夫",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/626/35523626/t6_35523626.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "哥儿",
+        "author": "夏目漱石",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/55/YueWen_927221/t6_YueWen_927221.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "爱的饥渴",
+        "author": "三岛由纪夫",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/79/cpPlatform_3300003465/t6_cpPlatform_3300003465.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "金阁寺（2025经典无删减版）",
+        "author": "[日]三岛由纪夫著\n黄洪涛译",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/21/cpplatform_km8hs7ccwwazn2orp8md4a/t6_cpplatform_km8hs7ccwwazn2orp8md4a1762764574.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "我是猫",
+        "author": "[日]夏目漱石",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/43/cpplatform_7dabcbnctilnwhatqfedcv/t6_cpplatform_7dabcbnctilnwhatqfedcv1763118066.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "心",
+        "author": "夏目漱石",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/220/927220/t6_927220.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "悖论13",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/34/YueWen_818911/t6_YueWen_818911.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "彷徨之刃",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/33/YueWen_818910/t6_YueWen_818910.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "那时的某人",
+        "author": "[日]东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/9/cpplatform_ccgiufh9h5v5i7pgk9ucaz/t6_cpplatform_ccgiufh9h5v5i7pgk9ucaz1788947496.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "假面游戏",
+        "author": "[日]东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/72/cpplatform_9lgcgjfbkxacgknvozrvfk/t6_cpplatform_9lgcgjfbkxacgknvozrvfk1711008481.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "怪笑小说",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/77/yuewen_818918/t6_yuewen_8189181785220010.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "毒笑小说",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/75/yuewen_818916/t6_yuewen_8189161785220011.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "黑笑小说",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/50/yuewen_233932/t6_yuewen_2339321785220010.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "信（东野圭吾不可不读的洞悉人性之作）",
+        "author": "[日]东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/59/yuewen_34424286/t6_yuewen_344242861722245441.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "人偶游戏",
+        "author": "[日]东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/13/cpplatform_pqycmcezpckyvr2oex4dcb/t6_cpplatform_pqycmcezpckyvr2oex4dcb1763550134.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "假面山庄",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/3/22623003/t6_22623003.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "麒麟之翼",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/20/YueWen_840705/t6_YueWen_840705.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "白鸟与蝙蝠",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/52/cpplatform_7eqhcafvgdqlxk5tvo4j7p/t6_cpplatform_7eqhcafvgdqlxk5tvo4j7p1677660421.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "沉默的巡游",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/60/29829160/t6_29829160.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "歪笑小说",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/38/YueWen_818915/t6_YueWen_818915.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "假面前夜",
+        "author": "[日]东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/85/cpplatform_11bdkgcrc1psikd9sbprpt/t6_cpplatform_11bdkgcrc1psikd9sbprpt1723713597.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "幻夜",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/2/yuewen_230108/t6_yuewen_2301081785220014.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "无名之町",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/14/3300020514/t6_3300020514.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "我杀了他",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/16/YueWen_840701/t6_YueWen_840701.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "名侦探的咒缚",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/69/YueWen_23723048/t6_YueWen_23723048.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "同级生",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/33/YueWen_840690/t6_YueWen_840690.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "放学后",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/96/yuewen_840686/t6_yuewen_8406861685499369.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "祈祷落幕时",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/45/YueWen_842609/t6_YueWen_842609.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "谁杀了她",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/45/yuewen_22291759/t6_yuewen_222917591785220014.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "盛夏方程式",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/343/23557343/t6_23557343.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "你杀了谁",
+        "author": "[日]东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/44/cpplatform_tqyie6vuyk4hqstehqabqb/t6_cpplatform_tqyie6vuyk4hqstehqabqb1738724199.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "架空犯（东野圭吾2025年新书）",
+        "author": "[日]东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/97/cpplatform_dhsac2adevkeux942c7het/t6_cpplatform_dhsac2adevkeux942c7het1762225401.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "解忧杂货店",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/27/3300020527/t6_3300020527.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "大雪中的山庄",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/66/YueWen_22623005/t6_YueWen_22623005.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "虚无的十字架",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/22/cpPlatform_kboEK7t9eX3aznMwkW7YVz/t6_cpPlatform_kboEK7t9eX3aznMwkW7YVz.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "我的晃荡的青春",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/73/yuewen_818914/t6_yuewen_8189141719392607.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "嫌疑人X的献身",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/59/cpplatform_gnveypvmpcpiaen24cumub/t6_cpplatform_gnveypvmpcpiaen24cumub1785219967.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "希望之线",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/41/cpPlatform_3XMcHWXzdNuHjzKarJAqAL/t6_cpPlatform_3XMcHWXzdNuHjzKarJAqAL.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "透明的螺旋",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/22/3300020522/t6_3300020522.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "单恋",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/76/YueWen_816618/t6_YueWen_816618.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "禁断的魔术",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/345/23557345/t6_23557345.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "从前我死去的家",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/22/yuewen_840691/t6_yuewen_8406911785220016.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "伽利略的苦恼",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/36/YueWen_908269/t6_YueWen_908269.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "情人节终章",
+        "author": "[日]东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/3/cpplatform_pekzmy1w79wdp6wej9z84f/t6_cpplatform_pekzmy1w79wdp6wej9z84f1758792374.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "觉醒者们",
+        "author": "[日]东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/20/cpplatform_ifq54uf6gscdmzjpn6crwo/t6_cpplatform_ifq54uf6gscdmzjpn6crwo1746773624.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "恶意",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/29/3300020529/t6_3300020529.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "白夜行",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/1/yuewen_230107/t6_yuewen_2301071682244014.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "孤岛凶案：十一字杀人",
+        "author": "[日]东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/16/cpplatform_6jgnuvvn7xxzsqz3bjt5jx/t6_cpplatform_6jgnuvvn7xxzsqz3bjt5jx1757056065.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "布谷鸟的蛋",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/116/27182116/t6_27182116.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "无凶之夜",
+        "author": "[日]东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/83/cpplatform_tvsxkh3rvnn1epeinke81x/t6_cpplatform_tvsxkh3rvnn1epeinke81x1749111782.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "鸟人计划",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/81/3300024181/t6_3300024181.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "祈念守护人",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/1/cpPlatform_1KgMLi77yRKABbuL8mH3Mp/t6_cpPlatform_1KgMLi77yRKABbuL8mH3Mp.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "分身",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/98/yuewen_230104/t6_yuewen_2301041731323122.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "毕业",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/41/YueWen_840698/t6_YueWen_840698.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "白马山庄谜案",
+        "author": "[日]东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/1/cpplatform_ujstxntjckwz3piepbequg/t6_cpplatform_ujstxntjckwz3piepbequg1749174062.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "学生街的日子",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/65/YueWen_23198808/t6_YueWen_23198808.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "预知梦",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/0/YueWen_25415629/t6_YueWen_25415629.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "假面饭店（东野圭吾假面系列开篇作，木村拓哉、长泽雅美主演同名电影）",
+        "author": "[日]东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/88/yuewen_842992/t6_yuewen_8429921720597200.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "流星之绊",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/28/yuewen_840697/t6_yuewen_8406971785220015.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "假面之夜",
+        "author": "[日]东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/97/cpplatform_64ucfnmh246di2pb99uwcy/t6_cpplatform_64ucfnmh246di2pb99uwcy1723713605.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "虚像的丑角",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/71/cpPlatform_941uoksrozKnx7ED7egMJh/t6_cpPlatform_941uoksrozKnx7ED7egMJh.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "变身（同名日剧原著）",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/99/yuewen_840689/t6_yuewen_8406891731323182.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "湖畔",
+        "author": "[日]东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/38/cpplatform_q6zteein5xfvcmqe9eumpb/t6_cpplatform_q6zteein5xfvcmqe9eumpb1731484950.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "宿命",
+        "author": "[日]东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/98/yuewen_840688/t6_yuewen_8406881752226831.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "时生",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/39/cpplatform_dgzlv2uyu2cw9unrjdfgbq/t6_cpplatform_dgzlv2uyu2cw9unrjdfgbq1698910109.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "使命与魂的尽头",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/91/3300024191/t6_3300024191.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "新参者",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/7/yuewen_840704/t6_yuewen_8407041785220013.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "绑架游戏",
+        "author": "[日]东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/23/cpplatform_udhud3djnw8gfd5nnstas9/t6_cpplatform_udhud3djnw8gfd5nnstas91764589894.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "只差一个谎言",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/5/yuewen_840702/t6_yuewen_8407021785220012.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "空中杀人现场",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/71/yuewen_818912/t6_yuewen_8189121785220017.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "圣女的救济",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/51/851251/t6_851251.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "沉睡的森林",
+        "author": "[日]东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/42/YueWen_840699/t6_YueWen_840699.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "长长的回廊",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/73/3300024173/t6_3300024173.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "侦探伽利略",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/57/YueWen_25136688/t6_YueWen_25136688.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "秘密",
+        "author": "东野圭吾",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/85/22451285/t6_22451285.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "白色巨塔（日本“国民级小说”，日剧巅峰之作）",
+        "author": "山崎丰子",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/86/YueWen_43993718/t6_YueWen_43993718.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "菊与刀（果麦经典）",
+        "author": "本尼迪克特",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/68/YueWen_831424/t6_YueWen_831424.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "战后日本经济史",
+        "author": "野口悠纪雄",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/35/YueWen_22606355/t6_YueWen_22606355.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "天空的城：我的26岁女房客",
+        "author": "超级大坦克科比",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/62/cpplatform_4ycumme1o9kbq7pwsmqnr9/t6_cpplatform_4ycumme1o9kbq7pwsmqnr91729770841.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "围城",
+        "author": "钱钟书",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/7/40401007/t6_40401007.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "活着",
+        "author": "余华",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/1/yuewen_834464/t6_yuewen_8344641758521403.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "一个陌生女人的来信（同名电影原著）",
+        "author": "[奥]斯·茨威格",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/86/YueWen_34631951/t6_YueWen_34631951.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "魔力",
+        "author": "朗达·拜恩",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/252/852252/t6_852252.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "偏跟山过不去",
+        "author": "[英]比尔·布莱森",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/84/cpplatform_bz738ebgcqbcn6nqeyt1xl/t6_cpplatform_bz738ebgcqbcn6nqeyt1xl1790675874.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "化身博士：英汉对照",
+        "author": "[英]罗伯特·路易斯·史蒂文森",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/88/cpPlatform_jPLZb5G4nsD4z2s8WvGLTg/t6_cpPlatform_jPLZb5G4nsD4z2s8WvGLTg1672830380.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "飘",
+        "author": "[美]玛格丽特·米切尔",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/57/cpplatform_gphbw2c9duvae1kcvxmhfo/t6_cpplatform_gphbw2c9duvae1kcvxmhfo1753438332.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "远大前程：Great expectations（英文版）",
+        "author": "[英]查尔斯·狄更斯",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/61/YueWen_25791786/t6_YueWen_25791786.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "卡门：梅里美中短篇小说选（译文名著精选）",
+        "author": "[法]普罗斯佩·梅里美",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/53/YueWen_932151/t6_YueWen_932151.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "傲慢与偏见",
+        "author": "简·奥斯丁",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/833/842833/t6_842833.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "远大前程（译文名著精选）",
+        "author": "[英]狄更斯",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/87/932087/t6_932087.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "局外人",
+        "author": "[法]加缪",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/44/YueWen_912325/t6_YueWen_912325.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "无人生还（同名英剧原著）",
+        "author": "阿加莎·克里斯蒂",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/63/yuewen_728514/t6_yuewen_7285141680854106.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "动物农场",
+        "author": "乔治·奥威尔",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/38/YueWen_811769/t6_YueWen_811769.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "月亮和六便士",
+        "author": "毛姆",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/763/809763/t6_809763.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "东方快车谋杀案（图像小说版）",
+        "author": "阿加莎·克里斯蒂 蔡峰",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/71/3300010571/t6_3300010571.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "乌合之众",
+        "author": "[法]古斯塔夫·勒庞",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/40/cpplatform_spxfde1hbwdbgctjxvcjxl/t6_cpplatform_spxfde1hbwdbgctjxvcjxl1734949570.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "不止于正义",
+        "author": "赵宏 陈碧 李红勃 罗翔",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/72/cpplatform_tun3wo9v6bqrmjzyd2ybhj/t6_cpplatform_tun3wo9v6bqrmjzyd2ybhj1757906357.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "正义论（外国伦理学名著译丛）",
+        "author": "约翰·罗尔斯",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/403/40667403/t6_40667403.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "贫穷的本质：我们为什么摆脱不了贫穷（全新增订版）",
+        "author": "[美]阿比吉特·班纳吉  [法]埃斯特·迪弗洛",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/86/cpplatform_tpwc2cvkdspkkb5bjpe66r/t6_cpplatform_tpwc2cvkdspkkb5bjpe66r1766029213.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "第二性I：事实与神话",
+        "author": "[法]西蒙娜·德·波伏瓦",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/367/934367/t6_934367.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "思考致富",
+        "author": "拿破仑·希尔",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/1/YueWen_629424/t6_YueWen_629424.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "“研”磨记",
+        "author": "Philip J. Guo",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/26/cpplatform_12lhm76u7kpjcjxaujn5nq/t6_cpplatform_12lhm76u7kpjcjxaujn5nq1683338285.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "第二性II：实际体验",
+        "author": "[法]西蒙娜·德·波伏瓦",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/95/YueWen_934368/t6_YueWen_934368.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "国富论",
+        "author": "亚当·斯密",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/985/650985/t6_650985.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "指数基金投资指南",
+        "author": "银行螺丝钉",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/3/YueWen_921090/t6_YueWen_921090.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "谁动了我的奶酪",
+        "author": "斯宾塞·约翰逊",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/29/YueWen_635948/t6_YueWen_635948.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "王阳明心学全书",
+        "author": "罗智",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/78/YueWen_620376/t6_YueWen_620376.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "纳瓦尔宝典",
+        "author": "埃里克·乔根森",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/89/YueWen_44026191/t6_YueWen_44026191.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "穷查理宝典：查理·芒格智慧箴言录（全新增订本）",
+        "author": "彼得·考夫曼",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/48/YueWen_837932/t6_YueWen_837932.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "低风险创业",
+        "author": "樊登",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/61/cpplatform_f7hfgwvkbyq3pekbmn7bm6/t6_cpplatform_f7hfgwvkbyq3pekbmn7bm61779186018.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "金钱心理学 （全新增订版）",
+        "author": "[美]摩根·豪泽尔",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/31/cpplatform_fx1z5bkdgmbwqoatwezcxp/t6_cpplatform_fx1z5bkdgmbwqoatwezcxp1778466805.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "暮光之城2：新月",
+        "author": "斯蒂芬妮·梅尔",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/83/3300018083/t6_3300018083.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "暮光之城4：破晓",
+        "author": "斯蒂芬妮·梅尔",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/82/3300018082/t6_3300018082.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "暮光之城3：月食",
+        "author": "斯蒂芬妮·梅尔",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/84/3300018084/t6_3300018084.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "暮光之城1：暮色",
+        "author": "斯蒂芬妮·梅尔",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/500/831500/t6_831500.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "暮光之城5：午夜阳光",
+        "author": "斯蒂芬妮·梅尔",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/11/cpPlatform_5rGwnidK1cYzhwRW3C8UYv/t6_cpPlatform_5rGwnidK1cYzhwRW3C8UYv.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "五十度灰 第一部 调教",
+        "author": "E-L-詹姆斯",
+        "coverUrl": "https://weread.qq.com/https://res.weread.qq.com/wrepub/CB_AEgA6QA3U4JD6dj6cXDta6p6_parsecover",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "第一性原理：21堂科学通识课",
+        "author": "[英]马库斯·乔恩",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/91/cpplatform_36gfxbmirhqhzp9fkkrd4z/t6_cpplatform_36gfxbmirhqhzp9fkkrd4z1733216520.jpg",
+        "isbn": "",
+        "source": "weread"
+      }
+    ],
+    "stats": {
+      "readingCount": 37
+    }
+  },
+  "Q": {
+    "books": [
+      {
+        "title": "语言本能",
+        "author": "[美]史蒂芬·平克",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/29/YueWen_713314/t6_YueWen_713314.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "牛津通识读本：社会语言学（中文版）",
+        "author": "[加拿大]约翰•爱德华兹",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/85/cpplatform_vvxxcxnj1rmgjatno7athn/t6_cpplatform_vvxxcxnj1rmgjatno7athn1713859543.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "明朝那些事儿（全集）",
+        "author": "当年明月",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/97/yuewen_822995/t6_yuewen_8229951695023669.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "半小时漫画中国地理：长江流域（共3册）",
+        "author": "陈磊·半小时漫画团队",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/84/cpplatform_gyeov4zx3ph4kbdcxuuqnw/t6_cpplatform_gyeov4zx3ph4kbdcxuuqnw1716191660.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "中国通史（上下册）",
+        "author": "傅乐成",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/62/yuewen_25031485/t6_yuewen_250314851679552147.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "信念 : 人生每一步都算数（珍藏版）",
+        "author": "雷殿生",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/85/cpplatform_kbttvc9usqoqzr1j5bti3f/t6_cpplatform_kbttvc9usqoqzr1j5bti3f1704785877.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "明亮的夜晚",
+        "author": "崔恩荣",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/50/cpplatform_dzcupluzwjbcszj1zes4a9/t6_cpplatform_dzcupluzwjbcszj1zes4a91692182630.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "大崛起：中国经济的增长与转型",
+        "author": "赵燕菁",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/87/cpplatform_qrapbkumunkvc5wbegrsu4/t6_cpplatform_qrapbkumunkvc5wbegrsu41673341882.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "置身事内：中国政府与经济发展",
+        "author": "兰小欢",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/52/YueWen_40055543/t6_YueWen_40055543.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "纳瓦尔宝典",
+        "author": "埃里克·乔根森",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/89/YueWen_44026191/t6_YueWen_44026191.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "穷查理宝典：查理·芒格智慧箴言录（全新增订本）",
+        "author": "彼得·考夫曼",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/48/YueWen_837932/t6_YueWen_837932.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "登天的感觉：我在哈佛大学做心理咨询（2023版）",
+        "author": "岳晓东",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/89/YueWen_23693271/t6_YueWen_23693271.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "乌合之众",
+        "author": "[法]古斯塔夫·勒庞",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/40/cpplatform_spxfde1hbwdbgctjxvcjxl/t6_cpplatform_spxfde1hbwdbgctjxvcjxl1734949570.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "生命的重建（心理疗愈领域高峰之作）",
+        "author": "露易丝·海",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/65/cpplatform_b5ldwgekmxeabyxynyvpgl/t6_cpplatform_b5ldwgekmxeabyxynyvpgl1703819267.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "乡土中国（果麦经典）",
+        "author": "费孝通",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/97/cpPlatform_dUhjxq95Gg4Y1dg1rs68Rc/t6_cpPlatform_dUhjxq95Gg4Y1dg1rs68Rc.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "深度关系",
+        "author": "武志红",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/87/cpplatform_43qcgdhifxnzixexv7bekp/t6_cpplatform_43qcgdhifxnzixexv7bekp1698825144.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "被讨厌的勇气：“自我启发之父”阿德勒的哲学课",
+        "author": "岸见一郎 古贺史健",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/385/25615385/t6_25615385.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "亲密关系（第8版）",
+        "author": "[美]罗兰·米勒",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/29/cpplatform_fajupe6tastyjcbfydk4sx/t6_cpplatform_fajupe6tastyjcbfydk4sx1722240377.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "不要为打翻的牛奶哭泣",
+        "author": "赵约翰",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/19/cpplatform_5cuu4wuxh4rpbhz3rmhdjn/t6_cpplatform_5cuu4wuxh4rpbhz3rmhdjn1768895608.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "空洞的心：成瘾的真相与疗愈",
+        "author": "[加]加博尔·马泰",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/8/cpplatform_jvxuap9pljubvkrbrhs6py/t6_cpplatform_jvxuap9pljubvkrbrhs6py1695622493.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "自卑与超越（专家伴读版）",
+        "author": "[奥]阿尔弗雷德·阿德勒",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/86/cpplatform_6582iy5uwulac3y2fphe5t/t6_cpplatform_6582iy5uwulac3y2fphe5t1714473330.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "非暴力沟通（修订版）",
+        "author": "马歇尔·卢森堡",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/88/cpplatform_9iwmvppcbjd1kqabdkbe1e/t6_cpplatform_9iwmvppcbjd1kqabdkbe1e1685513342.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "悉达多（果麦经典）",
+        "author": "[德]赫尔曼·黑塞",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/68/YueWen_855327/t6_YueWen_855327.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "第一性原理：普通人的人生高效手册",
+        "author": "武从文",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/41/cpplatform_tpufzthcymkybyjf83v9un/t6_cpplatform_tpufzthcymkybyjf83v9un1789358460.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "认知觉醒：开启自我改变的原动力",
+        "author": "周岭",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/86/YueWen_33628204/t6_YueWen_33628204.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "简单的逻辑学：清晰思考的起点",
+        "author": "D.Q.麦克伦尼",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/45/cpplatform_ktzrcrwh9ftrdgiu2sxkrm/t6_cpplatform_ktzrcrwh9ftrdgiu2sxkrm1684812979.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "打造第二大脑",
+        "author": "[美]蒂亚戈·福特",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/4/cpplatform_qny6vkp5nzlu1gefjtdk9i/t6_cpplatform_qny6vkp5nzlu1gefjtdk9i1709021685.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "金字塔原理大全集",
+        "author": "[美]芭芭拉·明托",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/28/3300020528/t6_3300020528.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "思考，快与慢（第二版）",
+        "author": "[美]丹尼尔·卡尼曼",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/33/cpplatform_wr55yrqcgu1th4myjwezqj/t6_cpplatform_wr55yrqcgu1th4myjwezqj1745822239.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "微习惯：简单到不可能失败的自我管理法则",
+        "author": "斯蒂芬·盖斯",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/882/909882/t6_909882.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "海绵阅读法：如何吸收一本书的精华",
+        "author": "李小墨",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "蛇结（果麦经典）",
+        "author": "[法]弗朗索瓦·莫里亚克",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/45/cpplatform_dnv4tispbha7vrecp71efm/t6_cpplatform_dnv4tispbha7vrecp71efm1745489552.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "Animal Farm 动物农庄(英文版)",
+        "author": "[英]乔治·奥威尔",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/68/cpPlatform_n93q6Rr24JSU4LredUoEo9/t6_cpPlatform_n93q6Rr24JSU4LredUoEo9.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "1984",
+        "author": "[英]乔治·奥威尔",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/43/cpplatform_i8ynodndbtuzrhr7fdhy7c/t6_cpplatform_i8ynodndbtuzrhr7fdhy7c1764831272.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "房思琪的初恋乐园（精编版）",
+        "author": "林奕含",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/28/YueWen_32206126/t6_YueWen_32206126.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "失踪的孩子",
+        "author": "埃莱娜·费兰特",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/25/YueWen_23933599/t6_YueWen_23933599.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "红玫瑰与白玫瑰",
+        "author": "张爱玲",
+        "coverUrl": "https://weread.qq.com/https://res.weread.qq.com/wrepub/CB_Fkw2lm2mr6B06i26gtBpc3jr_parsecover",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "西线无战事（同名电影原著）（果麦经典）",
+        "author": "埃里希·玛丽亚·雷马克",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/26/YueWen_35458083/t6_YueWen_35458083.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "猫鱼",
+        "author": "陈冲",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/85/cpplatform_9p96osc2hbz9yyvma2wljk/t6_cpplatform_9p96osc2hbz9yyvma2wljk1741762382.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "离开的，留下的（《我的天才女友》第三季原著）",
+        "author": "埃莱娜·费兰特",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/34/YueWen_935492/t6_YueWen_935492.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "太白金星有点烦",
+        "author": "马伯庸",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/72/cpplatform_huhykqamxcvke1jfkpqxiv/t6_cpplatform_huhykqamxcvke1jfkpqxiv1695711014.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "三体全集（全三册）",
+        "author": "刘慈欣",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/80/yuewen_695233/t6_yuewen_6952331784884457.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "快速阅读",
+        "author": "克里斯蒂安·格吕宁",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/43/YueWen_921072/t6_YueWen_921072.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "奇风岁月",
+        "author": "[美]罗伯特·麦卡蒙",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/23/856023/t6_856023.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "倾城之恋",
+        "author": "张爱玲",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/88/yuewen_22355153/t6_yuewen_223551531680770798.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "喧哗与骚动（人文社外国文学名著经典·网格本）",
+        "author": "威廉·福克纳",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/87/YueWen_33820335/t6_YueWen_33820335.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "我的天才女友（HBO同名热剧原著）",
+        "author": "埃莱娜·费兰特",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/122/923122/t6_923122.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "平凡的世界（全三册）",
+        "author": "路遥",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/61/yuewen_24965201/t6_yuewen_249652011682413401.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "一句顶一万句（2022新版）",
+        "author": "刘震云",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/43/3300024943/t6_3300024943.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "鱼不存在",
+        "author": "露露·米勒",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/75/cpplatform_cvbkmm6ahiy3dkkjm6cbeu/t6_cpplatform_cvbkmm6ahiy3dkkjm6cbeu1676431298.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "动物庄园（奥威尔作品集）",
+        "author": "乔治·奥威尔",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/76/YueWen_641029/t6_YueWen_641029.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "新名字的故事（《我的天才女友》第二季原著）",
+        "author": "埃莱娜·费兰特",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/32/YueWen_923123/t6_YueWen_923123.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "清算已毕：波伏瓦自传",
+        "author": "[法]西蒙娜·德·波伏瓦",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/85/cpplatform_aeadwyzdkvsbhkuashe48f/t6_cpplatform_aeadwyzdkvsbhkuashe48f1738918192.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "一间只属于自己的房间（果麦经典）",
+        "author": "[英]弗吉尼亚·伍尔夫",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/66/yuewen_26797704/t6_yuewen_267977041715156795.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "A Room of One's Own  一个人的房间 英文原版",
+        "author": "Virginia Woolf",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/54/cpplatform_wgwn3ht46dyazxxvlpz74d/t6_cpplatform_wgwn3ht46dyazxxvlpz74d1721197132.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "厌女（增订本）",
+        "author": "[日]上野千鹤子",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/94/cpplatform_akrjnymgoxljkqszganvbx/t6_cpplatform_akrjnymgoxljkqszganvbx1682248200.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "写作是门手艺",
+        "author": "刘军强",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/26/cpplatform_1sihztdys5mvqdsaviwubl/t6_cpplatform_1sihztdys5mvqdsaviwubl1769653383.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "学会写作：自我进阶的高效方法",
+        "author": "粥左罗",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/236/25546236/t6_25546236.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "余华写作课：我能否相信自己",
+        "author": "余华",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/96/cpplatform_kmuyi3sxsbvnfntmkq54ad/t6_cpplatform_kmuyi3sxsbvnfntmkq54ad1754558525.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "写出我心：普通人如何通过写作表达自己",
+        "author": "娜塔莉·戈德堡",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/589/937589/t6_937589.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "雨季不再来",
+        "author": "三毛",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/35/22355135/t6_22355135.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "撒哈拉的故事",
+        "author": "三毛",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/24/3300020524/t6_3300020524.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "我与地坛（插图版）",
+        "author": "史铁生",
+        "coverUrl": "https://weread.qq.com/https://wfqqreader-1252317822.image.myqcloud.com/cover/741/33514741/t6_33514741.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "毛泽东选集（第一卷）",
+        "author": "",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/85/3300024285/t6_3300024285.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "半小时漫画红楼梦（全2册）",
+        "author": "陈磊·半小时漫画团队",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/76/cpplatform_wkbnge4t9gvkaehfkcwfvm/t6_cpplatform_wkbnge4t9gvkaehfkcwfvm1701845251.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "蒋勋说宋词（修订版）",
+        "author": "蒋勋",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/69/YueWen_23444136/t6_YueWen_23444136.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "蒋勋说唐诗（修订版）",
+        "author": "蒋勋",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/67/YueWen_23444134/t6_YueWen_23444134.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "蒋勋说红楼梦（套装共8册）",
+        "author": "蒋勋",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/96/YueWen_23444142/t6_YueWen_23444142.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "红楼梦（人民文学版）",
+        "author": "曹雪芹著 无名氏续 程伟元 高鹗整理",
+        "coverUrl": "https://weread.qq.com/https://cdn.weread.qq.com/weread/cover/45/YueWen_34615967/t6_YueWen_34615967.jpg",
+        "isbn": "",
+        "source": "weread"
+      }
+    ],
+    "stats": {
+      "readingCount": 49
+    }
+  }
+}
