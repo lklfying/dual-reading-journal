@@ -1,7 +1,6 @@
 /* ============================================================
    共读札记 · 微信读书联动 (weread.js)
-   云函数同步书架（CloudBase weread-sync）/ 手动添加 / 批量导入 / 重合对比
-   书架数据经云函数 weread-sync 获取，前端不接触 WEREAD_API_KEY
+   静态书架同步（data/shelves.json）/ 手动添加 / 批量导入 / 重合对比
    ============================================================ */
 
 (function () {
@@ -12,28 +11,7 @@
   // 当前书架操作对象（'H' / 'Q'）
   let shelfUser = 'H';
 
-  /* ---------------- 微信读书书架接口（经 CloudBase 云函数） ---------------- */
-  // 云函数持有 WEREAD_API_KEY 调 https://i.weread.qq.com/api/agent/gateway
-  // 动作：/shelf/sync 拉书架；/readdata/detail 拉阅读统计
-  async function fetchWereadShelf() {
-    const res = await window.CLOUD.callWeread('/shelf/sync', {});
-    if (!res || res.ok === false) {
-      throw new Error((res && res.msg) || '云函数调用失败');
-    }
-    const list = Array.isArray(res.data) ? res.data : [];
-    const books = list.map(b => {
-      const bi = b.bookInfo || b;
-      return {
-        title: bi.title || '',
-        author: (bi.author || '').split('/')[0] || '',
-        coverUrl: bi.cover ? (/^https?:\/\//i.test(bi.cover) ? bi.cover : ('https://weread.qq.com/' + bi.cover.replace(/^\/+/, ''))) : '',
-        isbn: (bi.isbn && String(bi.isbn).trim()) || '',
-        source: 'weread'
-      };
-    }).filter(b => b.title);
-    return books;
-  }
-
+  /* ---------------- 阅读统计展示 ---------------- */
   // 阅读统计展示文案（尽力读取常见字段，缺失显示 —）
   function statText(s) {
     if (!s || typeof s !== 'object') return '—';
@@ -79,8 +57,9 @@
     const booksHTML = list.length
       ? `<div class="shelf-grid">${list.map((b, i) => {
           const safeTitle = GD.esc(b.title).replace(/'/g, '');
-          const coverHTML = b.coverUrl
-            ? `<img src="${GD.esc(b.coverUrl)}" loading="lazy" onerror="this.outerHTML=window.__gongduShelfCover('${safeTitle}')">`
+          const cleanCover = normalizeCover(b.coverUrl);
+          const coverHTML = cleanCover
+            ? `<img src="${GD.esc(cleanCover)}" loading="lazy" onerror="this.outerHTML=window.__gongduShelfCover('${safeTitle}')">`
             : shelfFallback(b.title);
           return `
           <div class="shelf-book" title="${GD.esc(b.title)}">
@@ -89,7 +68,7 @@
             <div class="sb-title">${GD.esc(b.title)}</div>
           </div>`;
         }).join('')}</div>`
-      : `<div class="empty-tip">「${active}」的书架还是空的，用云函数同步或手动添加书籍。</div>`;
+      : `<div class="empty-tip">「${active}」的书架还是空的，书架数据自动同步后即会显示，也可手动添加书籍。</div>`;
 
     resultEl.innerHTML = `
       <div class="weread-summary">H ${mine.length} 本 · Q ${peer.length} 本</div>
@@ -106,7 +85,6 @@
           if (!confirm(`从「${u}」书架中移除《${GD.data.shelves[u][idx].title}》？`)) return;
           GD.data.shelves[u].splice(idx, 1);
           GD.save();
-          if (window.CLOUD) window.CLOUD.updateShelf(u).catch(() => {});
           renderWeread();
           renderOverlap();
           GD.toast('已移除');
@@ -118,6 +96,14 @@
         });
       }
     });
+  }
+
+  // 归一化封面 URL：修复历史脏数据（https://weread.qq.com/https://cdn.weread.qq.com/... 重复域名）
+  function normalizeCover(url) {
+    const s = String(url || '').trim();
+    if (!s) return '';
+    const m = s.match(/^https?:\/\/[^/]+\/(https?:\/\/.+)$/i);
+    return m ? m[1] : s;
   }
 
   function shelfFallback(title) {
@@ -178,56 +164,6 @@
 
   /* ---------------- 事件绑定 ---------------- */
   function initWeread() {
-    // 拉取书架（经云函数，云端不可达时提示降级）
-    $('wereadFetchBtn').addEventListener('click', async () => {
-      if (!window.CLOUD || !window.CLOUD.isReady()) {
-        GD.toast('云端未连接，无法调用微信读书同步接口', true);
-        return;
-      }
-      GD.toast('正在通过云函数拉取书架…');
-      $('wereadFetchBtn').disabled = true;
-      try {
-        const books = await fetchWereadShelf();
-        if (!books.length) { GD.toast('接口未返回书籍，请检查云函数配置或稍后重试，也可手动添加', true); return; }
-        mergeBooks(shelfUser, books);
-        GD.save();
-        if (window.CLOUD) window.CLOUD.updateShelf(shelfUser).catch(() => {});
-        renderWeread();
-        renderOverlap();
-        GD.toast(`拉取成功：${books.length} 本书已加入「${shelfUser}」书架`);
-      } catch (e) {
-        console.error(e);
-        GD.toast('拉取失败：' + (e && e.message ? e.message : '未知错误') + '。请使用手动添加/批量导入。', true);
-      } finally {
-        $('wereadFetchBtn').disabled = false;
-      }
-    });
-
-    // 刷新阅读统计（/readdata/detail）
-    $('wereadStatsBtn').addEventListener('click', async () => {
-      if (!window.CLOUD || !window.CLOUD.isReady()) {
-        GD.toast('云端未连接，无法调用微信读书同步接口', true);
-        return;
-      }
-      GD.toast('正在通过云函数刷新阅读统计…');
-      $('wereadStatsBtn').disabled = true;
-      try {
-        const res = await window.CLOUD.callWeread('/readdata/detail', { user: shelfUser });
-        if (!res || res.ok === false) throw new Error((res && res.msg) || '云函数调用失败');
-        GD.data.readStats = GD.data.readStats || {};
-        GD.data.readStats[shelfUser] = (res.data && typeof res.data === 'object') ? res.data : {};
-        GD.save();
-        if (window.CLOUD) window.CLOUD.updateShelf(shelfUser, { stats: GD.data.readStats[shelfUser] }).catch(() => {});
-        renderWeread();
-        GD.toast('阅读统计已刷新');
-      } catch (e) {
-        console.error(e);
-        GD.toast('刷新失败：' + (e && e.message ? e.message : '未知错误'), true);
-      } finally {
-        $('wereadStatsBtn').disabled = false;
-      }
-    });
-
     // 手动添加
     $('wereadManualBtn').addEventListener('click', () => {
       openModal(`
@@ -254,7 +190,6 @@
         }
         GD.data.shelves[shelfUser].push(book);
         GD.save();
-        if (window.CLOUD) window.CLOUD.updateShelf(shelfUser).catch(() => {});
         closeModal();
         renderWeread();
         renderOverlap();
@@ -279,7 +214,6 @@
         if (!books.length) { GD.toast('未能解析出任何书籍', true); return; }
         books.forEach(b => GD.data.shelves[shelfUser].push(b));
         GD.save();
-        if (window.CLOUD) window.CLOUD.updateShelf(shelfUser).catch(() => {});
         closeModal();
         renderWeread();
         renderOverlap();
@@ -357,9 +291,8 @@
       const j = await r.json();
       const img = j.items && j.items[0] && j.items[0].volumeInfo && j.items[0].volumeInfo.imageLinks;
       if (img && img.thumbnail) {
-        book.coverUrl = img.thumbnail.replace(/^http:/, 'https:');
+        book.coverUrl = normalizeCover(img.thumbnail.replace(/^http:/, 'https:'));
         GD.save();
-        if (window.CLOUD) window.CLOUD.updateShelf(shelfUser).catch(() => {});
         renderWeread();
         renderOverlap();
       }

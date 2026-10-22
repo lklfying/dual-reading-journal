@@ -1,8 +1,0 @@
-{
-  "name": "weread-sync",
-  "version": "1.0.0",
-  "description": "共读札记：微信读书书架/阅读统计同步云函数（持有 WEREAD_API_KEY，前端不接触）",
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {}
-}

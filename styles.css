@@ -530,18 +530,6 @@ textarea { resize: vertical; }
 .ms-card h4 { font-size: 15px; margin-bottom: 6px; color: var(--gold); }
 
 /* ---------- 微信读书 ---------- */
-.weread-cookie-box textarea {
-  width: 100%;
-  font-family: inherit;
-  font-size: 14px;
-  padding: 10px 12px;
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  background: var(--white);
-  color: var(--ink);
-  margin-bottom: 14px;
-}
-
 .safety-tip {
   font-size: 13px;
   color: var(--ink-soft);
@@ -700,11 +688,6 @@ textarea { resize: vertical; }
 .settings-row h3 { font-size: 16px; margin-bottom: 6px; }
 .settings-row p { font-size: 13px; color: var(--ink-soft); margin-bottom: 12px; }
 
-.settings-sync-guide { border: 1px dashed var(--line); border-radius: 6px; padding: 16px 20px; background: var(--white); }
-.settings-sync-guide h3 { margin-bottom: 8px; }
-.settings-sync-guide ol { padding-left: 22px; font-size: 14px; color: var(--ink-soft); }
-.settings-sync-guide li { margin-bottom: 4px; }
-
 /* ---------- Toast ---------- */
 .toast {
   position: fixed;
@@ -750,27 +733,6 @@ textarea { resize: vertical; }
 ::-webkit-scrollbar-track { background: var(--paper-deep); }
 ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 4px; }
 
-
-/* ============ 云同步状态横幅 ============ */
-.cloud-banner {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 8px 14px;
-  font-size: 12px;
-  text-align: center;
-  z-index: 99;
-  border-top: 1px solid rgba(0, 0, 0, .12);
-}
-.cloud-banner.ok {
-  background: #f3f7ee;
-  color: #3a7d3a;
-}
-.cloud-banner.error {
-  background: #fdf3f3;
-  color: #a94442;
-}
 
 /* ============ 微信读书阅读统计 ============ */
 .weread-stats {
