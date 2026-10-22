@@ -264,6 +264,10 @@
     const t = (title || '无题').trim();
     const box = $('coverPreview');
     const meta = $('coverMeta');
+    // 已显示真实封面（img）时，晚到的 fallback 结果不得覆盖，避免候选封面被延迟兜底冲掉
+    if (!url && kind === 'fallback' && box && box.querySelector('img') && !box.querySelector('.cover-fallback')) {
+      return;
+    }
     if (url) {
       box.innerHTML = `<img src="${esc(url)}" alt="封面" onerror="this.parentNode.innerHTML=window.__gongduFallback('${esc(t.replace(/'/g, ''))}')">`;
     } else {
@@ -306,6 +310,7 @@
 
   /* ---------------- 写作面板 ---------------- */
   let coverTimer = null;
+  let coverToken = 0;   // 封面请求令牌：输入/选中候选/提交时递增，旧请求结果作废
 
   /* ---------------- 微信读书书架封面候选弹层 ---------------- */
   let selectedCover = null;   // 用户从候选弹层选中的封面 {url, kind}
@@ -395,6 +400,9 @@
       btn.appendChild(cover);
       btn.appendChild(info);
       btn.addEventListener('click', () => {
+        // 取消未决的延迟网络封面查询，避免 ~12s 后 fallback 覆盖刚选中的真实封面
+        clearTimeout(coverTimer);
+        coverToken++;
         $('bookTitle').value = b.title;
         if (b.coverUrl) {
           selectedCover = { url: b.coverUrl, kind: 'weread' };
@@ -431,6 +439,7 @@
     // 书名输入 → 书架候选弹层 + 防抖加载封面
     $('bookTitle').addEventListener('input', () => {
       clearTimeout(coverTimer);
+      const token = ++coverToken;
       const title = $('bookTitle').value.trim();
       selectedCover = null;   // 手动输入后放弃已选书架封面，回到自动封面逻辑
       if (!title) {
@@ -448,6 +457,8 @@
           cover = await fetchCover(title);
         } catch (e) { /* 兜底 */ }
         if (!cover) cover = { url: '', kind: 'fallback' };
+        // 期间已输入新书名或选中候选，丢弃本次结果
+        if (token !== coverToken) return;
         setCoverPreview(cover.url, title, cover.kind);
       }, 700);
     });
@@ -490,6 +501,8 @@
       }).catch(() => {});
 
       // 清空表单，日期保持今天
+      clearTimeout(coverTimer);   // 取消提交前未决的封面查询，避免回弹覆盖空预览
+      coverToken++;
       $('bookTitle').value = '';
       $('content').value = '';
       $('coverPreview').innerHTML = '<span class="cover-placeholder">封面预览</span>';
