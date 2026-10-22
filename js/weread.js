@@ -1,6 +1,7 @@
 /* ============================================================
    共读札记 · 微信读书联动 (weread.js)
-   Cookie 拉取书架 / 手动添加 / 批量导入 / 重合对比
+   云函数同步书架（CloudBase weread-sync）/ 手动添加 / 批量导入 / 重合对比
+   书架数据经云函数 weread-sync 获取，前端不接触 WEREAD_API_KEY
    ============================================================ */
 
 (function () {
@@ -11,21 +12,16 @@
   // 当前书架操作对象（'H' / 'Q'）
   let shelfUser = 'H';
 
-  /* ---------------- 微信读书书架接口 ---------------- */
-  async function fetchWereadShelf(cookie) {
-    // 微信读书网页版书架接口（需携带登录 Cookie）
-    const res = await fetch('https://weread.qq.com/web/shelf/sync', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Cookie': cookie,
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36'
-      },
-      body: JSON.stringify({ synckeys: [], list: [] })
-    });
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const j = await res.json();
-    const books = (j.books || []).map(b => {
+  /* ---------------- 微信读书书架接口（经 CloudBase 云函数） ---------------- */
+  // 云函数持有 WEREAD_API_KEY 调 https://i.weread.qq.com/api/agent/gateway
+  // 动作：/shelf/sync 拉书架；/readdata/detail 拉阅读统计
+  async function fetchWereadShelf() {
+    const res = await window.CLOUD.callWeread('/shelf/sync', {});
+    if (!res || res.ok === false) {
+      throw new Error((res && res.msg) || '云函数调用失败');
+    }
+    const list = Array.isArray(res.data) ? res.data : [];
+    const books = list.map(b => {
       const bi = b.bookInfo || b;
       return {
         title: bi.title || '',
@@ -38,6 +34,20 @@
     return books;
   }
 
+  // 阅读统计展示文案（尽力读取常见字段，缺失显示 —）
+  function statText(s) {
+    if (!s || typeof s !== 'object') return '—';
+    const pick = (k1, k2) => (s[k1] != null ? s[k1] : (s[k2] != null ? s[k2] : null));
+    const parts = [];
+    const finish = pick('finishCount', 'finishedCount');
+    if (finish != null) parts.push(finish + ' 本读完');
+    const reading = pick('readingCount', 'readingingCount');
+    if (reading != null) parts.push(reading + ' 本在读');
+    const total = pick('totalMinutes', 'readingMinutes');
+    if (total != null) parts.push(total + ' 分钟');
+    return parts.length ? parts.join(' / ') : '—';
+  }
+
   /* ---------------- 渲染书架区 ---------------- */
   function renderWeread() {
     // 书架用户切换按钮
@@ -48,6 +58,15 @@
     const mine = GD.data.shelves['H'] || [];
     const peer = GD.data.shelves['Q'] || [];
     const active = shelfUser;
+
+    // 阅读统计摘要（来自 /readdata/detail，缓存于 GD.data.readStats）
+    const statsH = (GD.data.readStats && GD.data.readStats['H']) || null;
+    const statsQ = (GD.data.readStats && GD.data.readStats['Q']) || null;
+    const statsHTML = (statsH || statsQ) ? `
+      <div class="weread-stats">
+        <span class="ws-item"><b>H</b> ${statText(statsH)}</span>
+        <span class="ws-item"><b>Q</b> ${statText(statsQ)}</span>
+      </div>` : '';
 
     // 顶部操作栏：切换谁的书架
     const switcher = `
@@ -70,10 +89,11 @@
             <div class="sb-title">${GD.esc(b.title)}</div>
           </div>`;
         }).join('')}</div>`
-      : `<div class="empty-tip">「${active}」的书架还是空的，用 Cookie 拉取或手动添加书籍。</div>`;
+      : `<div class="empty-tip">「${active}」的书架还是空的，用云函数同步或手动添加书籍。</div>`;
 
     resultEl.innerHTML = `
       <div class="weread-summary">H ${mine.length} 本 · Q ${peer.length} 本</div>
+      ${statsHTML}
       ${switcher}
       ${booksHTML}`;
 
@@ -86,6 +106,7 @@
           if (!confirm(`从「${u}」书架中移除《${GD.data.shelves[u][idx].title}》？`)) return;
           GD.data.shelves[u].splice(idx, 1);
           GD.save();
+          if (window.CLOUD) window.CLOUD.updateShelf(u).catch(() => {});
           renderWeread();
           renderOverlap();
           GD.toast('已移除');
@@ -157,27 +178,53 @@
 
   /* ---------------- 事件绑定 ---------------- */
   function initWeread() {
-    // 拉取书架
+    // 拉取书架（经云函数，云端不可达时提示降级）
     $('wereadFetchBtn').addEventListener('click', async () => {
-      const cookie = $('wereadCookie').value.trim();
-      if (!cookie) { GD.toast('请先粘贴微信读书 Cookie', true); return; }
-      // 保存到当前用户的 Cookie 槽位
-      GD.data.wereadCookie[shelfUser] = cookie;
-      GD.save();
-      GD.toast('正在拉取书架…');
+      if (!window.CLOUD || !window.CLOUD.isReady()) {
+        GD.toast('云端未连接，无法调用微信读书同步接口', true);
+        return;
+      }
+      GD.toast('正在通过云函数拉取书架…');
       $('wereadFetchBtn').disabled = true;
       try {
-        const books = await fetchWereadShelf(cookie);
-        if (!books.length) { GD.toast('接口未返回书籍，可能 Cookie 失效或接口变更，请手动添加', true); return; }
+        const books = await fetchWereadShelf();
+        if (!books.length) { GD.toast('接口未返回书籍，请检查云函数配置或稍后重试，也可手动添加', true); return; }
         mergeBooks(shelfUser, books);
-        GD.toast(`拉取成功：${books.length} 本书已加入「${shelfUser}」书架`);
+        GD.save();
+        if (window.CLOUD) window.CLOUD.updateShelf(shelfUser).catch(() => {});
         renderWeread();
         renderOverlap();
+        GD.toast(`拉取成功：${books.length} 本书已加入「${shelfUser}」书架`);
       } catch (e) {
         console.error(e);
-        GD.toast('拉取失败：接口不可用或 Cookie 无效。已优雅降级，请使用手动添加/批量导入。', true);
+        GD.toast('拉取失败：' + (e && e.message ? e.message : '未知错误') + '。请使用手动添加/批量导入。', true);
       } finally {
         $('wereadFetchBtn').disabled = false;
+      }
+    });
+
+    // 刷新阅读统计（/readdata/detail）
+    $('wereadStatsBtn').addEventListener('click', async () => {
+      if (!window.CLOUD || !window.CLOUD.isReady()) {
+        GD.toast('云端未连接，无法调用微信读书同步接口', true);
+        return;
+      }
+      GD.toast('正在通过云函数刷新阅读统计…');
+      $('wereadStatsBtn').disabled = true;
+      try {
+        const res = await window.CLOUD.callWeread('/readdata/detail', { user: shelfUser });
+        if (!res || res.ok === false) throw new Error((res && res.msg) || '云函数调用失败');
+        GD.data.readStats = GD.data.readStats || {};
+        GD.data.readStats[shelfUser] = (res.data && typeof res.data === 'object') ? res.data : {};
+        GD.save();
+        if (window.CLOUD) window.CLOUD.updateShelf(shelfUser, { stats: GD.data.readStats[shelfUser] }).catch(() => {});
+        renderWeread();
+        GD.toast('阅读统计已刷新');
+      } catch (e) {
+        console.error(e);
+        GD.toast('刷新失败：' + (e && e.message ? e.message : '未知错误'), true);
+      } finally {
+        $('wereadStatsBtn').disabled = false;
       }
     });
 
@@ -207,6 +254,7 @@
         }
         GD.data.shelves[shelfUser].push(book);
         GD.save();
+        if (window.CLOUD) window.CLOUD.updateShelf(shelfUser).catch(() => {});
         closeModal();
         renderWeread();
         renderOverlap();
@@ -231,6 +279,7 @@
         if (!books.length) { GD.toast('未能解析出任何书籍', true); return; }
         books.forEach(b => GD.data.shelves[shelfUser].push(b));
         GD.save();
+        if (window.CLOUD) window.CLOUD.updateShelf(shelfUser).catch(() => {});
         closeModal();
         renderWeread();
         renderOverlap();
@@ -275,6 +324,7 @@
       if (img && img.thumbnail) {
         book.coverUrl = img.thumbnail.replace(/^http:/, 'https:');
         GD.save();
+        if (window.CLOUD) window.CLOUD.updateShelf(shelfUser).catch(() => {});
         renderWeread();
         renderOverlap();
       }
@@ -291,11 +341,12 @@
   function closeModal() {
     $('bookModal').classList.add('hidden');
   }
-  $('bookModalClose') && $('bookModalClose').addEventListener('click', closeModal);
 
   /* ---------------- 启动 ---------------- */
   function boot() {
     initWeread();
+    // DOM 就绪后再绑定关闭按钮
+    $('bookModalClose') && $('bookModalClose').addEventListener('click', closeModal);
     renderOverlap();
   }
 

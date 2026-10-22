@@ -2,148 +2,162 @@
 AIGC:
     Label: "1"
     ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: ee08f8ed85974cf172a08fc54fd0f487_e4af8872cd3e11f1b76f525400638852
-    ReservedCode1: CdrpH10qPl/0pIwOl4+3N0QSKfnL8rOVeb2WUecx4E3illKg/+eRQG+fNyFFfMAsnrhqfY+jYSJDBEHeDAWPkYcarAGWppSZwDh8gHylUh2ssPABFjTgpbeKGgMUTQHQurAtPGMy0vE0uuvp7fYl6zCJtHSIIsLR9B8eXujDZOqLuc5QbD3qmwMVEBg=
+    ProduceID: ee08f8ed85974cf172a08fc54fd0f487_06f4bcb5cd7111f1b659525400cd780f
+    ReservedCode1: MJxfP+lXSUY4IJMlIZGsbXb+yTEsWnFi5hxtlI6kmAMjz2+1UDarOJFP3Rmu+TI727G12Eneedx2P4onTMKrn6e7scIFZBUtPr9sOskq04osa1iZ2et1YtKiwEuT9GEyYR7eeklaGEz5O+Qmoie7vj6NrzF3QofHChIvYxQjpvmXDRwbk9w9UEuW4s0=
     ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: ee08f8ed85974cf172a08fc54fd0f487_e4af8872cd3e11f1b76f525400638852
-    ReservedCode2: CdrpH10qPl/0pIwOl4+3N0QSKfnL8rOVeb2WUecx4E3illKg/+eRQG+fNyFFfMAsnrhqfY+jYSJDBEHeDAWPkYcarAGWppSZwDh8gHylUh2ssPABFjTgpbeKGgMUTQHQurAtPGMy0vE0uuvp7fYl6zCJtHSIIsLR9B8eXujDZOqLuc5QbD3qmwMVEBg=
+    PropagateID: ee08f8ed85974cf172a08fc54fd0f487_06f4bcb5cd7111f1b659525400cd780f
+    ReservedCode2: MJxfP+lXSUY4IJMlIZGsbXb+yTEsWnFi5hxtlI6kmAMjz2+1UDarOJFP3Rmu+TI727G12Eneedx2P4onTMKrn6e7scIFZBUtPr9sOskq04osa1iZ2et1YtKiwEuT9GEyYR7eeklaGEz5O+Qmoie7vj6NrzF3QofHChIvYxQjpvmXDRwbk9w9UEuW4s0=
 ---
 
-# 共读札记 · 双人读书输出记录网页
+# 共读札记 · 双人读书输出记录
 
-一个纯前端、可在 GitHub Pages 免费部署的双人读书笔记共享平台。供两个固定用户（「我」与「同伴」）记录读书输出、互相留言回复、打卡统计、导出 DOCX，并联动微信读书书架对比重合书籍。
+古典风双人读书网页：写作面板 / 读书墙 / 进度统计 / 微信读书书架 / 设置。双人（H / Q）在同一页面各选身份使用，数据经腾讯云 CloudBase 云端互见（SQL 型数据库）。
 
-## ✨ 功能总览
+## 架构
 
-| 模块 | 说明 |
-|---|---|
-| 双人共享 | 本地身份选择（H / Q），两人在读书墙互相可见、互相评论回复 |
-| 写作面板 | 输入书名自动加载封面（Google Books / Open Library 公开接口，失败自动使用本地兜底封面）；选择读书年月日；输入多行读书输出 |
-| 目标打卡 | 每日至少 3 条、每周至少 3 天：本周 7 天卡片 + 双进度条 + 日历月视图（达标/有写/未写标记） |
-| 读书笔记导出 DOCX | 选择用户 + 时间范围，浏览器端用 docx.js 生成并下载 .docx |
-| 微信读书联动 | 粘贴微信读书 Cookie 拉取书架；支持手动添加与批量导入；两人书架自动计算重合书名、重合数量、重合率，并以韦恩图 + 列表展示 |
-| 数据存储 | localStorage 本地存储；JSON 导出 / 导入，实现两人数据同步 |
-| 设计风格 | 古典风格：米色纸张底纹、墨色文字、朱砂红点缀、印章与边框装饰、楷体/宋体/衬线字体 |
+- **前端**：纯静态页面（index.html + styles.css + js/*.js），浏览器打开即可用。
+- **数据层**：双写策略
+  - `localStorage`（`STORAGE_KEY = gongdu_journal_v1`）：本地缓存 + 离线降级；
+  - CloudBase SQL 型数据库（PostgreSQL 模式）表 `entries` / `comments` / `shelves`：云端互见。
+- **云端同步**：`js/cloud.js` 使用 CloudBase Web SDK 匿名登录获取 JWT，通过 PostgREST 风格 HTTP API（`/v1/rdb/rest/<table>`）读写三张表，权限由数据库层 GRANT + RLS 行级安全策略控制。
+- **实时互见**：SQL 型数据库**不支持** NoSQL 的 `watch` 实时监听，改用**轮询**方案：页面可见时每 15 秒全量拉取一次并刷新渲染；页面切回 / 聚焦时立即拉取。
+- **微信读书同步**：前端不再持有 Cookie / 密钥，改为调用云函数 `weread-sync`（通过 `app.callFunction({ name: 'weread-sync' })`），云函数内部持有环境变量 `WEREAD_API_KEY`，调用微信读书 Agent Gateway：`https://i.weread.qq.com/api/agent/gateway`，支持动作 `/shelf/sync`（拉书架）与 `/readdata/detail`（拉阅读统计）。每次请求 body 必须携带 `skill_version = '1.0.5'`，业务参数平铺。
 
-## 📁 项目结构
+## 目录结构
 
 ```
 dual-reading-journal/
-├── index.html      # 页面结构与所有视图
-├── styles.css      # 古典风格样式
+├── index.html                  # 页面结构（引入 CloudBase SDK + js/cloud.js）
+├── styles.css                  # 样式（含云同步横幅、阅读统计样式）
 ├── js/
-│   ├── app.js      # 核心逻辑：数据层 / 登录 / 写作面板 / 读书墙 / 统计 / 设置
-│   ├── weread.js   # 微信读书书架联动与重合对比
-│   └── export.js   # DOCX 导出（docx.js）
-└── README.md       # 本文档
+│   ├── cloud.js                # CloudBase 云同步层：匿名登录 / SQL 表读写 / 轮询 / 降级
+│   ├── app.js                  # 核心逻辑：数据双写、写作面板、读书墙、统计、设置
+│   ├── weread.js               # 微信读书：云函数同步书架、重合对比、阅读统计
+│   └── export.js               # 导出 DOCX / JSON
+└── cloudfunctions/
+    └── weread-sync/            # 微信读书同步云函数
+        ├── index.js            # 网关调用逻辑（持有 WEREAD_API_KEY）
+        └── package.json
 ```
 
-## 🚀 部署到 GitHub Pages
+## 云函数部署步骤（weread-sync）
 
-### 方式一：新建仓库部署（推荐）
+1. 登录 [CloudBase 控制台](https://console.cloud.tencent.com/tcb)，选择环境：`zhhhhh-d7g3gofzia26c76c3`。
+2. 进入「云函数」→「新建云函数」：
+   - 名称：`weread-sync`
+   - 运行环境：Nodejs（>= 16 即可，本函数无第三方依赖）
+   - 上传 `cloudfunctions/weread-sync/` 目录下的 `index.js` 与 `package.json`
+3. 配置环境变量：
+   - `WEREAD_API_KEY = wrk-25apaPBDTrCY8QAdthf5ygAA`
+   - 该密钥仅存于云函数环境变量中，**严禁写入前端代码 / 提交到公开仓库**。
+4.（可选）如需 HTTP 触发，在云函数「HTTP 访问服务」中开启；前端默认通过 `callFunction` 调用，无需公网 HTTP。
+5. 云函数权限：默认即可（函数通过网关调第三方接口，不访问云数据库）。
 
-1. 注册并登录 [GitHub](https://github.com)，点击右上角 **+ → New repository**。
-2. 仓库名随意（如 `dual-reading-journal`），选择 **Public**（免费托管必须公开），不要勾选 "Add a README"。
-3. 点击 **Create repository** 后，页面会显示上传指引。将本项目的 4 个文件/文件夹（`index.html`、`styles.css`、`js/`、`README.md`）上传：
-   - 方式 A（网页上传）：点击页面的 **Add file → Upload files**，把上述文件拖拽进去，Commit。
-   - 方式 B（命令行）：在项目文件夹内执行
-     ```bash
-     git init
-     git add .
-     git commit -m "init"
-     git branch -M main
-     git remote add origin https://github.com/<你的用户名>/dual-reading-journal.git
-     git push -u origin main
-     ```
-4. 打开仓库 **Settings → Pages**：
-   - Source 选择 **Deploy from a branch**；
-   - Branch 选择 **main**、目录 `/ (root)`；
-   - 点击 **Save**。
-5. 等待 1~2 分钟，页面顶部会显示站点地址，形如：
-   `https://<你的用户名>.github.io/dual-reading-journal/`
-   两人用这个地址即可访问。
+## 前端绑定 CloudBase（SQL 型数据库）
 
-### 方式二：Fork / 已有仓库
+- `index.html` 静态加载官方 SDK：`https://static.cloudbase.net/cloudbase-js-sdk/latest/cloudbase.full.js`（失败时 `js/cloud.js` 自动回退 jsdelivr / unpkg）。
+- 环境 ID 固定写在 `js/cloud.js`：`CLOUD_ENV = 'zhhhhh-d7g3gofzia26c76c3'`。
+- 匿名登录：`auth.anonymousAuthProvider().signIn()`，无需注册；登录后取 JWT 作为 REST 请求的 `Authorization: Bearer <token>`。
+- 前端查询写法（PostgREST 风格，`js/cloud.js` 内部封装 `request()`，页面代码无需直接拼接）：
 
-- 已有仓库时，把本项目文件提交到 `main` 分支根目录，再按上述第 4 步开启 Pages 即可。
-- 注意：仓库必须为 **Public**（免费版 GitHub Pages 不支持私有仓库）。
+```
+GET  https://<envId>.api.tcloudbasegateway.com/v1/rdb/rest/entries?select=*&limit=1000&offset=0
+GET  https://<envId>.api.tcloudbasegateway.com/v1/rdb/rest/entries?doc_key=eq.<id>&limit=1
+POST https://<envId>.api.tcloudbasegateway.com/v1/rdb/rest/entries        # body 为整行 JSON，Prefer: return=representation
+PATCH https://<envId>.api.tcloudbasegateway.com/v1/rdb/rest/entries?doc_key=eq.<id>  # body 为待更新字段
+DELETE https://<envId>.api.tcloudbasegateway.com/v1/rdb/rest/entries?doc_key=eq.<id>
+```
 
-### 更新页面
+- 所有请求必须携带 `Authorization: Bearer <匿名登录 access_token>`；网关解析 JWT 后以 `anon` / `authenticated` 角色执行 SQL，受表级 GRANT 与行级 RLS 双重约束。
+- 写操作返回 `Prefer: return=representation` 的变更后行；`delete` / 无结果时可能返回 `204`。
 
-修改文件后 `git add . && git commit -m "update" && git push`，Pages 会自动重新构建，约 1 分钟生效。
+## SQL 表结构
 
-## 🔄 两人数据同步说明
+三张表均以 `doc_key` 为业务唯一键（原 NoSQL 集合 docKey 字段映射为 `doc_key` 列），`owner_uid` 由数据库默认值 `auth.uid()` 自动填充（当前 JWT 的 sub），用于 RLS 判定创建者。
 
-本页面数据默认只保存在**各自浏览器**的 localStorage 中，两人之间通过 JSON 文件同步：
+```sql
+CREATE TABLE IF NOT EXISTS entries (
+  id          BIGSERIAL PRIMARY KEY,
+  doc_key     TEXT NOT NULL UNIQUE,          -- 输出条目 id（原 docKey）
+  user        TEXT NOT NULL,                 -- H / Q
+  book_title  TEXT NOT NULL,
+  cover_url   TEXT NOT NULL DEFAULT '',
+  cover_kind  TEXT NOT NULL DEFAULT 'fallback',
+  date        TEXT NOT NULL,                 -- 读书日期
+  content     TEXT NOT NULL DEFAULT '',
+  created_at  BIGINT NOT NULL DEFAULT 0,     -- 毫秒时间戳
+  owner_uid   TEXT NOT NULL DEFAULT auth.uid()  -- 创建者，RLS 依据
+);
 
-1. 「H」写作、回复、导入书架后，进入 **设置 → 导出数据备份**，得到一个 JSON 文件。
-2. 把 JSON 文件发送给「Q」（微信 / QQ / 邮件均可）。
-3. 「Q」在自己的浏览器打开页面 → **设置 → 导入数据备份**，选择该 JSON 文件。
-4. 导入采用**按 ID 去重合并**策略：双方各自的输出、评论、书架会自动合并，不会重复；自己已有的数据不会被覆盖。
-5. 反向同理：Q 导出后发回给 H 导入，即可互相看到对方的输出、回复与书架。
-6. 建议：**每次写作或回复后**导出一次；或者约定每天结束时互相同步一次。
+CREATE TABLE IF NOT EXISTS comments (
+  id          BIGSERIAL PRIMARY KEY,
+  doc_key     TEXT NOT NULL UNIQUE,          -- 评论 id
+  entry_id    TEXT NOT NULL,                 -- 所属输出条目 id
+  user        TEXT NOT NULL,
+  content     TEXT NOT NULL DEFAULT '',
+  created_at  BIGINT NOT NULL DEFAULT 0,
+  owner_uid   TEXT NOT NULL DEFAULT auth.uid()
+);
 
-> 提示：如果两人共用同一台电脑/浏览器，直接切换身份即可，无需同步文件。
+CREATE TABLE IF NOT EXISTS shelves (
+  id          BIGSERIAL PRIMARY KEY,
+  doc_key     TEXT NOT NULL UNIQUE,          -- shelf_H / shelf_Q
+  user        TEXT NOT NULL,
+  books       JSONB NOT NULL DEFAULT '[]',   -- 书架书籍数组
+  cookie      TEXT NOT NULL DEFAULT '',
+  stats       JSONB,                          -- 阅读统计缓存
+  owner_uid   TEXT NOT NULL DEFAULT auth.uid()
+);
+```
 
-## 📱 微信读书 Cookie 获取说明与安全提示
+> 说明：JSONB 列（`books` / `stats`）直接以 JSON 存取，PostgREST 返回时自动解析为对象 / 数组，`cloud.js` 无需手动序列化。
 
-微信读书官方没有公开 API，本项目调用的是 `weread.qq.com` 网页版接口，需要你自己在浏览器中获取登录 Cookie。
+## RLS 行级安全策略配置
 
-### 获取步骤
+在 SQL 型数据库控制台或 CLI 中对上述三张表执行以下授权（以 `entries` 为例，`comments` / `shelves` 同理）：
 
-1. 在电脑浏览器打开并登录 [weread.qq.com](https://weread.qq.com)。
-2. 按 **F12** 打开开发者工具。
-3. 切换到 **Console（控制台）** 标签页。
-4. 输入以下命令并回车：
-   ```js
-   document.cookie
-   ```
-5. 复制输出的整串文本（形如 `wr_vid=xxxx; wr_skey=xxxx; ...`），粘贴到页面「微信读书」面板的 Cookie 输入框中。
-6. 点击 **拉取我的书架**。
+```sql
+-- 1. 表级授权：允许前端角色读写表与序列
+GRANT SELECT, INSERT, UPDATE, DELETE ON public.entries TO anon, authenticated;
+GRANT USAGE, SELECT ON SEQUENCE public.entries_id_seq TO anon, authenticated;
 
-### 安全提示
+-- 2. 开启行级安全
+ALTER TABLE public.entries ENABLE ROW LEVEL SECURITY;
 
-- ⚠️ **Cookie 相当于你的登录凭证**，切勿发给任何人。
-- 本项目为**纯前端**实现：Cookie 只写入你浏览器本地 localStorage，**不会发送到任何服务器**（代码中没有后端请求，GitHub Pages 也仅托管静态文件）。
-- 微信读书网页接口可能随时变更。若拉取失败，页面会提示并**优雅降级**——请改用「手动添加书籍」或「批量导入」（支持 JSON 数组或每行 `书名|作者` 的纯文本）。
-- 书架数据保存在本地；两人各自维护自己的书架，通过 JSON 导入导出合并。
-- 建议定期在微信读书网页端重新登录以刷新 Cookie；Cookie 失效时重新获取即可。
+-- 3. 行级策略：所有人可读，仅创建者可写（RLS 双人互见的关键）
+CREATE POLICY entries_select_all ON public.entries
+  FOR SELECT TO anon, authenticated USING (true);
+CREATE POLICY entries_insert_own ON public.entries
+  FOR INSERT TO anon, authenticated WITH CHECK (owner_uid = auth.uid());
+CREATE POLICY entries_update_own ON public.entries
+  FOR UPDATE TO anon, authenticated USING (owner_uid = auth.uid()) WITH CHECK (owner_uid = auth.uid());
+CREATE POLICY entries_delete_own ON public.entries
+  FOR DELETE TO anon, authenticated USING (owner_uid = auth.uid());
+```
 
-## 📚 封面加载说明
+配置要点：
 
-- 写作面板输入书名后，页面会依次尝试 **Google Books**、**Open Library** 公开接口获取封面。
-- 接口不可用或查无封面时，自动使用**本地 SVG 兜底封面**（深底描金、书名首字印章样式），不影响正常写作。
-- 书架手动添加时同样支持封面 URL；微信读书拉取的书籍自带封面。
+- **双层校验**：GRANT 决定角色能否操作表，RLS 决定能访问哪些行，两者缺一不可；只配 GRANT 无 RLS 会读到超预期数据，只配 RLS 无 GRANT 会直接 `permission denied`。
+- **身份函数**：策略中必须使用 `auth.uid()`（返回当前 JWT 的 sub，text 类型），**禁止**使用 `current_user` / `current_setting(...)`（返回的是数据库角色名而非用户 id）。
+- **前端角色**：匿名登录产生 access_token 后以 `authenticated` 角色访问；未登录 / 仅 Publishable Key 时为 `anon`。策略同时授权两个角色以兼容两种来源。
+- **清空云端**：`clearAllCloud` 受 RLS 限制，仅能删除本人创建的行（与 NoSQL 版「仅创建者可读写」语义一致）。
 
-## 🔒 数据与隐私
+## 实时监听能力结论（重要）
 
-- 全部数据存于浏览器 localStorage，关闭浏览器不丢失，清除浏览器数据会丢失，请定期导出备份。
-- 清空数据需两次确认；删除单条读书输出在读书墙点击「删除」并确认。
-- 本项目无后端、无数据库、无第三方统计脚本，数据不出本地。
+SQL 型数据库（PostgreSQL 模式）**不支持** NoSQL 集合的 `watch` 实时监听 API。`js/cloud.js` 已改用**轮询方案**：
 
-## 🛠 技术栈
+- 页面可见时每 **15 秒**（`POLL_INTERVAL`）全量拉取三张表并刷新渲染；
+- 页面 Tab 切换 / 窗口聚焦时立即拉取（`visibilitychange` / `focus` 事件，`onTabSwitch`）；
+- 页面隐藏（`visibilityState === 'hidden'`）时暂停轮询，避免后台无效请求；
+- 轮询期间防重入（`pulling` 标志），失败自动跳过等待下一轮，不影响本地编辑。
 
-- 原生 HTML + CSS + JavaScript（无框架、无构建步骤）
-- 封面接口：Google Books API、Open Library API
-- 微信读书：`weread.qq.com/web/shelf/sync`（需 Cookie）
-- DOCX 导出：docx.js（CDN：unpkg / jsdelivr，失败自动切换）
-- 字体：Noto Serif SC、Ma Shan Zheng（Google Fonts，国内不可用时回退楷体/宋体）
+## 本地运行
 
-## 📝 常见问题
+直接用浏览器打开 `index.html` 即可（静态页面，无构建步骤）。CloudBase SDK 由 CDN 加载，需要网络；断网时页面自动降级为本地模式（底部横幅提示），编辑不丢数据，恢复后自动补传。
 
-**Q：Google Fonts 加载慢 / 打不开？**
-A：不影响功能。CSS 已配置回退：楷体（KaiTi）、宋体（SimSun）、衬线字体。
+## 离线降级
 
-**Q：导出的 DOCX 打不开？**
-A：请确认浏览器可访问 unpkg / jsdelivr 的 CDN（国内网络偶发失败会尝试第二个 CDN）。若均失败，可把 `js/export.js` 中 `DOCX_CDNS` 改为本地 `/vendor/docx.js` 并自行下载该库文件放于项目目录。
-
-**Q：微信读书拉取不到书架？**
-A：优先检查 Cookie 是否完整（需以 `wr_` 开头的关键字段）且已登录 weread.qq.com。接口变更时请手动添加书籍。
-
-**Q：两人数据合并不对吗？**
-A：导入合并按条目标识 ID 去重。请确认双方都使用同一份代码部署，且导出的是最新数据。
-
----
-
-祝你们共读愉快，以书会友。
+- SDK 加载 / 登录失败：`cloud.js` 优雅降级，显示横幅「云端未连接」，页面仍可本地编辑。
+- 写入失败：本地保存后标记 `pendingSync`，恢复连接后增量上传本地孤儿数据（以 docKey 判断），避免覆盖云端他人内容。
+- 页面 Tab 切换 / 聚焦：自动重试连接并全量拉取最新数据。
 *（内容由AI生成，仅供参考）*

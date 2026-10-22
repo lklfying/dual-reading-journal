@@ -1,6 +1,6 @@
 /* ============================================================
    共读札记 · 核心逻辑 (app.js)
-   数据层 / 登录 / 写作面板 / 读书墙 / 统计 / 设置
+   数据层(localStorage缓存 + CloudBase云同步) / 登录 / 写作面板 / 读书墙 / 统计 / 设置
    ============================================================ */
 
 (function () {
@@ -42,8 +42,9 @@
     }
   }
 
+  // 本地缓存 + 云端写入（云端不可达时由 cloud.js 标记待同步）
   function save() {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); } catch (e) { /* 存储满等忽略 */ }
   }
 
   /* ---------------- 工具函数 ---------------- */
@@ -348,6 +349,7 @@
           found.coverUrl = cover.url;
           found.coverKind = cover.kind;
           save();
+          if (window.CLOUD) window.CLOUD.updateEntry(found.id, { coverUrl: found.coverUrl, coverKind: found.coverKind }).catch(() => {});
           renderWall();
           renderStats();
         }
@@ -489,6 +491,7 @@
           data.entries = data.entries.filter(e => e.id !== entryId);
           data.comments = data.comments.filter(c => c.entryId !== entryId);
           save();
+          if (window.CLOUD) window.CLOUD.deleteEntry(entryId).catch(() => {});
           renderWall();
           renderWrite();
           renderStats();
@@ -688,6 +691,14 @@
             }
           });
           save();
+          if (window.CLOUD) {
+            // 导入内容全量上传云端
+            Promise.all([
+              window.CLOUD.syncAllLocalToCloud(),
+              window.CLOUD.updateShelf('H').catch(() => {}),
+              window.CLOUD.updateShelf('Q').catch(() => {})
+            ]).catch(() => {});
+          }
           renderWrite(); renderWall(); renderStats(); renderWeread();
           toast(`导入成功：${imported.entries.length} 条输出已并入`);
         } catch (err) {
@@ -698,12 +709,38 @@
       e.target.value = '';
     });
 
+    // 云端：立即拉取最新数据
+    $('cloudPullBtn').addEventListener('click', () => {
+      if (!window.CLOUD || !window.CLOUD.isReady()) { toast('云端未连接', true); return; }
+      window.CLOUD.pullAll().then(() => {
+        renderWrite(); renderWall(); renderStats(); renderWeread();
+        toast('已从云端拉取最新数据');
+      }).catch(() => toast('拉取失败，请稍后重试', true));
+    });
+
+    // 云端：清空云端全部数据（本地保留）
+    $('cloudClearBtn').addEventListener('click', () => {
+      if (!window.CLOUD || !window.CLOUD.isReady()) { toast('云端未连接', true); return; }
+      if (!confirm('确定清空云端全部数据？（本地数据保留，之后会自动重新上传）')) return;
+      window.CLOUD.clearAllCloud().then(() => toast('云端已清空')).catch(() => toast('清空云端失败', true));
+    });
+
     // 清空数据
     $('clearDataBtn').addEventListener('click', () => {
       if (confirm('确定清空本浏览器中的全部数据？此操作不可恢复！建议先导出备份。')) {
         if (confirm('再次确认：全部读书输出、评论、书架将被删除。确定继续？')) {
           data = defaultData();
           save();
+          if (window.CLOUD) {
+            window.CLOUD.clearAllCloud().then(() => window.CLOUD.pullAll()).then(() => {
+              renderWrite(); renderWall(); renderStats(); renderWeread();
+              toast('已清空全部数据（云端已同步清空）');
+            }).catch(() => {
+              renderWrite(); renderWall(); renderStats(); renderWeread();
+              toast('本地已清空，云端清理失败，可稍后在设置中重试', true);
+            });
+            return;
+          }
           renderWrite(); renderWall(); renderStats(); renderWeread();
           toast('已清空全部数据');
         }
@@ -789,6 +826,15 @@
     if (data.currentUser && USERS.includes(data.currentUser)) {
       enterApp();
     }
+
+    // 启动 CloudBase 云同步（SDK 加载/登录失败自动降级为本地模式）
+    if (window.CLOUD) {
+      window.CLOUD.bootstrap();
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') window.CLOUD.onTabSwitch();
+      });
+      window.addEventListener('focus', () => window.CLOUD.onTabSwitch());
+    }
   }
 
   document.addEventListener('DOMContentLoaded', boot);
@@ -796,7 +842,9 @@
   // 供 weread.js / export.js 使用
   window.GD = {
     data, save, $, esc, uid, toast, todayStr, fmtDate, fmtDateTime,
-    coverHTML, fallbackHTML, downloadBlob, renderWrite, renderWall, renderStats, renderWeread,
+    coverHTML, fallbackHTML, downloadBlob, renderWrite, renderWall, renderStats,
+    // weread.js 在 app.js 之后加载，用 getter 延迟读取避免顶层引用失效
+    get renderWeread() { return window.renderWeread; },
     DAILY_TARGET, WEEKLY_TARGET, USERS
   };
 })();
