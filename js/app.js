@@ -179,35 +179,41 @@
   /* ============================================================
      写作面板：书名 → 封面加载
      ============================================================ */
-  // 封面接口：先试 Google Books，再试 Open Library，失败用本地兜底
+  // 封面接口：依次尝试 Google Books / Open Library，失败用本地兜底。
+  // 任何情况下都必须返回 {url, kind} 结构、绝不抛异常（调用方依赖恒定结构）。
   async function fetchCover(title) {
-    if (!title.trim()) return { url: '', kind: '' };
-    // 1. Google Books
+    const t = (title || '').trim();
+    if (!t) return { url: '', kind: '' };
+    // 1. Google Books（遍历结果，取第一个带缩略图的条目，提升中文书命中率）
     try {
       const r = await fetchWithTimeout(
-        'https://www.googleapis.com/books/v1/volumes?q=intitle:' + encodeURIComponent(title.trim()) + '&maxResults=3',
+        'https://www.googleapis.com/books/v1/volumes?q=' + encodeURIComponent('intitle:' + t) + '&maxResults=5',
         6000
       );
       const j = await r.json();
-      const img = j.items && j.items[0] && j.items[0].volumeInfo && j.items[0].volumeInfo.imageLinks;
-      if (img && img.thumbnail) {
+      const items = Array.isArray(j.items) ? j.items : [];
+      const item = items.find(it => it && it.volumeInfo && it.volumeInfo.imageLinks && it.volumeInfo.imageLinks.thumbnail);
+      if (item) {
         // Google 返回的 thumbnail 可能是 http，转 https
-        return { url: img.thumbnail.replace(/^http:/, 'https:'), kind: 'google', raw: j.items[0].volumeInfo };
+        const thumb = (item.volumeInfo.imageLinks.thumbnail || '').replace(/^http:/, 'https:');
+        return { url: thumb, kind: 'google', raw: item.volumeInfo };
       }
     } catch (e) { /* 继续尝试下一接口 */ }
 
-    // 2. Open Library
+    // 2. Open Library（遍历结果，取第一个带封面的条目）
     try {
       const r = await fetchWithTimeout(
-        'https://openlibrary.org/search.json?q=' + encodeURIComponent(title.trim()) + '&limit=3',
+        'https://openlibrary.org/search.json?q=' + encodeURIComponent(t) + '&limit=5',
         6000
       );
       const j = await r.json();
-      if (j.docs && j.docs.length && j.docs[0].cover_i != null) {
+      const docs = Array.isArray(j.docs) ? j.docs : [];
+      const doc = docs.find(d => d && d.cover_i != null);
+      if (doc) {
         return {
-          url: 'https://covers.openlibrary.org/b/id/' + j.docs[0].cover_i + '-M.jpg',
+          url: 'https://covers.openlibrary.org/b/id/' + doc.cover_i + '-M.jpg',
           kind: 'openlibrary',
-          raw: j.docs[0]
+          raw: doc
         };
       }
     } catch (e) { /* 继续 */ }
@@ -215,20 +221,19 @@
     // 3. Open Library ISBN 精确匹配（尝试）
     try {
       const r = await fetchWithTimeout(
-        'https://openlibrary.org/search.json?q=title:' + encodeURIComponent(title.trim()) + '&fields=isbn,cover_i&limit=5',
+        'https://openlibrary.org/search.json?q=title:' + encodeURIComponent(t) + '&fields=isbn,cover_i&limit=5',
         6000
       );
       const j = await r.json();
-      if (j.docs && j.docs.length) {
-        const doc = j.docs.find(d => d.isbn && d.isbn.length) || j.docs[0];
-        const isbn = doc.isbn && doc.isbn[0];
-        if (isbn) {
-          return {
-            url: 'https://covers.openlibrary.org/b/isbn/' + isbn + '-M.jpg',
-            kind: 'openlibrary-isbn',
-            isbn
-          };
-        }
+      const docs = Array.isArray(j.docs) ? j.docs : [];
+      const doc = docs.find(d => d && d.isbn && d.isbn.length) || docs[0];
+      const isbn = doc && doc.isbn && doc.isbn[0];
+      if (isbn) {
+        return {
+          url: 'https://covers.openlibrary.org/b/isbn/' + isbn + '-M.jpg',
+          kind: 'openlibrary-isbn',
+          isbn
+        };
       }
     } catch (e) { /* 继续 */ }
 
@@ -256,17 +261,18 @@
   }
 
   function setCoverPreview(url, title, kind) {
+    const t = (title || '无题').trim();
     const box = $('coverPreview');
     const meta = $('coverMeta');
     if (url) {
-      box.innerHTML = `<img src="${esc(url)}" alt="封面" onerror="this.parentNode.innerHTML=window.__gongduFallback('${esc(title.replace(/'/g, ''))}')">`;
+      box.innerHTML = `<img src="${esc(url)}" alt="封面" onerror="this.parentNode.innerHTML=window.__gongduFallback('${esc(t.replace(/'/g, ''))}')">`;
     } else {
-      box.innerHTML = `<div class="cover-fallback">${fallbackHTML(title)}</div>`;
+      box.innerHTML = `<div class="cover-fallback">${fallbackHTML(t)}</div>`;
     }
-    const kindText = { google: 'Google Books', openlibrary: 'Open Library', 'openlibrary-isbn': 'Open Library ISBN', fallback: '本地兜底封面' };
+    const kindText = { google: 'Google Books', openlibrary: 'Open Library', 'openlibrary-isbn': 'Open Library ISBN', weread: '微信读书', fallback: '本地兜底封面', unknown: '未知来源' };
     meta.innerHTML = kind === 'fallback'
       ? `<span class="meta-loading">未能获取网络封面，已使用本地兜底封面</span>`
-      : `<span>封面来源：${kindText[kind] || kind}</span>`;
+      : `<span>封面来源：${kindText[kind] || '未知来源'}</span>`;
   }
 
   // 兜底封面 HTML（用于列表/卡片）
@@ -278,8 +284,10 @@
 
   // 暴露给 img onerror 使用
   window.__gongduFallback = function (title) {
+    const html = `<div class="cover-fallback">${fallbackHTML(title)}</div>`;
     const box = $('coverPreview');
-    if (box) box.innerHTML = `<div class="cover-fallback">${fallbackHTML(title)}</div>`;
+    if (box) box.innerHTML = html;
+    return html;   // 供 onerror 内联赋值拿到合法 HTML，避免显示 undefined
   };
 
   // 渲染任意封面的 HTML 片段（条目/书架用）
@@ -299,22 +307,147 @@
   /* ---------------- 写作面板 ---------------- */
   let coverTimer = null;
 
+  /* ---------------- 微信读书书架封面候选弹层 ---------------- */
+  let selectedCover = null;   // 用户从候选弹层选中的封面 {url, kind}
+
+  // 从 GD.data.shelves（H/Q 合并、按书名去重）模糊匹配候选，最多返回 8 条
+  // 历史数据可能被错误前置拼接成 https://weread.qq.com/https://cdn.weread.qq.com/...，统一修复
+  function normalizeWereadCover(url) {
+    const u = (url || '').trim();
+    if (!u) return '';
+    if (/^https?:\/\/weread\.qq\.com\/https?:\/\//i.test(u)) {
+      return u.replace(/^https?:\/\/weread\.qq\.com\//i, '');
+    }
+    return u;
+  }
+
+  function shelfCandidates(keyword) {
+    const kw = (keyword || '').trim().toLowerCase();
+    if (!kw) return [];
+    const seen = new Set();
+    const out = [];
+    ['H', 'Q'].forEach(u => {
+      (GD.data.shelves[u] || []).forEach(b => {
+        const t = (b.title || '').trim();
+        const key = t.toLowerCase();
+        if (!t || seen.has(key) || t.toLowerCase().indexOf(kw) === -1) return;
+        seen.add(key);
+        out.push({ title: t, author: b.author || '', coverUrl: normalizeWereadCover(b.coverUrl) });
+      });
+    });
+    return out.slice(0, 8);
+  }
+
+  function hideCoverSuggest() { $('coverSuggest').hidden = true; }
+
+  function showCoverSuggest(keyword) {
+    const box = $('coverSuggest');
+    box.textContent = '';
+    const kw = (keyword || '').trim();
+    const list = shelfCandidates(kw);
+    if (!list.length) {
+      // 书架未匹配：提示正在查询网络封面，避免用户误以为功能失效
+      const tip = document.createElement('div');
+      tip.className = 'cs-empty';
+      tip.textContent = kw ? `书架中未找到「${kw}」，正在查询网络封面…` : '输入书名以匹配书架';
+      box.appendChild(tip);
+      box.hidden = false;
+      return;
+    }
+    list.forEach(b => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'cs-item';
+      const cover = document.createElement('span');
+      cover.className = 'cs-cover';
+      if (b.coverUrl) {
+        const img = document.createElement('img');
+        img.className = 'cs-thumb';
+        img.src = b.coverUrl;
+        img.alt = '';
+        img.loading = 'lazy';
+        // 封面加载失败：降级为书名首字占位，不报错
+        img.addEventListener('error', () => {
+          const fb = document.createElement('span');
+          fb.className = 'cs-fb';
+          fb.textContent = (b.title.trim().charAt(0) || '书');
+          cover.replaceChild(fb, img);
+        });
+        cover.appendChild(img);
+      } else {
+        const fb = document.createElement('span');
+        fb.className = 'cs-fb';
+        fb.textContent = (b.title.trim().charAt(0) || '书');
+        cover.appendChild(fb);
+      }
+      const info = document.createElement('span');
+      info.className = 'cs-info';
+      const name = document.createElement('span');
+      name.className = 'cs-name';
+      name.textContent = b.title;
+      info.appendChild(name);
+      if (b.author) {
+        const author = document.createElement('span');
+        author.className = 'cs-author';
+        author.textContent = b.author;
+        info.appendChild(author);
+      }
+      btn.appendChild(cover);
+      btn.appendChild(info);
+      btn.addEventListener('click', () => {
+        $('bookTitle').value = b.title;
+        if (b.coverUrl) {
+          selectedCover = { url: b.coverUrl, kind: 'weread' };
+          setCoverPreview(b.coverUrl, b.title, 'weread');
+        } else {
+          selectedCover = null;
+          setCoverPreview('', b.title, 'fallback');
+        }
+        hideCoverSuggest();
+      });
+      box.appendChild(btn);
+    });
+    box.hidden = false;
+  }
+
+  function initCoverSuggest() {
+    // 点击输入框/弹层外部时收起
+    document.addEventListener('click', (e) => {
+      const box = $('coverSuggest');
+      if (box.hidden) return;
+      if (e.target.closest('#bookTitle') || e.target.closest('#coverSuggest')) return;
+      hideCoverSuggest();
+    });
+    // Esc 收起
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') hideCoverSuggest();
+    });
+  }
+
   function initWrite() {
     $('readDate').value = todayStr();
+    initCoverSuggest();
 
-    // 书名输入 → 防抖加载封面
+    // 书名输入 → 书架候选弹层 + 防抖加载封面
     $('bookTitle').addEventListener('input', () => {
       clearTimeout(coverTimer);
       const title = $('bookTitle').value.trim();
+      selectedCover = null;   // 手动输入后放弃已选书架封面，回到自动封面逻辑
       if (!title) {
         $('coverPreview').innerHTML = '<span class="cover-placeholder">封面预览</span>';
         $('coverMeta').innerHTML = '';
+        hideCoverSuggest();
         return;
       }
+      showCoverSuggest(title);
       $('coverPreview').innerHTML = '<span class="cover-placeholder">加载封面中…</span>';
       $('coverMeta').innerHTML = '<span class="meta-loading">正在查询公开封面接口…</span>';
       coverTimer = setTimeout(async () => {
-        const cover = await fetchCover(title);
+        let cover = null;
+        try {
+          cover = await fetchCover(title);
+        } catch (e) { /* 兜底 */ }
+        if (!cover) cover = { url: '', kind: 'fallback' };
         setCoverPreview(cover.url, title, cover.kind);
       }, 700);
     });
@@ -328,13 +461,13 @@
       if (!date) { toast('请选择读书日期', true); return; }
       if (!content) { toast('请输入读书输出内容', true); return; }
 
-      // 用当前预览的封面（若还在加载中，尝试同步获取一次）
+      // 优先使用书架候选选中的封面；未选中则保持原有异步补封面流程
       const entry = {
         id: uid(),
         user: data.currentUser,
         bookTitle,
-        coverUrl: '',   // 提交时再异步补封面
-        coverKind: 'fallback',
+        coverUrl: selectedCover && selectedCover.url ? selectedCover.url : '',   // 书架候选选中则直接用，否则提交后异步补
+        coverKind: selectedCover && selectedCover.url ? selectedCover.kind : 'fallback',
         date,
         content,
         createdAt: Date.now()
@@ -342,10 +475,11 @@
       data.entries.push(entry);
       save();
 
-      // 异步补封面（不阻塞提交）
-      fetchCover(bookTitle).then(cover => {
+      // 异步补封面（不阻塞提交；已从书架候选选中封面则跳过）
+      if (!entry.coverUrl) fetchCover(bookTitle).then(cover => {
+        if (!cover || !cover.url) return;
         const found = data.entries.find(en => en.id === entry.id);
-        if (found && cover.url) {
+        if (found) {
           found.coverUrl = cover.url;
           found.coverKind = cover.kind;
           save();
@@ -353,13 +487,15 @@
           renderWall();
           renderStats();
         }
-      });
+      }).catch(() => {});
 
       // 清空表单，日期保持今天
       $('bookTitle').value = '';
       $('content').value = '';
       $('coverPreview').innerHTML = '<span class="cover-placeholder">封面预览</span>';
       $('coverMeta').innerHTML = '';
+      selectedCover = null;
+      hideCoverSuggest();
       $('readDate').value = todayStr();
 
       const count = userCountOn(data.currentUser, date);

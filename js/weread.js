@@ -26,7 +26,7 @@
       return {
         title: bi.title || '',
         author: (bi.author || '').split('/')[0] || '',
-        coverUrl: bi.cover ? ('https://weread.qq.com/' + bi.cover.replace(/^\/+/, '')) : '',
+        coverUrl: bi.cover ? (/^https?:\/\//i.test(bi.cover) ? bi.cover : ('https://weread.qq.com/' + bi.cover.replace(/^\/+/, ''))) : '',
         isbn: (bi.isbn && String(bi.isbn).trim()) || '',
         source: 'weread'
       };

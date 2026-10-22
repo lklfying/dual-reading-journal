@@ -10,7 +10,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const { execFileSync } = require('child_process');
 
 const GATEWAY = 'https://i.weread.qq.com/api/agent/gateway';
 const SKILL_VERSION = '1.0.5';
@@ -61,7 +61,9 @@ function extractBooks(payload) {
           title: (bi && bi.title) || '',
           author: String((bi && bi.author) || '').split('/')[0] || '',
           coverUrl: bi && bi.cover
-            ? 'https://weread.qq.com/' + String(bi.cover).replace(/^\/+/, '')
+            ? /^https?:\/\//i.test(String(bi.cover))
+              ? String(bi.cover)
+              : 'https://weread.qq.com/' + String(bi.cover).replace(/^\/+/, '')
             : '',
           isbn: bi && bi.isbn != null ? String(bi.isbn).trim() : '',
           source: 'weread',
@@ -117,7 +119,7 @@ async function fetchUser(apiKey) {
 
 /* ---------------- git 提交推送 ---------------- */
 function runGit(args, repoRoot) {
-  return execSync('git ' + args.join(' '), { cwd: repoRoot, encoding: 'utf8' });
+  return execFileSync('git', args, { cwd: repoRoot, encoding: 'utf8' });
 }
 
 function commitAndPush(repoRoot, message) {
