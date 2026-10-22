@@ -56,9 +56,10 @@
             <h2 class="panel-title">✒ 写作面板</h2>
             <p class="panel-desc">写下今天的读书输出，书名自动加载封面。</p>
             <form id="writeForm">
-              <div class="field">
+              <div class="field field-suggest">
                 <label for="bookTitle">书名</label>
                 <input type="text" id="bookTitle" placeholder="输入书名，如：红楼梦" autocomplete="off">
+                <div id="coverSuggest" class="cover-suggest" hidden></div>
               </div>
               <div class="cover-row">
                 <div id="coverPreview" class="cover-preview">
