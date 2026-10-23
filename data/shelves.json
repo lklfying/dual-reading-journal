@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T21:20:17.170Z",
+  "updatedAt": "2026-10-23T03:59:25.135Z",
   "H": {
     "books": [
       {
@@ -1336,6 +1336,13 @@
         "title": "中国通史（上下册）",
         "author": "傅乐成",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/62/yuewen_25031485/t6_yuewen_250314851679552147.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "重塑大脑，重塑人生",
+        "author": "[美]诺曼·道伊奇",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/40/yuewen_603371/t6_yuewen_6033711706092500.jpg",
         "isbn": "",
         "source": "weread"
       },
