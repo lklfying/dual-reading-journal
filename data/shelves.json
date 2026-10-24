@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T10:34:29.568Z",
+  "updatedAt": "2026-10-24T15:37:54.408Z",
   "H": {
     "books": [
       {
@@ -13,6 +13,13 @@
         "title": "不教养的勇气：“自我启发之父”阿德勒的育儿心理学",
         "author": "岸见一郎",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/38/cpPlatform_hFYL9MRdUpFUqXs1Z4uf1w/t6_cpPlatform_hFYL9MRdUpFUqXs1Z4uf1w.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "人一旦染上这个习惯，日子只会越过越带劲（轻心理）",
+        "author": "KnowYourself知我心理",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/14/cpplatform_tkjvqcpcpw2odsmw4ojbj9/t6_cpplatform_tkjvqcpcpw2odsmw4ojbj91791773547.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -426,13 +433,6 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "错把妻子当帽子（24个神经失序患者的故事）",
-        "author": "[英]奥利弗·萨克斯",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/94/cpplatform_tkuccwulcrdjz4hbuzopkg/t6_cpplatform_tkuccwulcrdjz4hbuzopkg1721032777.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -1000,6 +1000,13 @@
         "title": "战后日本经济史",
         "author": "野口悠纪雄",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/35/YueWen_22606355/t6_YueWen_22606355.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "错把妻子当帽子（24个神经失序患者的故事）",
+        "author": "[英]奥利弗·萨克斯",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/94/cpplatform_tkuccwulcrdjz4hbuzopkg/t6_cpplatform_tkuccwulcrdjz4hbuzopkg1721032777.jpg",
         "isbn": "",
         "source": "weread"
       },
