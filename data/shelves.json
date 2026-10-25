@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T10:59:11.161Z",
+  "updatedAt": "2026-10-25T15:47:53.663Z",
   "H": {
     "books": [
       {
@@ -433,6 +433,27 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "反本能：如何对抗你的习以为常",
+        "author": "卫蓝　著",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/81/3300020681/t6_3300020681.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "蛤蟆先生去看心理医生",
+        "author": "罗伯特·戴博德",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/81/YueWen_35551088/t6_YueWen_35551088.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "钝感力（典藏版）",
+        "author": "[日]渡边淳一",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/485/32765485/t6_32765485.jpg",
         "isbn": "",
         "source": "weread"
       },
