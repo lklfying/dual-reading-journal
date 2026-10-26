@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T03:57:27.555Z",
+  "updatedAt": "2026-10-26T12:31:28.522Z",
   "H": {
     "books": [
       {
@@ -496,6 +496,13 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "别让怕丢脸的社交监控器，偷走你的人生选择权",
+        "author": "叶承安",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/32/cpplatform_kptcz9m6f8bivwcdx3x5tn/t6_cpplatform_kptcz9m6f8bivwcdx3x5tn1780570260.jpg",
         "isbn": "",
         "source": "weread"
       },
