@@ -1,7 +1,91 @@
 {
-  "updatedAt": "2026-10-25T20:35:29.593Z",
+  "updatedAt": "2026-10-26T03:57:27.555Z",
   "H": {
     "books": [
+      {
+        "title": "红书",
+        "author": "[瑞士]荣格原著  [英]索努·沙姆达萨尼编译",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/60/YueWen_43102026/t6_YueWen_43102026.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "原型与集体无意识",
+        "author": "[瑞士]卡尔·古斯塔夫·荣格",
+        "coverUrl": "https://rescdn.qqmail.com/weread/cover/161/3300007161/t6_3300007161.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "荣格自传：回忆、梦与思考",
+        "author": "[瑞士]卡尔·古斯塔夫·荣格",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/50/cpplatform_wozw7etinqwng8ftaufsej/t6_cpplatform_wozw7etinqwng8ftaufsej1760077095.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "心理类型：理解MBTI背后的心理学原理",
+        "author": "[瑞士]卡尔·荣格",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/79/cpplatform_saz2b4zqv2cxh6oakxsqej/t6_cpplatform_saz2b4zqv2cxh6oakxsqej1772010292.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "自我与本我（果麦经典）",
+        "author": "西格蒙德·弗洛伊德",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/36/YueWen_30961498/t6_YueWen_30961498.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "超越快乐原则",
+        "author": "[奥]西格蒙德·弗洛伊德",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/37/cpplatform_73ap8jdrzgyhcjx4vdpyxm/t6_cpplatform_73ap8jdrzgyhcjx4vdpyxm1790763587.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "性学三论（果麦经典）",
+        "author": "[奥]弗洛伊德",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/56/YueWen_568791/t6_YueWen_568791.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "梦的解析",
+        "author": "[奥]弗洛伊德",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/43/cpplatform_hwseazezmv9bxg8nw5xknw/t6_cpplatform_hwseazezmv9bxg8nw5xknw1736155790.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "精神分析引论（果麦经典）",
+        "author": "西格蒙德·弗洛伊德 徐胤译",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/67/YueWen_831423/t6_YueWen_831423.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "钝感力（典藏版）",
+        "author": "[日]渡边淳一",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/485/32765485/t6_32765485.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "反本能：如何对抗你的习以为常",
+        "author": "卫蓝　著",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/81/3300020681/t6_3300020681.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "蛤蟆先生去看心理医生",
+        "author": "罗伯特·戴博德",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/81/YueWen_35551088/t6_YueWen_35551088.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
       {
         "title": "不计较的勇气：“自我启发之父”阿德勒的生活哲学课",
         "author": "岸见一郎",
@@ -27,13 +111,6 @@
         "title": "活出自己的勇气（阿德勒心理学精要）",
         "author": "[奥]阿尔弗雷德·阿德勒",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/84/cpplatform_x3mbjxmtewpeohjn1dqryi/t6_cpplatform_x3mbjxmtewpeohjn1dqryi1768534652.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "性学三论（果麦经典）",
-        "author": "[奥]弗洛伊德",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/56/YueWen_568791/t6_YueWen_568791.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -199,13 +276,6 @@
         "source": "weread"
       },
       {
-        "title": "梦的解析",
-        "author": "[奥]弗洛伊德",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/43/cpplatform_hwseazezmv9bxg8nw5xknw/t6_cpplatform_hwseazezmv9bxg8nw5xknw1736155790.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
         "title": "福格行为模型：你会越来越有能量",
         "author": "B.J.福格",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/39/YueWen_41147996/t6_YueWen_41147996.jpg",
@@ -300,13 +370,6 @@
         "title": "认知驱动：做成一件对他人很有用的事",
         "author": "周岭",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/88/YueWen_40649986/t6_YueWen_40649986.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "精神分析引论（果麦经典）",
-        "author": "西格蒙德·弗洛伊德 徐胤译",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/67/YueWen_831423/t6_YueWen_831423.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -433,27 +496,6 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "反本能：如何对抗你的习以为常",
-        "author": "卫蓝　著",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/81/3300020681/t6_3300020681.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "蛤蟆先生去看心理医生",
-        "author": "罗伯特·戴博德",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/81/YueWen_35551088/t6_YueWen_35551088.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "钝感力（典藏版）",
-        "author": "[日]渡边淳一",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/485/32765485/t6_32765485.jpg",
         "isbn": "",
         "source": "weread"
       },
