@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T11:49:43.425Z",
+  "updatedAt": "2026-10-27T17:43:35.589Z",
   "H": {
     "books": [
       {
@@ -1417,6 +1417,13 @@
         "source": "weread"
       },
       {
+        "title": "爱，鸡尾酒与生化危机",
+        "author": "赵艺恩",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/83/cpplatform_5ux3t3fsjkfpcy7t9cxytt/t6_cpplatform_5ux3t3fsjkfpcy7t9cxytt1723627718.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "重塑大脑，重塑人生",
         "author": "[美]诺曼·道伊奇",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/40/yuewen_603371/t6_yuewen_6033711706092500.jpg",
@@ -1880,7 +1887,7 @@
       }
     ],
     "stats": {
-      "readingCount": 49
+      "readingCount": 50
     }
   }
 }
