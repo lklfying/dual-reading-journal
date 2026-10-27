@@ -25,6 +25,13 @@
 
   let data = load();
 
+  // 评论缓存有效性判定：必须携带非空 id 与 entryId（防止 entry 对象混入 comments 导致上传 400 死循环）
+  function isValidComment(c) {
+    return !!c && typeof c === 'object' &&
+      typeof c.id === 'string' && c.id.length > 0 &&
+      typeof c.entryId === 'string' && c.entryId.length > 0;
+  }
+
   function load() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
@@ -32,10 +39,19 @@
       const parsed = JSON.parse(raw);
       // 合并默认结构，防止旧数据缺字段
       const base = defaultData();
-      return Object.assign(base, parsed, {
+      const merged = Object.assign(base, parsed, {
         shelves: Object.assign({ 'H': [], 'Q': [] }, parsed.shelves),
         wereadCookie: Object.assign({ 'H': '', 'Q': '' }, parsed.wereadCookie)
       });
+      // 缓存自愈：过滤混入 comments 的脏对象（缺 entryId 等必要字段），写回后不再触发上传 400
+      const comments = Array.isArray(merged.comments) ? merged.comments : [];
+      const clean = comments.filter(isValidComment);
+      if (clean.length !== comments.length) {
+        merged.comments = clean;
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(merged)); } catch (e2) { /* 存储满等忽略 */ }
+        console.warn(`[app] 缓存自愈：已清除 ${comments.length - clean.length} 条无效评论缓存`);
+      }
+      return merged;
     } catch (e) {
       console.warn('数据读取失败，使用默认数据', e);
       return defaultData();
@@ -849,7 +865,7 @@
           };
           // 先合并 entries 和 comments，再合并书架
           data.entries = mergeById(imported.entries);
-          data.comments = mergeById(imported.comments);
+          data.comments = mergeById(imported.comments).filter(isValidComment);
           USERS.forEach(u => {
             const mine = (data.shelves[u] || []);
             const theirs = (imported.shelves[u] || []).filter(b => !mine.some(m => m.title === b.title && m.author === b.author));

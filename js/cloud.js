@@ -197,6 +197,20 @@
     });
   }
 
+  /* ---------------- 错误分类：数据级错误（400/422/409）不拉黑云端，连接级才置未连接 ---------------- */
+  function isDataError(e) {
+    var m = String((e && e.message) || '');
+    return m.indexOf('400') !== -1 || m.indexOf('422') !== -1 || m.indexOf('409') !== -1;
+  }
+
+  function isConnectError(e) {
+    if (isDataError(e)) return false;
+    var m = String((e && e.message) || '');
+    if (m.indexOf('401') !== -1 || m.indexOf('403') !== -1 || m.indexOf('Unauthorized') !== -1) return true;
+    if (e instanceof TypeError || /Failed to fetch|NetworkError|网络|fetch/i.test(m)) return true;
+    return true; // 其它未知错误按连接级处理（保守拉黑再重试）
+  }
+
   /* ---------------- 表读取（分页拉取，绕过单次请求行数限制） ---------------- */
   function fetchAll(table) {
     var out = [];
@@ -257,6 +271,13 @@
     };
   }
 
+  // 评论有效性：必须携带非空 id 与 entryId（缺 entryId 的脏对象上传会触发 400 not-null 违规）
+  function isValidCommentForSync(c) {
+    return !!c && typeof c === 'object' &&
+      typeof c.id === 'string' && c.id.length > 0 &&
+      typeof c.entryId === 'string' && c.entryId.length > 0;
+  }
+
   function rowForShelf(user, extra) {
     var d = GD();
     var row = {
@@ -296,7 +317,9 @@
       d.data.entries = cloudEntries.concat(orphanEntries);
 
       var cloudCIds = new Set(cloudComments.map(function (c) { return c.id; }));
-      var orphanComments = (d.data.comments || []).filter(function (c) { return !cloudCIds.has(c.id); });
+      // 先过滤本地缓存中的无效评论（缺 entryId 等），避免脏数据进入渲染与上传
+      var localComments = (d.data.comments || []).filter(isValidCommentForSync);
+      var orphanComments = localComments.filter(function (c) { return !cloudCIds.has(c.id); });
       d.data.comments = cloudComments.concat(orphanComments);
 
       // 书架：云端优先，缺用户用本地缓存
@@ -393,6 +416,18 @@
 
   function pushComment(c) {
     if (!state.ready) { markPending(); return Promise.resolve(); }
+    // 防御：脏评论（缺 entryId 等必要字段）跳过上传并从缓存移除，绝不触发 POST 400
+    if (!isValidCommentForSync(c)) {
+      console.warn('[cloud] 跳过无效评论并从缓存移除', c && c.id);
+      var d = GD();
+      var before = (d.data.comments || []).length;
+      d.data.comments = (d.data.comments || []).filter(function (x) {
+        return !(x && x.id && c && c.id && x.id === c.id);
+      });
+      if (d.data.comments.length !== before) d.save();
+      if (c && c.id) state.cloudKeys.comments.delete(c.id);
+      return Promise.resolve();
+    }
     return upsert('comments', c.id, rowForComment(c));
   }
 
@@ -405,11 +440,17 @@
   function syncLocalToCloud() {
     if (!state.ready) return Promise.resolve();
     var d = GD();
+    // 上传前先自愈：移除缓存中的无效评论（缺 entryId 等），避免遍历中被 mutate 跳项，也杜绝 400
+    var validComments = (d.data.comments || []).filter(isValidCommentForSync);
+    if (validComments.length !== (d.data.comments || []).length) {
+      d.data.comments = validComments;
+      d.save();
+    }
     var jobs = [];
     (d.data.entries || []).forEach(function (e) {
       if (!state.cloudKeys.entries.has(e.id)) jobs.push(pushEntry(e));
     });
-    (d.data.comments || []).forEach(function (c) {
+    validComments.forEach(function (c) {
       if (!state.cloudKeys.comments.has(c.id)) jobs.push(pushComment(c));
     });
     // 书架不参与自动同步（靠 data/shelves.json 静态文件 + 手动刷新），仅笔记自动上传
@@ -426,12 +467,17 @@
       failCount = 0;
       refreshAll();
     }).catch(function (e) {
-      failCount += 1;
-      if (failCount >= 3) {
-        state.ready = false;
-        updateBanner();
+      if (isDataError(e)) {
+        // 数据级错误（400 等）不拉黑云端状态，仅记录
+        console.warn('[cloud] poll data error ignored (cloud stays ready)', e);
+      } else {
+        failCount += 1;
+        if (failCount >= 3) {
+          state.ready = false;
+          updateBanner();
+        }
+        console.warn('[cloud] poll pull failed', e);
       }
-      console.warn('[cloud] poll pull failed', e);
     }).finally(function () {
       pulling = false;
     });
@@ -503,9 +549,14 @@
         startPolling();
         refreshAll();
       }).catch(function (e) {
-        state.ready = false;
-        updateBanner();
-        console.warn('[cloud] bootstrap sync failed', e);
+        if (isDataError(e)) {
+          // 数据级错误（如评论 400）：不拉黑云端状态，保持已连接
+          console.warn('[cloud] bootstrap data error ignored (cloud stays ready)', e);
+        } else {
+          state.ready = false;
+          updateBanner();
+          console.warn('[cloud] bootstrap sync failed', e);
+        }
       });
     });
   }
@@ -522,6 +573,13 @@
       }).then(function () { return pullNotes(); })
         .then(function () { startPolling(); refreshAll(); return true; });
     }).catch(function (e) {
+      if (isDataError(e)) {
+        // 数据级错误：云端已连上（pullNotes 已置 ready），不拉黑
+        state.ready = true;
+        updateBanner();
+        console.warn('[cloud] retry data error ignored (cloud stays ready)', e);
+        return true;
+      }
       state.ready = false;
       updateBanner();
       console.warn('[cloud] retry failed', e);
