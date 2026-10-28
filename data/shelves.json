@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T21:57:25.381Z",
+  "updatedAt": "2026-10-28T04:48:52.261Z",
   "H": {
     "books": [
       {
@@ -496,6 +496,13 @@
         "title": "圆圈正义：作为自由前提的信念",
         "author": "罗翔",
         "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/732/40457732/t6_40457732.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "爱，鸡尾酒与生化危机",
+        "author": "赵艺恩",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/83/cpplatform_5ux3t3fsjkfpcy7t9cxytt/t6_cpplatform_5ux3t3fsjkfpcy7t9cxytt1723627718.jpg",
         "isbn": "",
         "source": "weread"
       },
