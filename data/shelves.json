@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T04:48:52.261Z",
+  "updatedAt": "2026-10-28T12:24:08.648Z",
   "H": {
     "books": [
       {
@@ -510,6 +510,13 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "东京八平米",
+        "author": "吉井忍",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/29/cpplatform_fwyuuwozyuxhgstwdmi1mu/t6_cpplatform_fwyuuwozyuxhgstwdmi1mu1688959572.jpg",
         "isbn": "",
         "source": "weread"
       },
