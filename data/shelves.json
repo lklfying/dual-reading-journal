@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T12:24:46.838Z",
+  "updatedAt": "2026-10-30T22:03:58.207Z",
   "H": {
     "books": [
       {
@@ -62,6 +62,13 @@
         "title": "精神分析引论（果麦经典）",
         "author": "西格蒙德·弗洛伊德 徐胤译",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/67/YueWen_831423/t6_YueWen_831423.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "精力管理",
+        "author": "吉姆·洛尔 托尼·施瓦茨　",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/654/33091654/t6_33091654.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -514,13 +521,6 @@
         "source": "weread"
       },
       {
-        "title": "东京八平米",
-        "author": "吉井忍",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/29/cpplatform_fwyuuwozyuxhgstwdmi1mu/t6_cpplatform_fwyuuwozyuxhgstwdmi1mu1688959572.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
         "title": "少爷（果麦经典）",
         "author": "夏目漱石",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/82/YueWen_850812/t6_YueWen_850812.jpg",
@@ -545,6 +545,13 @@
         "title": "潮骚",
         "author": "三岛由纪夫",
         "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/626/35523626/t6_35523626.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "东京八平米",
+        "author": "吉井忍",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/29/cpplatform_fwyuuwozyuxhgstwdmi1mu/t6_cpplatform_fwyuuwozyuxhgstwdmi1mu1688959572.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -1126,6 +1133,13 @@
         "title": "活着",
         "author": "余华",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/1/yuewen_834464/t6_yuewen_8344641758521403.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "天色已晚",
+        "author": "[爱尔兰]克莱尔·吉根",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/80/cpplatform_9xqveuyszv1dekmiddeu6p/t6_cpplatform_9xqveuyszv1dekmiddeu6p1772701104.jpg",
         "isbn": "",
         "source": "weread"
       },
