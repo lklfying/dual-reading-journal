@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T05:08:55.741Z",
+  "updatedAt": "2026-11-01T12:54:16.242Z",
   "H": {
     "books": [
       {
@@ -517,6 +517,20 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "人性的优点(卡耐基励志经典·英文原版)",
+        "author": "[美]戴尔·卡耐基",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/47/3300012247/t6_3300012247.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "人性的优点：如何停止忧虑，开创人生（果麦经典）",
+        "author": "卡耐基",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/732/908732/t6_908732.jpg",
         "isbn": "",
         "source": "weread"
       },
