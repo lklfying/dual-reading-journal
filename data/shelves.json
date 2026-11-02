@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T21:50:29.903Z",
+  "updatedAt": "2026-11-02T05:08:54.580Z",
   "H": {
     "books": [
       {
@@ -62,6 +62,27 @@
         "title": "精神分析引论（果麦经典）",
         "author": "西格蒙德·弗洛伊德 徐胤译",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/67/YueWen_831423/t6_YueWen_831423.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "人性的优点(卡耐基励志经典·英文原版)",
+        "author": "[美]戴尔·卡耐基",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/47/3300012247/t6_3300012247.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "活出生命的意义",
+        "author": "[奥]维克多·弗兰克尔",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/22/cpplatform_hsl2ccpugksluxgua2xm52/t6_cpplatform_hsl2ccpugksluxgua2xm521788261188.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "活出生命的意义",
+        "author": "[奥]阿尔弗雷德·阿德勒",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/35/cpplatform_gw8jpyeab7j8xyhmh3yqsh/t6_cpplatform_gw8jpyeab7j8xyhmh3yqsh1778557294.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -174,6 +195,13 @@
         "title": "冥想：唤醒内心强大的力量",
         "author": "肖文键",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/1/cpPlatform_3300003214/t6_cpPlatform_3300003214.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "人性的优点：如何停止忧虑，开创人生（果麦经典）",
+        "author": "卡耐基",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/732/908732/t6_908732.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -517,20 +545,6 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "人性的优点(卡耐基励志经典·英文原版)",
-        "author": "[美]戴尔·卡耐基",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/47/3300012247/t6_3300012247.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "人性的优点：如何停止忧虑，开创人生（果麦经典）",
-        "author": "卡耐基",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/732/908732/t6_908732.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -1418,7 +1432,7 @@
       }
     ],
     "stats": {
-      "readingCount": 37
+      "readingCount": 38
     }
   },
   "Q": {
