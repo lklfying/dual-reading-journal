@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T13:51:39.884Z",
+  "updatedAt": "2026-11-03T23:00:43.358Z",
   "H": {
     "books": [
       {
@@ -580,6 +580,13 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "悉达多（果麦经典）",
+        "author": "[德]赫尔曼·黑塞",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/68/YueWen_855327/t6_YueWen_855327.jpg",
         "isbn": "",
         "source": "weread"
       },
