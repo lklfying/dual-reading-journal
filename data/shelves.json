@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T05:30:02.702Z",
+  "updatedAt": "2026-11-04T13:59:18.885Z",
   "H": {
     "books": [
       {
@@ -580,6 +580,13 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "父母：挑战（果麦经典）",
+        "author": "[美]鲁道夫·德雷克斯",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/65/cpplatform_xtzvabpuzprspsel5rhwsv/t6_cpplatform_xtzvabpuzprspsel5rhwsv1742457924.jpg",
         "isbn": "",
         "source": "weread"
       },
