@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T14:20:14.995Z",
+  "updatedAt": "2026-11-05T23:26:42.526Z",
   "H": {
     "books": [
       {
@@ -402,6 +402,13 @@
         "source": "weread"
       },
       {
+        "title": "找不到答案时就去找自己",
+        "author": "崔璀",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_kv67gltzsw3qz2h8dxzkub/t6_cpplatform_kv67gltzsw3qz2h8dxzkub1783678254.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "重塑杏仁核：情绪修复脑科学",
         "author": "[美]凯瑟琳·M. 皮特曼",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/75/cpplatform_f8nqyjadruqecj4euuj6jj/t6_cpplatform_f8nqyjadruqecj4euuj6jj1727434091.jpg",
@@ -468,6 +475,13 @@
         "title": "一年顶十年",
         "author": "剽悍一只猫",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/7/YueWen_30182760/t6_YueWen_30182760.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "父母：挑战（果麦经典）",
+        "author": "[美]鲁道夫·德雷克斯",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/65/cpplatform_xtzvabpuzprspsel5rhwsv/t6_cpplatform_xtzvabpuzprspsel5rhwsv1742457924.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -563,6 +577,13 @@
         "source": "weread"
       },
       {
+        "title": "悉达多（果麦经典）",
+        "author": "[德]赫尔曼·黑塞",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/68/YueWen_855327/t6_YueWen_855327.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "圆圈正义：作为自由前提的信念",
         "author": "罗翔",
         "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/732/40457732/t6_40457732.jpg",
@@ -580,20 +601,6 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "父母：挑战（果麦经典）",
-        "author": "[美]鲁道夫·德雷克斯",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/65/cpplatform_xtzvabpuzprspsel5rhwsv/t6_cpplatform_xtzvabpuzprspsel5rhwsv1742457924.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "悉达多（果麦经典）",
-        "author": "[德]赫尔曼·黑塞",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/68/YueWen_855327/t6_YueWen_855327.jpg",
         "isbn": "",
         "source": "weread"
       },
