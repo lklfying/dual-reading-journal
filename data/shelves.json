@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T05:46:58.263Z",
+  "updatedAt": "2026-11-06T13:57:04.791Z",
   "H": {
     "books": [
       {
@@ -1494,6 +1494,20 @@
   "Q": {
     "books": [
       {
+        "title": "陈鲁豫：还是要相信",
+        "author": "陈鲁豫",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/9/cpPlatform_ht568HKfg1VpBrpP8ERpHs/t6_cpPlatform_ht568HKfg1VpBrpP8ERpHs.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "信念 : 人生每一步都算数（珍藏版）",
+        "author": "雷殿生",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/85/cpplatform_kbttvc9usqoqzr1j5bti3f/t6_cpplatform_kbttvc9usqoqzr1j5bti3f1704785877.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "语言本能",
         "author": "[美]史蒂芬·平克",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/29/YueWen_713314/t6_YueWen_713314.jpg",
@@ -1525,48 +1539,6 @@
         "title": "中国通史（上下册）",
         "author": "傅乐成",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/62/yuewen_25031485/t6_yuewen_250314851679552147.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "依恋与亲密关系：情绪取向伴侣治疗实践（第3版）",
-        "author": "[加]苏珊·M.约翰逊",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/82/cpplatform_esi4xpeku2zyxjackjmrgw/t6_cpplatform_esi4xpeku2zyxjackjmrgw1756871636.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "爱，鸡尾酒与生化危机",
-        "author": "赵艺恩",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/83/cpplatform_5ux3t3fsjkfpcy7t9cxytt/t6_cpplatform_5ux3t3fsjkfpcy7t9cxytt1723627718.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "重塑大脑，重塑人生",
-        "author": "[美]诺曼·道伊奇",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/40/yuewen_603371/t6_yuewen_6033711706092500.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "允许爱情消失",
-        "author": "杜素娟",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/71/cpplatform_hdfhq8fukgwdmrzldfodxy/t6_cpplatform_hdfhq8fukgwdmrzldfodxy1748574405.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "信念 : 人生每一步都算数（珍藏版）",
-        "author": "雷殿生",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/85/cpplatform_kbttvc9usqoqzr1j5bti3f/t6_cpplatform_kbttvc9usqoqzr1j5bti3f1704785877.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "明亮的夜晚",
-        "author": "崔恩荣",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/50/cpplatform_dzcupluzwjbcszj1zes4a9/t6_cpplatform_dzcupluzwjbcszj1zes4a91692182630.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -1627,23 +1599,9 @@
         "source": "weread"
       },
       {
-        "title": "深度关系",
-        "author": "武志红",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/87/cpplatform_43qcgdhifxnzixexv7bekp/t6_cpplatform_43qcgdhifxnzixexv7bekp1698825144.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
         "title": "被讨厌的勇气：“自我启发之父”阿德勒的哲学课",
         "author": "岸见一郎 古贺史健",
         "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/385/25615385/t6_25615385.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "亲密关系（第8版）",
-        "author": "[美]罗兰·米勒",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/29/cpplatform_fajupe6tastyjcbfydk4sx/t6_cpplatform_fajupe6tastyjcbfydk4sx1722240377.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -1665,13 +1623,6 @@
         "title": "自卑与超越（专家伴读版）",
         "author": "[奥]阿尔弗雷德·阿德勒",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/86/cpplatform_6582iy5uwulac3y2fphe5t/t6_cpplatform_6582iy5uwulac3y2fphe5t1714473330.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "非暴力沟通（修订版）",
-        "author": "[美]马歇尔·卢森堡",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/88/cpplatform_9iwmvppcbjd1kqabdkbe1e/t6_cpplatform_9iwmvppcbjd1kqabdkbe1e1685513342.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -1711,6 +1662,13 @@
         "source": "weread"
       },
       {
+        "title": "重塑大脑，重塑人生",
+        "author": "[美]诺曼·道伊奇",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/40/yuewen_603371/t6_yuewen_6033711706092500.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "金字塔原理大全集",
         "author": "[美]芭芭拉·明托",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/28/3300020528/t6_3300020528.jpg",
@@ -1739,128 +1697,16 @@
         "source": "weread"
       },
       {
-        "title": "蛇结（果麦经典）",
-        "author": "[法]弗朗索瓦·莫里亚克",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/45/cpplatform_dnv4tispbha7vrecp71efm/t6_cpplatform_dnv4tispbha7vrecp71efm1745489552.jpg",
+        "title": "动物庄园（奥威尔作品集）",
+        "author": "乔治·奥威尔",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/76/YueWen_641029/t6_YueWen_641029.jpg",
         "isbn": "",
         "source": "weread"
       },
       {
-        "title": "Animal Farm 动物农庄(英文版)",
-        "author": "[英]乔治·奥威尔",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/68/cpPlatform_n93q6Rr24JSU4LredUoEo9/t6_cpPlatform_n93q6Rr24JSU4LredUoEo9.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "1984",
-        "author": "[英]乔治·奥威尔",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/43/cpplatform_i8ynodndbtuzrhr7fdhy7c/t6_cpplatform_i8ynodndbtuzrhr7fdhy7c1764831272.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "房思琪的初恋乐园（精编版）",
-        "author": "林奕含",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/28/YueWen_32206126/t6_YueWen_32206126.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "失踪的孩子",
-        "author": "埃莱娜·费兰特",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/25/YueWen_23933599/t6_YueWen_23933599.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "红玫瑰与白玫瑰",
-        "author": "张爱玲",
-        "coverUrl": "https://res.weread.qq.com/wrepub/CB_Fkw2lm2mr6B06i26gtBpc3jr_parsecover",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "西线无战事（同名电影原著）（果麦经典）",
-        "author": "埃里希·玛丽亚·雷马克",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/26/YueWen_35458083/t6_YueWen_35458083.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "猫鱼",
-        "author": "陈冲",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/85/cpplatform_9p96osc2hbz9yyvma2wljk/t6_cpplatform_9p96osc2hbz9yyvma2wljk1741762382.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "离开的，留下的（《我的天才女友》第三季原著）",
-        "author": "埃莱娜·费兰特",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/34/YueWen_935492/t6_YueWen_935492.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "太白金星有点烦",
-        "author": "马伯庸",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/72/cpplatform_huhykqamxcvke1jfkpqxiv/t6_cpplatform_huhykqamxcvke1jfkpqxiv1695711014.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "三体全集（全三册）",
-        "author": "刘慈欣",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/80/yuewen_695233/t6_yuewen_6952331784884457.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "快速阅读",
-        "author": "克里斯蒂安·格吕宁",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/43/YueWen_921072/t6_YueWen_921072.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "奇风岁月",
-        "author": "[美]罗伯特·麦卡蒙",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/23/856023/t6_856023.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "倾城之恋",
-        "author": "张爱玲",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/88/yuewen_22355153/t6_yuewen_223551531680770798.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "喧哗与骚动（人文社外国文学名著经典·网格本）",
-        "author": "威廉·福克纳",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/87/YueWen_33820335/t6_YueWen_33820335.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "我的天才女友（HBO同名热剧原著）",
-        "author": "埃莱娜·费兰特",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/122/923122/t6_923122.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "平凡的世界（全三册）",
-        "author": "路遥",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/61/yuewen_24965201/t6_yuewen_249652011682413401.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "一句顶一万句（2022新版）",
-        "author": "刘震云",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/43/3300024943/t6_3300024943.jpg",
+        "title": "明亮的夜晚",
+        "author": "崔恩荣",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/50/cpplatform_dzcupluzwjbcszj1zes4a9/t6_cpplatform_dzcupluzwjbcszj1zes4a91692182630.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -1872,9 +1718,37 @@
         "source": "weread"
       },
       {
-        "title": "动物庄园（奥威尔作品集）",
-        "author": "乔治·奥威尔",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/76/YueWen_641029/t6_YueWen_641029.jpg",
+        "title": "一句顶一万句（2022新版）",
+        "author": "刘震云",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/43/3300024943/t6_3300024943.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "平凡的世界（全三册）",
+        "author": "路遥",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/61/yuewen_24965201/t6_yuewen_249652011682413401.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "倾城之恋",
+        "author": "张爱玲",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/88/yuewen_22355153/t6_yuewen_223551531680770798.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "奇风岁月",
+        "author": "[美]罗伯特·麦卡蒙",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/23/856023/t6_856023.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "快速阅读",
+        "author": "克里斯蒂安·格吕宁",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/43/YueWen_921072/t6_YueWen_921072.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -1882,6 +1756,104 @@
         "title": "新名字的故事（《我的天才女友》第二季原著）",
         "author": "埃莱娜·费兰特",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/32/YueWen_923123/t6_YueWen_923123.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "三体全集（全三册）",
+        "author": "刘慈欣",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/80/yuewen_695233/t6_yuewen_6952331784884457.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "太白金星有点烦",
+        "author": "马伯庸",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/72/cpplatform_huhykqamxcvke1jfkpqxiv/t6_cpplatform_huhykqamxcvke1jfkpqxiv1695711014.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "离开的，留下的（《我的天才女友》第三季原著）",
+        "author": "埃莱娜·费兰特",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/34/YueWen_935492/t6_YueWen_935492.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "我的天才女友（HBO同名热剧原著）",
+        "author": "埃莱娜·费兰特",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/122/923122/t6_923122.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "猫鱼",
+        "author": "陈冲",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/85/cpplatform_9p96osc2hbz9yyvma2wljk/t6_cpplatform_9p96osc2hbz9yyvma2wljk1741762382.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "西线无战事（同名电影原著）（果麦经典）",
+        "author": "埃里希·玛丽亚·雷马克",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/26/YueWen_35458083/t6_YueWen_35458083.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "喧哗与骚动（人文社外国文学名著经典·网格本）",
+        "author": "威廉·福克纳",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/87/YueWen_33820335/t6_YueWen_33820335.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "红玫瑰与白玫瑰",
+        "author": "张爱玲",
+        "coverUrl": "https://res.weread.qq.com/wrepub/CB_Fkw2lm2mr6B06i26gtBpc3jr_parsecover",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "失踪的孩子",
+        "author": "埃莱娜·费兰特",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/25/YueWen_23933599/t6_YueWen_23933599.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "房思琪的初恋乐园（精编版）",
+        "author": "林奕含",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/28/YueWen_32206126/t6_YueWen_32206126.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "1984",
+        "author": "[英]乔治·奥威尔",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/43/cpplatform_i8ynodndbtuzrhr7fdhy7c/t6_cpplatform_i8ynodndbtuzrhr7fdhy7c1764831272.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "Animal Farm 动物农庄(英文版)",
+        "author": "[英]乔治·奥威尔",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/68/cpPlatform_n93q6Rr24JSU4LredUoEo9/t6_cpPlatform_n93q6Rr24JSU4LredUoEo9.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "蛇结（果麦经典）",
+        "author": "[法]弗朗索瓦·莫里亚克",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/45/cpplatform_dnv4tispbha7vrecp71efm/t6_cpplatform_dnv4tispbha7vrecp71efm1745489552.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "爱，鸡尾酒与生化危机",
+        "author": "赵艺恩",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/83/cpplatform_5ux3t3fsjkfpcy7t9cxytt/t6_cpplatform_5ux3t3fsjkfpcy7t9cxytt1723627718.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -1910,6 +1882,48 @@
         "title": "厌女（增订本）",
         "author": "[日]上野千鹤子",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/94/cpplatform_akrjnymgoxljkqszganvbx/t6_cpplatform_akrjnymgoxljkqszganvbx1682248200.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "人性的弱点",
+        "author": "[美]戴尔·卡耐基",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/28/cpplatform_ipiqxlasqypwwbdptqa163/t6_cpplatform_ipiqxlasqypwwbdptqa1631789382231.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "允许爱情消失",
+        "author": "杜素娟",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/71/cpplatform_hdfhq8fukgwdmrzldfodxy/t6_cpplatform_hdfhq8fukgwdmrzldfodxy1748574405.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "依恋与亲密关系：情绪取向伴侣治疗实践（第3版）",
+        "author": "[加]苏珊·M.约翰逊",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/82/cpplatform_esi4xpeku2zyxjackjmrgw/t6_cpplatform_esi4xpeku2zyxjackjmrgw1756871636.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "亲密关系（第8版）",
+        "author": "[美]罗兰·米勒",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/29/cpplatform_fajupe6tastyjcbfydk4sx/t6_cpplatform_fajupe6tastyjcbfydk4sx1722240377.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "非暴力沟通（修订版）",
+        "author": "[美]马歇尔·卢森堡",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/88/cpplatform_9iwmvppcbjd1kqabdkbe1e/t6_cpplatform_9iwmvppcbjd1kqabdkbe1e1685513342.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "深度关系",
+        "author": "武志红",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/87/cpplatform_43qcgdhifxnzixexv7bekp/t6_cpplatform_43qcgdhifxnzixexv7bekp1698825144.jpg",
         "isbn": "",
         "source": "weread"
       },
