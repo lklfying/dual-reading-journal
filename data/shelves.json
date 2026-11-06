@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T23:26:42.526Z",
+  "updatedAt": "2026-11-06T05:46:58.263Z",
   "H": {
     "books": [
       {
@@ -1525,6 +1525,13 @@
         "title": "中国通史（上下册）",
         "author": "傅乐成",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/62/yuewen_25031485/t6_yuewen_250314851679552147.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "依恋与亲密关系：情绪取向伴侣治疗实践（第3版）",
+        "author": "[加]苏珊·M.约翰逊",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/82/cpplatform_esi4xpeku2zyxjackjmrgw/t6_cpplatform_esi4xpeku2zyxjackjmrgw1756871636.jpg",
         "isbn": "",
         "source": "weread"
       },
