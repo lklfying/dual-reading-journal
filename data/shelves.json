@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T12:41:12.983Z",
+  "updatedAt": "2026-11-07T21:36:51.499Z",
   "H": {
     "books": [
       {
@@ -1539,6 +1539,13 @@
         "title": "中国通史（上下册）",
         "author": "傅乐成",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/62/yuewen_25031485/t6_yuewen_250314851679552147.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "血糖密码",
+        "author": "[加]杰森·冯著 孙璐译",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/38/cpplatform_q5o1uejvgjlk8pn5sm4yxy/t6_cpplatform_q5o1uejvgjlk8pn5sm4yxy1791883826.jpg",
         "isbn": "",
         "source": "weread"
       },
