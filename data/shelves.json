@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T21:36:51.499Z",
+  "updatedAt": "2026-11-08T05:14:23.487Z",
   "H": {
     "books": [
       {
@@ -1539,6 +1539,13 @@
         "title": "中国通史（上下册）",
         "author": "傅乐成",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/62/yuewen_25031485/t6_yuewen_250314851679552147.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "控糖革命",
+        "author": "[法]杰西·安佐斯佩",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/64/cpplatform_qpqefbrrjjgqq7t62wt1ca/t6_cpplatform_qpqefbrrjjgqq7t62wt1ca1706772686.jpg",
         "isbn": "",
         "source": "weread"
       },
