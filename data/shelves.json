@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T05:26:23.293Z",
+  "updatedAt": "2026-11-09T15:39:11.713Z",
   "H": {
     "books": [
       {
@@ -1278,7 +1278,7 @@
       },
       {
         "title": "傲慢与偏见",
-        "author": "简·奥斯丁",
+        "author": "[英]简·奥斯丁",
         "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/833/842833/t6_842833.jpg",
         "isbn": "",
         "source": "weread"
@@ -1313,7 +1313,7 @@
       },
       {
         "title": "月亮和六便士",
-        "author": "毛姆",
+        "author": "[英]毛姆",
         "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/763/809763/t6_809763.jpg",
         "isbn": "",
         "source": "weread"
