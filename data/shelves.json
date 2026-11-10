@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T15:39:11.713Z",
+  "updatedAt": "2026-11-10T01:19:31.490Z",
   "H": {
     "books": [
       {
@@ -601,6 +601,13 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "羞耻感",
+        "author": "Ronald Potter-Efron  Patricia Potter-Efron",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/18/yuewen_933131/t6_yuewen_9331311737447302.jpg",
         "isbn": "",
         "source": "weread"
       },
