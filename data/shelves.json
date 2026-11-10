@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T14:34:25.251Z",
+  "updatedAt": "2026-11-10T22:58:53.178Z",
   "H": {
     "books": [
       {
@@ -608,6 +608,20 @@
         "title": "非暴力沟通（修订版）",
         "author": "[美]马歇尔·卢森堡",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/88/cpplatform_9iwmvppcbjd1kqabdkbe1e/t6_cpplatform_9iwmvppcbjd1kqabdkbe1e1685513342.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "花落了：一个民间大了的生死笔记",
+        "author": "韩云",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/86/cpplatform_oqhgfabqafxdwmkcrqnhvr/t6_cpplatform_oqhgfabqafxdwmkcrqnhvr1760518628.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "死亡这件小事（轻纪实）",
+        "author": "《人物》杂志 李雨凝",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/98/cpplatform_964ejnoo7qsj7adppslhpg/t6_cpplatform_964ejnoo7qsj7adppslhpg1765182206.jpg",
         "isbn": "",
         "source": "weread"
       },
