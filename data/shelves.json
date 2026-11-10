@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T01:19:31.490Z",
+  "updatedAt": "2026-11-10T14:34:25.251Z",
   "H": {
     "books": [
       {
@@ -601,6 +601,20 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "非暴力沟通（修订版）",
+        "author": "[美]马歇尔·卢森堡",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/88/cpplatform_9iwmvppcbjd1kqabdkbe1e/t6_cpplatform_9iwmvppcbjd1kqabdkbe1e1685513342.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "如何了解一个人",
+        "author": "[美]戴维·布鲁克斯",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/28/cpplatform_o7rw6dnynfzvsekh4c39pc/t6_cpplatform_o7rw6dnynfzvsekh4c39pc1767083845.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -1495,7 +1509,7 @@
       }
     ],
     "stats": {
-      "readingCount": 39
+      "readingCount": 40
     }
   },
   "Q": {
@@ -1553,6 +1567,13 @@
         "title": "中国通史（上下册）",
         "author": "傅乐成",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/62/yuewen_25031485/t6_yuewen_250314851679552147.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "我们时代的神经症人格",
+        "author": "卡伦·霍妮",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/11/YueWen_26391930/t6_YueWen_26391930.jpg",
         "isbn": "",
         "source": "weread"
       },
