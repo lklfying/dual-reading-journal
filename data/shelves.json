@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T00:16:02.345Z",
+  "updatedAt": "2026-11-12T14:51:46.758Z",
   "H": {
     "books": [
       {
@@ -66,6 +66,20 @@
         "source": "weread"
       },
       {
+        "title": "非暴力沟通（修订版）",
+        "author": "[美]马歇尔·卢森堡",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/88/cpplatform_9iwmvppcbjd1kqabdkbe1e/t6_cpplatform_9iwmvppcbjd1kqabdkbe1e1685513342.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "如何了解一个人",
+        "author": "[美]戴维·布鲁克斯",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/28/cpplatform_o7rw6dnynfzvsekh4c39pc/t6_cpplatform_o7rw6dnynfzvsekh4c39pc1767083845.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "长期把喜欢的人当做倾诉对象，是高危行为（轻情感）",
         "author": "我要WhatYouNeed 仙草",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/19/cpplatform_mrlr114vzwhw5rz4nc4mfh/t6_cpplatform_mrlr114vzwhw5rz4nc4mfh1785925838.jpg",
@@ -90,6 +104,13 @@
         "title": "活出生命的意义",
         "author": "[奥]维克多·弗兰克尔",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/22/cpplatform_hsl2ccpugksluxgua2xm52/t6_cpplatform_hsl2ccpugksluxgua2xm521788261188.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "亲密关系（第8版）",
+        "author": "[美]罗兰·米勒",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/29/cpplatform_fajupe6tastyjcbfydk4sx/t6_cpplatform_fajupe6tastyjcbfydk4sx1722240377.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -472,6 +493,13 @@
         "source": "weread"
       },
       {
+        "title": "羞耻感",
+        "author": "Ronald Potter-Efron  Patricia Potter-Efron",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/18/yuewen_933131/t6_yuewen_9331311737447302.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "一年顶十年",
         "author": "剽悍一只猫",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/7/YueWen_30182760/t6_YueWen_30182760.jpg",
@@ -601,48 +629,6 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "非暴力沟通（修订版）",
-        "author": "[美]马歇尔·卢森堡",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/88/cpplatform_9iwmvppcbjd1kqabdkbe1e/t6_cpplatform_9iwmvppcbjd1kqabdkbe1e1685513342.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "亲密关系（第8版）",
-        "author": "[美]罗兰·米勒",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/29/cpplatform_fajupe6tastyjcbfydk4sx/t6_cpplatform_fajupe6tastyjcbfydk4sx1722240377.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "花落了：一个民间大了的生死笔记",
-        "author": "韩云",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/86/cpplatform_oqhgfabqafxdwmkcrqnhvr/t6_cpplatform_oqhgfabqafxdwmkcrqnhvr1760518628.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "死亡这件小事（轻纪实）",
-        "author": "《人物》杂志 李雨凝",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/98/cpplatform_964ejnoo7qsj7adppslhpg/t6_cpplatform_964ejnoo7qsj7adppslhpg1765182206.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "如何了解一个人",
-        "author": "[美]戴维·布鲁克斯",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/28/cpplatform_o7rw6dnynfzvsekh4c39pc/t6_cpplatform_o7rw6dnynfzvsekh4c39pc1767083845.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "羞耻感",
-        "author": "Ronald Potter-Efron  Patricia Potter-Efron",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/18/yuewen_933131/t6_yuewen_9331311737447302.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -1242,6 +1228,20 @@
         "source": "weread"
       },
       {
+        "title": "死亡这件小事（轻纪实）",
+        "author": "《人物》杂志 李雨凝",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/98/cpplatform_964ejnoo7qsj7adppslhpg/t6_cpplatform_964ejnoo7qsj7adppslhpg1765182206.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "花落了：一个民间大了的生死笔记",
+        "author": "韩云",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/86/cpplatform_oqhgfabqafxdwmkcrqnhvr/t6_cpplatform_oqhgfabqafxdwmkcrqnhvr1760518628.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "天空的城：我的26岁女房客",
         "author": "超级大坦克科比",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/62/cpplatform_4ycumme1o9kbq7pwsmqnr9/t6_cpplatform_4ycumme1o9kbq7pwsmqnr91729770841.jpg",
@@ -1634,6 +1634,13 @@
         "source": "weread"
       },
       {
+        "title": "《一句话干完一天活：WorkBuddy 提效指南》AI博士联合编写",
+        "author": "吕晖 周小慧 王四平 著",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/64/cpplatform_9qqz1pzef7n2ejwcjdg6r5/t6_cpplatform_9qqz1pzef7n2ejwcjdg6r51792563178.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "登天的感觉：我在哈佛大学做心理咨询（2023版）",
         "author": "岳晓东",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/89/YueWen_23693271/t6_YueWen_23693271.jpg",
@@ -1693,6 +1700,13 @@
         "title": "悉达多（果麦经典）",
         "author": "[德]赫尔曼·黑塞",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/68/YueWen_855327/t6_YueWen_855327.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "自控力",
+        "author": "凯利·麦格尼格尔",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/9/YueWen_837618/t6_YueWen_837618.jpg",
         "isbn": "",
         "source": "weread"
       },
