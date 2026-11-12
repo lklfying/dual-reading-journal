@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T13:49:10.786Z",
+  "updatedAt": "2026-11-12T00:16:02.345Z",
   "H": {
     "books": [
       {
@@ -608,6 +608,13 @@
         "title": "非暴力沟通（修订版）",
         "author": "[美]马歇尔·卢森堡",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/88/cpplatform_9iwmvppcbjd1kqabdkbe1e/t6_cpplatform_9iwmvppcbjd1kqabdkbe1e1685513342.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "亲密关系（第8版）",
+        "author": "[美]罗兰·米勒",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/29/cpplatform_fajupe6tastyjcbfydk4sx/t6_cpplatform_fajupe6tastyjcbfydk4sx1722240377.jpg",
         "isbn": "",
         "source": "weread"
       },
