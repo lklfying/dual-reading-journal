@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T05:47:31.539Z",
+  "updatedAt": "2026-11-13T14:14:26.316Z",
   "H": {
     "books": [
       {
@@ -1959,6 +1959,13 @@
         "title": "厌女（增订本）",
         "author": "[日]上野千鹤子",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/94/cpplatform_akrjnymgoxljkqszganvbx/t6_cpplatform_akrjnymgoxljkqszganvbx1682248200.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "超级沟通者",
+        "author": "[美]查尔斯·都希格",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/68/cpplatform_1m2nbuds51dnyk2fz6thcr/t6_cpplatform_1m2nbuds51dnyk2fz6thcr1736754494.jpg",
         "isbn": "",
         "source": "weread"
       },
