@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T14:14:26.316Z",
+  "updatedAt": "2026-11-13T23:23:49.143Z",
   "H": {
     "books": [
       {
@@ -629,6 +629,13 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "真高潮如何帮女性建立主体性？（轻心理）",
+        "author": "简单心理",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/28/cpplatform_h3pabrwyvd5grluj9h6ieg/t6_cpplatform_h3pabrwyvd5grluj9h6ieg1781161016.jpg",
         "isbn": "",
         "source": "weread"
       },
