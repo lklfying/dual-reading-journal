@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T05:38:02.046Z",
+  "updatedAt": "2026-11-14T13:13:20.358Z",
   "H": {
     "books": [
       {
@@ -629,6 +629,13 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "Overcoming Retroactive Jealousy: A Guide to Getting Over Your Partner's Past and Finding Peace",
+        "author": "Zachary Stockill",
+        "coverUrl": "https://res.weread.qq.com/wrepub/CB_AHt7kz7mFDWM73q75YDZ81B6_parsecover",
         "isbn": "",
         "source": "weread"
       },
