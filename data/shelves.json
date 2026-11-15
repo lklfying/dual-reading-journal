@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T22:07:46.348Z",
+  "updatedAt": "2026-11-15T05:36:14.524Z",
   "H": {
     "books": [
       {
@@ -1602,6 +1602,13 @@
         "title": "中国通史（上下册）",
         "author": "傅乐成",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/62/yuewen_25031485/t6_yuewen_250314851679552147.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "家庭的觉醒",
+        "author": "[美]沙法丽·萨巴瑞",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/550/33303550/t6_33303550.jpg",
         "isbn": "",
         "source": "weread"
       },
