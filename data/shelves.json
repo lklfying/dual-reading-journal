@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T05:35:11.752Z",
+  "updatedAt": "2026-11-16T15:14:39.219Z",
   "H": {
     "books": [
       {
@@ -62,6 +62,13 @@
         "title": "精神分析引论（果麦经典）",
         "author": "西格蒙德·弗洛伊德 徐胤译",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/67/YueWen_831423/t6_YueWen_831423.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "Overcoming Retroactive Jealousy: A Guide to Getting Over Your Partner's Past and Finding Peace",
+        "author": "Zachary Stockill",
+        "coverUrl": "https://res.weread.qq.com/wrepub/CB_AHt7kz7mFDWM73q75YDZ81B6_parsecover",
         "isbn": "",
         "source": "weread"
       },
@@ -146,6 +153,13 @@
         "title": "钝感力（典藏版）",
         "author": "[日]渡边淳一",
         "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/485/32765485/t6_32765485.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "真高潮如何帮女性建立主体性？（轻心理）",
+        "author": "简单心理",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/28/cpplatform_h3pabrwyvd5grluj9h6ieg/t6_cpplatform_h3pabrwyvd5grluj9h6ieg1781161016.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -633,16 +647,30 @@
         "source": "weread"
       },
       {
-        "title": "Overcoming Retroactive Jealousy: A Guide to Getting Over Your Partner's Past and Finding Peace",
-        "author": "Zachary Stockill",
-        "coverUrl": "https://res.weread.qq.com/wrepub/CB_AHt7kz7mFDWM73q75YDZ81B6_parsecover",
+        "title": "每晚一个离奇故事 第四晚",
+        "author": "",
+        "coverUrl": "https://res.weread.qq.com/wrepub/CB_FIjAEvAFp67m77i75f7H33KT_parsecover",
         "isbn": "",
         "source": "weread"
       },
       {
-        "title": "真高潮如何帮女性建立主体性？（轻心理）",
-        "author": "简单心理",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/28/cpplatform_h3pabrwyvd5grluj9h6ieg/t6_cpplatform_h3pabrwyvd5grluj9h6ieg1781161016.jpg",
+        "title": "每晚一个离奇故事 第三晚",
+        "author": "",
+        "coverUrl": "https://res.weread.qq.com/wrepub/CB_Ap0ADqAFp67m77i75fGXz2xI_parsecover",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "每晚一个离奇故事 第二晚",
+        "author": "",
+        "coverUrl": "https://res.weread.qq.com/wrepub/CB_4CdACFAFp67m77i75fFbp2MI_parsecover",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "每晚一个离奇故事 第一晚",
+        "author": "",
+        "coverUrl": "https://res.weread.qq.com/wrepub/CB_0oGACSAFp67m77i75fCRiH2W_parsecover",
         "isbn": "",
         "source": "weread"
       },
@@ -1606,6 +1634,13 @@
         "source": "weread"
       },
       {
+        "title": "饥饿的女儿（虹影长篇小说定本全编）",
+        "author": "虹影",
+        "coverUrl": "https://res.weread.qq.com/wrepub/CB_DRM0Bg0BB4j577j75X5B98t0_parsecover",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "家庭的觉醒",
         "author": "[美]沙法丽·萨巴瑞",
         "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/550/33303550/t6_33303550.jpg",
@@ -1657,7 +1692,7 @@
       {
         "title": "《一句话干完一天活：WorkBuddy 提效指南》AI博士联合编写",
         "author": "吕晖 周小慧 王四平 著",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/64/cpplatform_9qqz1pzef7n2ejwcjdg6r5/t6_cpplatform_9qqz1pzef7n2ejwcjdg6r51792563178.jpg",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/64/cpplatform_9qqz1pzef7n2ejwcjdg6r5/t6_cpplatform_9qqz1pzef7n2ejwcjdg6r51794812992.jpg",
         "isbn": "",
         "source": "weread"
       },
