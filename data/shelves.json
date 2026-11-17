@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T01:44:24.006Z",
+  "updatedAt": "2026-11-17T15:42:05.684Z",
   "H": {
     "books": [
       {
@@ -647,34 +647,6 @@
         "source": "weread"
       },
       {
-        "title": "每晚一个离奇故事 第四晚",
-        "author": "",
-        "coverUrl": "https://res.weread.qq.com/wrepub/CB_FIjAEvAFp67m77i75f7H33KT_parsecover",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "每晚一个离奇故事 第三晚",
-        "author": "",
-        "coverUrl": "https://res.weread.qq.com/wrepub/CB_Ap0ADqAFp67m77i75fGXz2xI_parsecover",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "每晚一个离奇故事 第二晚",
-        "author": "",
-        "coverUrl": "https://res.weread.qq.com/wrepub/CB_4CdACFAFp67m77i75fFbp2MI_parsecover",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "每晚一个离奇故事 第一晚",
-        "author": "",
-        "coverUrl": "https://res.weread.qq.com/wrepub/CB_0oGACSAFp67m77i75fCRiH2W_parsecover",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
         "title": "少爷（果麦经典）",
         "author": "夏目漱石",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/82/YueWen_850812/t6_YueWen_850812.jpg",
@@ -1270,6 +1242,20 @@
         "source": "weread"
       },
       {
+        "title": "每晚一个离奇故事 第二晚",
+        "author": "",
+        "coverUrl": "https://res.weread.qq.com/wrepub/CB_4CdACFAFp67m77i75fFbp2MI_parsecover",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "每晚一个离奇故事 第四晚",
+        "author": "",
+        "coverUrl": "https://res.weread.qq.com/wrepub/CB_FIjAEvAFp67m77i75f7H33KT_parsecover",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "死亡这件小事（轻纪实）",
         "author": "《人物》杂志 李雨凝",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/98/cpplatform_964ejnoo7qsj7adppslhpg/t6_cpplatform_964ejnoo7qsj7adppslhpg1765182206.jpg",
@@ -1291,9 +1277,23 @@
         "source": "weread"
       },
       {
+        "title": "每晚一个离奇故事 第三晚",
+        "author": "",
+        "coverUrl": "https://res.weread.qq.com/wrepub/CB_Ap0ADqAFp67m77i75fGXz2xI_parsecover",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "围城",
         "author": "钱钟书",
         "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/7/40401007/t6_40401007.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "每晚一个离奇故事 第一晚",
+        "author": "",
+        "coverUrl": "https://res.weread.qq.com/wrepub/CB_0oGACSAFp67m77i75fCRiH2W_parsecover",
         "isbn": "",
         "source": "weread"
       },
