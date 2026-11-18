@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T15:42:05.684Z",
+  "updatedAt": "2026-11-18T00:44:50.872Z",
   "H": {
     "books": [
       {
@@ -62,6 +62,13 @@
         "title": "精神分析引论（果麦经典）",
         "author": "西格蒙德·弗洛伊德 徐胤译",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/67/YueWen_831423/t6_YueWen_831423.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "爱的艺术：珍藏本",
+        "author": "[美]艾里希·弗洛姆",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/68/cpplatform_i9su97gsqshsacvvhjogqu/t6_cpplatform_i9su97gsqshsacvvhjogqu1770870937.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -202,6 +209,13 @@
         "title": "活出自己的勇气（阿德勒心理学精要）",
         "author": "[奥]阿尔弗雷德·阿德勒",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/84/cpplatform_x3mbjxmtewpeohjn1dqryi/t6_cpplatform_x3mbjxmtewpeohjn1dqryi1768534652.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "男性性责任",
+        "author": "[美]加布丽埃勒·布莱尔",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/65/cpplatform_kkqtg8wjvfukjmxbn2ero2/t6_cpplatform_kkqtg8wjvfukjmxbn2ero21745403379.jpg",
         "isbn": "",
         "source": "weread"
       },
