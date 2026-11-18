@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T00:44:50.872Z",
+  "updatedAt": "2026-11-18T15:21:50.491Z",
   "H": {
     "books": [
       {
@@ -657,6 +657,13 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "吸引力法则：如何利用心理暗示实现愿望",
+        "author": "[美]埃斯特·希克斯  [美]杰里·希克斯",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/53/cpplatform_8pvj45tl1ypz57cmnjwqgt/t6_cpplatform_8pvj45tl1ypz57cmnjwqgt1721032624.jpg",
         "isbn": "",
         "source": "weread"
       },
