@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T00:25:16.038Z",
+  "updatedAt": "2026-11-20T15:05:12.417Z",
   "H": {
     "books": [
       {
@@ -1651,6 +1651,13 @@
         "title": "中国通史（上下册）",
         "author": "傅乐成",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/62/yuewen_25031485/t6_yuewen_250314851679552147.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "幸福的勇气：“自我启发之父”阿德勒的哲学课2",
+        "author": "岸见一郎 古贺史健",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/647/32486647/t6_32486647.jpg",
         "isbn": "",
         "source": "weread"
       },
