@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T14:18:50.014Z",
+  "updatedAt": "2026-11-22T23:24:59.476Z",
   "H": {
     "books": [
       {
@@ -657,6 +657,34 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "挪威的森林（2023修订版）",
+        "author": "[日]村上春树",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/15/cpplatform_mhkuusf5fivqteswxbuuxi/t6_cpplatform_mhkuusf5fivqteswxbuuxi1686221024.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "男人四十：以自在的心态善待自我",
+        "author": "孙郡锴",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/52/YueWen_584654/t6_YueWen_584654.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "活到30岁还觉得自己像小孩？成不成熟其实要看这一点（轻心理）",
+        "author": "KnowYourself知我心理",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/94/cpplatform_r5lw8ns6vhzl8ux1zfebty/t6_cpplatform_r5lw8ns6vhzl8ux1zfebty1763968275.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "一个人决定出轨，会经历的5个心理阶段（轻心理）",
+        "author": "KnowYourself知我心理",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/55/cpplatform_ma7urrsncllh2pvdw9ijwz/t6_cpplatform_ma7urrsncllh2pvdw9ijwz1765190727.jpg",
         "isbn": "",
         "source": "weread"
       },
