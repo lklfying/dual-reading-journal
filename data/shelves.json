@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T18:52:33.972Z",
+  "updatedAt": "2026-11-22T05:49:30.160Z",
   "H": {
     "books": [
       {
@@ -1599,6 +1599,13 @@
   "Q": {
     "books": [
       {
+        "title": "血糖密码",
+        "author": "[加]杰森·冯著 孙璐译",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/38/cpplatform_q5o1uejvgjlk8pn5sm4yxy/t6_cpplatform_q5o1uejvgjlk8pn5sm4yxy1791883826.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "控糖革命",
         "author": "[法]杰西·安佐斯佩",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/64/cpplatform_qpqefbrrjjgqq7t62wt1ca/t6_cpplatform_qpqefbrrjjgqq7t62wt1ca1706772686.jpg",
@@ -1634,6 +1641,13 @@
         "source": "weread"
       },
       {
+        "title": "大明王朝1566（全集）",
+        "author": "刘和平",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/310/847310/t6_847310.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "明朝那些事儿（全集）",
         "author": "当年明月",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/yuewen_822995/t6_yuewen_8229951695023669.jpg",
@@ -1655,37 +1669,9 @@
         "source": "weread"
       },
       {
-        "title": "幸福的勇气：“自我启发之父”阿德勒的哲学课2",
-        "author": "岸见一郎 古贺史健",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/647/32486647/t6_32486647.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
         "title": "饥饿的女儿（虹影长篇小说定本全编）",
         "author": "虹影",
         "coverUrl": "https://res.weread.qq.com/wrepub/CB_DRM0Bg0BB4j577j75X5B98t0_parsecover",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "家庭的觉醒",
-        "author": "[美]沙法丽·萨巴瑞",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/550/33303550/t6_33303550.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "我们时代的神经症人格",
-        "author": "卡伦·霍妮",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/11/YueWen_26391930/t6_YueWen_26391930.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "血糖密码",
-        "author": "[加]杰森·冯著 孙璐译",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/38/cpplatform_q5o1uejvgjlk8pn5sm4yxy/t6_cpplatform_q5o1uejvgjlk8pn5sm4yxy1791883826.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -1721,6 +1707,20 @@
         "title": "《一句话干完一天活：WorkBuddy 提效指南》AI博士联合编写",
         "author": "吕晖 周小慧 王四平 著",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/64/cpplatform_9qqz1pzef7n2ejwcjdg6r5/t6_cpplatform_9qqz1pzef7n2ejwcjdg6r51794812992.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "家庭的觉醒",
+        "author": "[美]沙法丽·萨巴瑞",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/550/33303550/t6_33303550.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "幸福的勇气：“自我启发之父”阿德勒的哲学课2",
+        "author": "岸见一郎 古贺史健",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/647/32486647/t6_32486647.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -1896,6 +1896,13 @@
         "title": "倾城之恋",
         "author": "张爱玲",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/88/yuewen_22355153/t6_yuewen_223551531680770798.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "卡拉马佐夫兄弟（名家译、深度注释、人物关系图）你心里也住着一个天使和一个魔鬼",
+        "author": "[俄]陀思妥耶夫斯基 著",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/43/cpplatform_dvff3mvmxmwof2yyadxkm7/t6_cpplatform_dvff3mvmxmwof2yyadxkm71786524299.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -2188,7 +2195,7 @@
       }
     ],
     "stats": {
-      "readingCount": 51
+      "readingCount": 52
     }
   }
 }
