@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T06:36:53.840Z",
+  "updatedAt": "2026-11-23T23:36:36.742Z",
   "H": {
     "books": [
       {
@@ -62,6 +62,20 @@
         "title": "精神分析引论（果麦经典）",
         "author": "[奥]西格蒙德·弗洛伊德 徐胤译",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/67/YueWen_831423/t6_YueWen_831423.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "吸引力法则：如何利用心理暗示实现愿望",
+        "author": "[美]埃斯特·希克斯  [美]杰里·希克斯",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/53/cpplatform_8pvj45tl1ypz57cmnjwqgt/t6_cpplatform_8pvj45tl1ypz57cmnjwqgt1721032624.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "一个人决定出轨，会经历的5个心理阶段（轻心理）",
+        "author": "KnowYourself知我心理",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/55/cpplatform_ma7urrsncllh2pvdw9ijwz/t6_cpplatform_ma7urrsncllh2pvdw9ijwz1765190727.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -244,6 +258,13 @@
         "title": "内在动机：自主掌控人生的力量",
         "author": "爱德华·L.德西 理查德·弗拉斯特",
         "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/226/33357226/t6_33357226.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "男人四十：以自在的心态善待自我",
+        "author": "孙郡锴",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/52/YueWen_584654/t6_YueWen_584654.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -535,6 +556,13 @@
         "source": "weread"
       },
       {
+        "title": "活到30岁还觉得自己像小孩？成不成熟其实要看这一点（轻心理）",
+        "author": "KnowYourself知我心理",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/94/cpplatform_r5lw8ns6vhzl8ux1zfebty/t6_cpplatform_r5lw8ns6vhzl8ux1zfebty1763968275.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "父母：挑战（果麦经典）",
         "author": "[美]鲁道夫·德雷克斯",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/65/cpplatform_xtzvabpuzprspsel5rhwsv/t6_cpplatform_xtzvabpuzprspsel5rhwsv1742457924.jpg",
@@ -661,86 +689,16 @@
         "source": "weread"
       },
       {
+        "title": "科学脱单指南：如何让你爱的人爱上你",
+        "author": "陈思逸 高巧雨",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/61/cpplatform_2srscu2rajqzibmbrlshgj/t6_cpplatform_2srscu2rajqzibmbrlshgj1743070414.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "挪威的森林（2023修订版）",
         "author": "[日]村上春树",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/15/cpplatform_mhkuusf5fivqteswxbuuxi/t6_cpplatform_mhkuusf5fivqteswxbuuxi1686221024.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "男人四十：以自在的心态善待自我",
-        "author": "孙郡锴",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/52/YueWen_584654/t6_YueWen_584654.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "活到30岁还觉得自己像小孩？成不成熟其实要看这一点（轻心理）",
-        "author": "KnowYourself知我心理",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/94/cpplatform_r5lw8ns6vhzl8ux1zfebty/t6_cpplatform_r5lw8ns6vhzl8ux1zfebty1763968275.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "一个人决定出轨，会经历的5个心理阶段（轻心理）",
-        "author": "KnowYourself知我心理",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/55/cpplatform_ma7urrsncllh2pvdw9ijwz/t6_cpplatform_ma7urrsncllh2pvdw9ijwz1765190727.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "吸引力法则：如何利用心理暗示实现愿望",
-        "author": "[美]埃斯特·希克斯  [美]杰里·希克斯",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/53/cpplatform_8pvj45tl1ypz57cmnjwqgt/t6_cpplatform_8pvj45tl1ypz57cmnjwqgt1721032624.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "少爷（果麦经典）",
-        "author": "夏目漱石",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/82/YueWen_850812/t6_YueWen_850812.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "雪国",
-        "author": "[日]川端康成",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/70/cpPlatform_bDr8V4xkSCSCkHV87JSy93/t6_cpPlatform_bDr8V4xkSCSCkHV87JSy93.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "1Q84 BOOK 2（7月-9月）",
-        "author": "[日]村上春树",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/48/YueWen_22485614/t6_YueWen_22485614.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "潮骚",
-        "author": "三岛由纪夫",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/626/35523626/t6_35523626.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "东京八平米",
-        "author": "吉井忍",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/29/cpplatform_fwyuuwozyuxhgstwdmi1mu/t6_cpplatform_fwyuuwozyuxhgstwdmi1mu1688959572.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "哥儿",
-        "author": "夏目漱石",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/55/YueWen_927221/t6_YueWen_927221.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "爱的饥渴",
-        "author": "三岛由纪夫",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/79/cpPlatform_3300003465/t6_cpPlatform_3300003465.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -752,6 +710,41 @@
         "source": "weread"
       },
       {
+        "title": "爱的饥渴",
+        "author": "三岛由纪夫",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/79/cpPlatform_3300003465/t6_cpPlatform_3300003465.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "哥儿",
+        "author": "夏目漱石",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/55/YueWen_927221/t6_YueWen_927221.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "东京八平米",
+        "author": "吉井忍",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/29/cpplatform_fwyuuwozyuxhgstwdmi1mu/t6_cpplatform_fwyuuwozyuxhgstwdmi1mu1688959572.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "潮骚",
+        "author": "三岛由纪夫",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/626/35523626/t6_35523626.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "1Q84 BOOK 2（7月-9月）",
+        "author": "[日]村上春树",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/48/YueWen_22485614/t6_YueWen_22485614.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "我是猫",
         "author": "[日]夏目漱石",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/43/cpplatform_7dabcbnctilnwhatqfedcv/t6_cpplatform_7dabcbnctilnwhatqfedcv1763118066.jpg",
@@ -759,9 +752,23 @@
         "source": "weread"
       },
       {
+        "title": "雪国",
+        "author": "[日]川端康成",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/70/cpPlatform_bDr8V4xkSCSCkHV87JSy93/t6_cpPlatform_bDr8V4xkSCSCkHV87JSy93.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "心",
         "author": "夏目漱石",
         "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/220/927220/t6_927220.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "少爷（果麦经典）",
+        "author": "夏目漱石",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/82/YueWen_850812/t6_YueWen_850812.jpg",
         "isbn": "",
         "source": "weread"
       },
