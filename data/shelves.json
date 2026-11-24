@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T23:36:36.742Z",
+  "updatedAt": "2026-11-24T09:05:03.591Z",
   "H": {
     "books": [
       {
@@ -685,6 +685,13 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "非暴力沟通（全新版）",
+        "author": "[美]马歇尔·卢森堡",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/31/cpplatform_5uebpb4fjbs3ftaxrhx9j5/t6_cpplatform_5uebpb4fjbs3ftaxrhx9j51793848405.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -1700,6 +1707,20 @@
         "title": "中国通史（上下册）",
         "author": "傅乐成",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/62/yuewen_25031485/t6_yuewen_250314851679552147.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "允许自己慢一点",
+        "author": "杜素娟",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/86/cpplatform_wpfo7qsvjhlug4hshtswcp/t6_cpplatform_wpfo7qsvjhlug4hshtswcp1791884377.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "柳如是别传（上、中、下）",
+        "author": "陈寅恪",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/596/39609596/t6_39609596.jpg",
         "isbn": "",
         "source": "weread"
       },
