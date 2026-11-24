@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T09:05:03.591Z",
+  "updatedAt": "2026-11-24T22:05:59.577Z",
   "H": {
     "books": [
       {
@@ -685,6 +685,13 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "戒为良药（戒色奇书）",
+        "author": "干慧",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/31/cpplatform_rar5euplhoxqd479b7fwzl/t6_cpplatform_rar5euplhoxqd479b7fwzl1762221523.jpg",
         "isbn": "",
         "source": "weread"
       },
