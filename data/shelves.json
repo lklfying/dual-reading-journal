@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T22:05:59.577Z",
+  "updatedAt": "2026-11-25T07:42:41.566Z",
   "H": {
     "books": [
       {
@@ -97,6 +97,13 @@
         "title": "非暴力沟通（修订版）",
         "author": "[美]马歇尔·卢森堡",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/88/cpplatform_9iwmvppcbjd1kqabdkbe1e/t6_cpplatform_9iwmvppcbjd1kqabdkbe1e1685513342.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "戒为良药（戒色奇书）",
+        "author": "干慧",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/31/cpplatform_rar5euplhoxqd479b7fwzl/t6_cpplatform_rar5euplhoxqd479b7fwzl1762221523.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -521,6 +528,13 @@
         "source": "weread"
       },
       {
+        "title": "科学脱单指南：如何让你爱的人爱上你",
+        "author": "陈思逸 高巧雨",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/61/cpplatform_2srscu2rajqzibmbrlshgj/t6_cpplatform_2srscu2rajqzibmbrlshgj1743070414.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
         "title": "认知驱动：做成一件对他人很有用的事",
         "author": "周岭",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/88/YueWen_40649986/t6_YueWen_40649986.jpg",
@@ -587,6 +601,13 @@
         "title": "思维的囚徒",
         "author": "亚历克斯·佩塔克斯 伊莱恩·丹顿",
         "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/813/25995813/t6_25995813.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "非暴力沟通（全新版）",
+        "author": "[美]马歇尔·卢森堡",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/31/cpplatform_5uebpb4fjbs3ftaxrhx9j5/t6_cpplatform_5uebpb4fjbs3ftaxrhx9j51793848405.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -685,27 +706,6 @@
         "title": "海绵阅读法：如何吸收一本书的精华",
         "author": "李小墨",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_5txjkz3bgnbwaapw2icnnt/t6_cpplatform_5txjkz3bgnbwaapw2icnnt1695888230.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "戒为良药（戒色奇书）",
-        "author": "干慧",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/31/cpplatform_rar5euplhoxqd479b7fwzl/t6_cpplatform_rar5euplhoxqd479b7fwzl1762221523.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "非暴力沟通（全新版）",
-        "author": "[美]马歇尔·卢森堡",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/31/cpplatform_5uebpb4fjbs3ftaxrhx9j5/t6_cpplatform_5uebpb4fjbs3ftaxrhx9j51793848405.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "科学脱单指南：如何让你爱的人爱上你",
-        "author": "陈思逸 高巧雨",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/61/cpplatform_2srscu2rajqzibmbrlshgj/t6_cpplatform_2srscu2rajqzibmbrlshgj1743070414.jpg",
         "isbn": "",
         "source": "weread"
       },
