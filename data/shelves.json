@@ -1,7 +1,623 @@
 {
-  "updatedAt": "2026-11-25T07:42:41.566Z",
+  "updatedAt": "2026-11-25T21:22:21.014Z",
   "H": {
     "books": [
+      {
+        "title": "创伤与解离",
+        "author": "利奈特·S. 丹尼恰克 凯文·J. 康纳斯",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/61/cpplatform_7fxtk4e2sqsekkjfp51su3/t6_cpplatform_7fxtk4e2sqsekkjfp51su31775184725.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "内驱式学习",
+        "author": "张文渊",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/87/cpplatform_7zoytctrba9utxmkum3tvj/t6_cpplatform_7zoytctrba9utxmkum3tvj1786615182.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "亲密关系（第6版）",
+        "author": "[美]罗兰·米勒",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/24/3300014124/t6_3300014124.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "人性的优点：如何停止忧虑，开创人生（果麦经典）",
+        "author": "卡耐基",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/732/908732/t6_908732.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "幸福的勇气：“自我启发之父”阿德勒的哲学课2",
+        "author": "岸见一郎 古贺史健",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/647/32486647/t6_32486647.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "无畏的勇气：“自我启发之父”阿德勒的生命哲学课",
+        "author": "[日]岸见一郎",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/85/cpPlatform_rQFXdAvYGNkbSnWYkDiMgT/t6_cpPlatform_rQFXdAvYGNkbSnWYkDiMgT.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "男人四十：以自在的心态善待自我",
+        "author": "孙郡锴",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/52/YueWen_584654/t6_YueWen_584654.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "学会去爱：给新人类的恋爱成长课",
+        "author": "满堂",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/20/cpplatform_vunpsevp7tqjfrcddzuscx/t6_cpplatform_vunpsevp7tqjfrcddzuscx1770087301.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "内在动机：自主掌控人生的力量",
+        "author": "爱德华·L.德西 理查德·弗拉斯特",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/226/33357226/t6_33357226.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "活在此时此刻",
+        "author": "[法]一行禅师",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/914/24282914/t6_24282914.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "焦虑症的自救：从神经系统角度出发治愈焦虑症",
+        "author": "克莱尔·威克斯 ",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/83/3300015083/t6_3300015083.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "性格修正：如何突破你的原生性格",
+        "author": "本杰明·哈迪",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/61/3300015161/t6_3300015161.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "男性性责任",
+        "author": "[美]加布丽埃勒·布莱尔",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/65/cpplatform_kkqtg8wjvfukjmxbn2ero2/t6_cpplatform_kkqtg8wjvfukjmxbn2ero21745403379.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "活出自己的勇气（阿德勒心理学精要）",
+        "author": "[奥]阿尔弗雷德·阿德勒",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/84/cpplatform_x3mbjxmtewpeohjn1dqryi/t6_cpplatform_x3mbjxmtewpeohjn1dqryi1768534652.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "人一旦染上这个习惯，日子只会越过越带劲（轻心理）",
+        "author": "KnowYourself知我心理",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/14/cpplatform_tkjvqcpcpw2odsmw4ojbj9/t6_cpplatform_tkjvqcpcpw2odsmw4ojbj91791773547.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "反本能：如何对抗你的习以为常",
+        "author": "卫蓝　著",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/81/3300020681/t6_3300020681.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "真高潮如何帮女性建立主体性？（轻心理）",
+        "author": "简单心理",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/28/cpplatform_h3pabrwyvd5grluj9h6ieg/t6_cpplatform_h3pabrwyvd5grluj9h6ieg1781161016.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "不计较的勇气：“自我启发之父”阿德勒的生活哲学课",
+        "author": "岸见一郎",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/65/cpplatform_ot2vcab816brnd3ymwwf4c/t6_cpplatform_ot2vcab816brnd3ymwwf4c1688043207.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "为什么没人早点告诉我？",
+        "author": "朱莉·史密斯",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/92/YueWen_24434445801906206/t6_YueWen_24434445801906206.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "Overcoming Retroactive Jealousy: A Guide to Getting Over Your Partner's Past and Finding Peace",
+        "author": "Zachary Stockill",
+        "coverUrl": "https://res.weread.qq.com/wrepub/CB_AHt7kz7mFDWM73q75YDZ81B6_parsecover",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "爱的艺术：珍藏本",
+        "author": "[美]艾里希·弗洛姆",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/68/cpplatform_i9su97gsqshsacvvhjogqu/t6_cpplatform_i9su97gsqshsacvvhjogqu1770870937.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "清醒地活：超越自我的生命之旅",
+        "author": "[美]迈克尔·辛格",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/84/YueWen_40381455/t6_YueWen_40381455.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "非暴力沟通（修订版）",
+        "author": "[美]马歇尔·卢森堡",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/88/cpplatform_9iwmvppcbjd1kqabdkbe1e/t6_cpplatform_9iwmvppcbjd1kqabdkbe1e1685513342.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "早安，怪物",
+        "author": "[加]凯瑟琳·吉尔迪纳",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_hre43m7tloyfetmcyqwrgu/t6_cpplatform_hre43m7tloyfetmcyqwrgu1714270637.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "一个人决定出轨，会经历的5个心理阶段（轻心理）",
+        "author": "KnowYourself知我心理",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/55/cpplatform_ma7urrsncllh2pvdw9ijwz/t6_cpplatform_ma7urrsncllh2pvdw9ijwz1765190727.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "蛤蟆先生去看心理医生",
+        "author": "罗伯特·戴博德",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/81/YueWen_35551088/t6_YueWen_35551088.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "人性的优点(卡耐基励志经典·英文原版)",
+        "author": "[美]戴尔·卡耐基",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/47/3300012247/t6_3300012247.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "长期把喜欢的人当做倾诉对象，是高危行为（轻情感）",
+        "author": "我要WhatYouNeed 仙草",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/19/cpplatform_mrlr114vzwhw5rz4nc4mfh/t6_cpplatform_mrlr114vzwhw5rz4nc4mfh1785925838.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "吸引力法则：如何利用心理暗示实现愿望",
+        "author": "[美]埃斯特·希克斯  [美]杰里·希克斯",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/53/cpplatform_8pvj45tl1ypz57cmnjwqgt/t6_cpplatform_8pvj45tl1ypz57cmnjwqgt1721032624.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "冥想：唤醒内心强大的力量",
+        "author": "肖文键",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/1/cpPlatform_3300003214/t6_cpPlatform_3300003214.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "为什么我们总是在防御",
+        "author": "约瑟夫·布尔戈",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/73/cpplatform_333k5xdpfqutmr9xflkf7w/t6_cpplatform_333k5xdpfqutmr9xflkf7w1681817760.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "活出生命的意义",
+        "author": "[奥]维克多·弗兰克尔",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/22/cpplatform_hsl2ccpugksluxgua2xm52/t6_cpplatform_hsl2ccpugksluxgua2xm521788261188.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "亲密关系（第8版）",
+        "author": "[美]罗兰·米勒",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/29/cpplatform_fajupe6tastyjcbfydk4sx/t6_cpplatform_fajupe6tastyjcbfydk4sx1722240377.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "活出生命的意义",
+        "author": "[奥]阿尔弗雷德·阿德勒",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/35/cpplatform_gw8jpyeab7j8xyhmh3yqsh/t6_cpplatform_gw8jpyeab7j8xyhmh3yqsh1778557294.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "如何了解一个人",
+        "author": "[美]戴维·布鲁克斯",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/28/cpplatform_o7rw6dnynfzvsekh4c39pc/t6_cpplatform_o7rw6dnynfzvsekh4c39pc1767083845.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "戒为良药（戒色奇书）",
+        "author": "干慧",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/31/cpplatform_rar5euplhoxqd479b7fwzl/t6_cpplatform_rar5euplhoxqd479b7fwzl1762221523.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "坚持，一种可以养成的习惯",
+        "author": "古川武士",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/52/YueWen_909886/t6_YueWen_909886.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "不原谅也没关系",
+        "author": "[美]皮特·沃克",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/89/cpplatform_5m7j6mw2t6q8xamtgbr4eh/t6_cpplatform_5m7j6mw2t6q8xamtgbr4eh1675067330.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "精力管理",
+        "author": "吉姆·洛尔 托尼·施瓦茨　",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/654/33091654/t6_33091654.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "人性的优点",
+        "author": "卡耐基",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/57/YueWen_26188277/t6_YueWen_26188277.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "别让怕丢脸的社交监控器，偷走你的人生选择权",
+        "author": "叶承安",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/32/cpplatform_kptcz9m6f8bivwcdx3x5tn/t6_cpplatform_kptcz9m6f8bivwcdx3x5tn1780570260.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "钝感力（典藏版）",
+        "author": "[日]渡边淳一",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/485/32765485/t6_32765485.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "被讨厌的勇气：“自我启发之父”阿德勒的哲学课",
+        "author": "岸见一郎 古贺史健",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/385/25615385/t6_25615385.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "我们如何面对痛苦、疾病与死亡：雷曼医生的治愈故事",
+        "author": "瑞秋·娜奥米·雷曼",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/90/cpplatform_ktjcexperx3ccteqesodza/t6_cpplatform_ktjcexperx3ccteqesodza1725000343.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "美好的人生",
+        "author": "卡耐基",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/765/791765/t6_791765.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "一年顶十年",
+        "author": "剽悍一只猫",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/7/YueWen_30182760/t6_YueWen_30182760.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "羞耻感",
+        "author": "Ronald Potter-Efron  Patricia Potter-Efron",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/18/yuewen_933131/t6_yuewen_9331311737447302.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "认知驱动：做成一件对他人很有用的事",
+        "author": "周岭",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/88/YueWen_40649986/t6_YueWen_40649986.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "科学脱单指南：如何让你爱的人爱上你",
+        "author": "陈思逸 高巧雨",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/61/cpplatform_2srscu2rajqzibmbrlshgj/t6_cpplatform_2srscu2rajqzibmbrlshgj1743070414.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "停止你的内在战争",
+        "author": "黄仕明",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/3/3300018303/t6_3300018303.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "回避型依恋：“越爱越想逃”的人（轻心理）",
+        "author": "远叔 弈文文化",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/53/cpplatform_irgrtkynwcukmih84axaac/t6_cpplatform_irgrtkynwcukmih84axaac1780373053.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "性心理学：亲密关系",
+        "author": "[英]霭理士 著 潘光旦 译",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/29/cpplatform_bmyrqgcb6qqbuhamhc8p5t/t6_cpplatform_bmyrqgcb6qqbuhamhc8p5t1724235505.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "自控力",
+        "author": "凯利·麦格尼格尔",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/9/YueWen_837618/t6_YueWen_837618.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "被爱是一种能力：6堂课，创造你想要的关系",
+        "author": "丛非从",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/81/cpplatform_sgszk5qausolgxrvwfb92e/t6_cpplatform_sgszk5qausolgxrvwfb92e1769763570.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "有这种特质的伴侣，会永远令人「上头」（轻心理）",
+        "author": "KnowYourself知我心理",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/22/cpplatform_834tx24emxahjydlhtcl1x/t6_cpplatform_834tx24emxahjydlhtcl1x1770119347.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "她的过去为什么会刺痛你",
+        "author": "淼淼",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/67/cpplatform_pdsmei559zzjejfcf4mxrx/t6_cpplatform_pdsmei559zzjejfcf4mxrx1781771728.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "噪声：《思考快与慢》作者全新力作",
+        "author": "[美]丹尼尔·卡尼曼 [法]奥利维耶·西博尼 [美]卡斯·R.桑斯坦",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/633/40638633/t6_40638633.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "活到30岁还觉得自己像小孩？成不成熟其实要看这一点（轻心理）",
+        "author": "KnowYourself知我心理",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/94/cpplatform_r5lw8ns6vhzl8ux1zfebty/t6_cpplatform_r5lw8ns6vhzl8ux1zfebty1763968275.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "超越自卑",
+        "author": "阿尔弗雷德·阿德勒",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/83/YueWen_918887/t6_YueWen_918887.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "父母：挑战（果麦经典）",
+        "author": "[美]鲁道夫·德雷克斯",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/65/cpplatform_xtzvabpuzprspsel5rhwsv/t6_cpplatform_xtzvabpuzprspsel5rhwsv1742457924.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "刻意练习：如何从新手到大师",
+        "author": "[美]安德斯·艾利克森 [英]罗伯特·普尔",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/95/YueWen_843464/t6_YueWen_843464.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "福格行为模型：你会越来越有能量",
+        "author": "B.J.福格",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/39/YueWen_41147996/t6_YueWen_41147996.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "思维的囚徒",
+        "author": "亚历克斯·佩塔克斯 伊莱恩·丹顿",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/813/25995813/t6_25995813.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "掌控习惯：如何养成好习惯并戒除坏习惯（《原子习惯》中文版）（新版）",
+        "author": "詹姆斯·克利尔",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/25/yuewen_26934843/t6_yuewen_269348431702464198.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "非暴力沟通（全新版）",
+        "author": "[美]马歇尔·卢森堡",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/31/cpplatform_5uebpb4fjbs3ftaxrhx9j5/t6_cpplatform_5uebpb4fjbs3ftaxrhx9j51793848405.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "高敏感是种天赋（套装共3册）",
+        "author": "[丹]伊尔斯·桑德",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/61/YueWen_40425664/t6_YueWen_40425664.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "谈谈方法",
+        "author": "[法]勒内·笛卡尔",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/57/cpplatform_skgwdem4u6rrqkwmg4u5mm/t6_cpplatform_skgwdem4u6rrqkwmg4u5mm1720598151.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "思考，快与慢（第二版）",
+        "author": "[美]丹尼尔·卡尼曼",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/33/cpplatform_wr55yrqcgu1th4myjwezqj/t6_cpplatform_wr55yrqcgu1th4myjwezqj1745822239.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "允许爱情消失",
+        "author": "杜素娟",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/71/cpplatform_hdfhq8fukgwdmrzldfodxy/t6_cpplatform_hdfhq8fukgwdmrzldfodxy1748574405.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "数学觉醒：学会更清晰地思考",
+        "author": "[法]戴维·贝西",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/78/cpplatform_w9dbcslensnfpwn7jdupam/t6_cpplatform_w9dbcslensnfpwn7jdupam1773398615.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "找不到答案时就去找自己",
+        "author": "崔璀",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_kv67gltzsw3qz2h8dxzkub/t6_cpplatform_kv67gltzsw3qz2h8dxzkub1783678254.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "重塑杏仁核：情绪修复脑科学",
+        "author": "[美]凯瑟琳·M. 皮特曼",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/75/cpplatform_f8nqyjadruqecj4euuj6jj/t6_cpplatform_f8nqyjadruqecj4euuj6jj1727434091.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "人性的弱点",
+        "author": "[美]戴尔·卡耐基",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/28/cpplatform_ipiqxlasqypwwbdptqa163/t6_cpplatform_ipiqxlasqypwwbdptqa1631789382231.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "禅与摩托车维修艺术",
+        "author": "罗伯特·M.波西格",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/1/yuewen_33810356/t6_yuewen_338103561689835422.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "稀缺：我们是如何陷入贫穷与忙碌的",
+        "author": "塞德希尔·穆来纳森",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/46/YueWen_853426/t6_YueWen_853426.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "简单的逻辑学：清晰思考的起点",
+        "author": "D.Q.麦克伦尼",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/45/cpplatform_ktzrcrwh9ftrdgiu2sxkrm/t6_cpplatform_ktzrcrwh9ftrdgiu2sxkrm1684812979.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "深度关系",
+        "author": "武志红",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/87/cpplatform_43qcgdhifxnzixexv7bekp/t6_cpplatform_43qcgdhifxnzixexv7bekp1698825144.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "认知觉醒：开启自我改变的原动力",
+        "author": "周岭",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/86/YueWen_33628204/t6_YueWen_33628204.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "心流：最优体验心理学",
+        "author": "米哈里·契克森米哈赖",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/826/921826/t6_921826.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "4点起床：最养生和高效的时间管理",
+        "author": "中岛孝志",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/52/YueWen_31595333/t6_YueWen_31595333.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "走出人格陷阱",
+        "author": "武志红",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/58/YueWen_29998638/t6_YueWen_29998638.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "变态心理学（第11版）",
+        "author": "[美]杰弗里·S. 尼维德  [美]斯潘塞·A. 拉瑟斯  [美]贝弗利·格林",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/24/cpplatform_uj6sfrz6qdowpr7nlqbvlf/t6_cpplatform_uj6sfrz6qdowpr7nlqbvlf1777017099.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "正义之心：为什么人们总是坚持“我对你错”",
+        "author": "乔纳森·海特",
+        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/363/713363/t6_713363.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "驱动力（经典版）",
+        "author": "丹尼尔·平克",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/64/YueWen_713409/t6_YueWen_713409.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "长期关系中最令人下头的伴侣特质，却经常被误以为是优点（轻心理）",
+        "author": "KnowYourself知我心理",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/55/cpplatform_gai7jzk5vsgdphzkxrjgtd/t6_cpplatform_gai7jzk5vsgdphzkxrjgtd1790669162.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "成瘾：在放纵中寻找平衡",
+        "author": "安娜·伦布克",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/48/cpplatform_2snyvh3uqxd5ppjq1txyyk/t6_cpplatform_2snyvh3uqxd5ppjq1txyyk1681110456.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "阿德勒女性心理学",
+        "author": "[奥]阿尔弗雷德·阿德勒",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/92/cpplatform_eaebcaom7rcmhdmax3hyoj/t6_cpplatform_eaebcaom7rcmhdmax3hyoj1792048983.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "不教养的勇气：“自我启发之父”阿德勒的育儿心理学",
+        "author": "岸见一郎",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/38/cpPlatform_hFYL9MRdUpFUqXs1Z4uf1w/t6_cpPlatform_hFYL9MRdUpFUqXs1Z4uf1w.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
       {
         "title": "红书",
         "author": "[瑞士]荣格原著  [英]索努·沙姆达萨尼编译",
@@ -62,615 +678,6 @@
         "title": "精神分析引论（果麦经典）",
         "author": "[奥]西格蒙德·弗洛伊德 徐胤译",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/67/YueWen_831423/t6_YueWen_831423.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "吸引力法则：如何利用心理暗示实现愿望",
-        "author": "[美]埃斯特·希克斯  [美]杰里·希克斯",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/53/cpplatform_8pvj45tl1ypz57cmnjwqgt/t6_cpplatform_8pvj45tl1ypz57cmnjwqgt1721032624.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "一个人决定出轨，会经历的5个心理阶段（轻心理）",
-        "author": "KnowYourself知我心理",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/55/cpplatform_ma7urrsncllh2pvdw9ijwz/t6_cpplatform_ma7urrsncllh2pvdw9ijwz1765190727.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "爱的艺术：珍藏本",
-        "author": "[美]艾里希·弗洛姆",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/68/cpplatform_i9su97gsqshsacvvhjogqu/t6_cpplatform_i9su97gsqshsacvvhjogqu1770870937.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "Overcoming Retroactive Jealousy: A Guide to Getting Over Your Partner's Past and Finding Peace",
-        "author": "Zachary Stockill",
-        "coverUrl": "https://res.weread.qq.com/wrepub/CB_AHt7kz7mFDWM73q75YDZ81B6_parsecover",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "非暴力沟通（修订版）",
-        "author": "[美]马歇尔·卢森堡",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/88/cpplatform_9iwmvppcbjd1kqabdkbe1e/t6_cpplatform_9iwmvppcbjd1kqabdkbe1e1685513342.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "戒为良药（戒色奇书）",
-        "author": "干慧",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/31/cpplatform_rar5euplhoxqd479b7fwzl/t6_cpplatform_rar5euplhoxqd479b7fwzl1762221523.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "如何了解一个人",
-        "author": "[美]戴维·布鲁克斯",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/28/cpplatform_o7rw6dnynfzvsekh4c39pc/t6_cpplatform_o7rw6dnynfzvsekh4c39pc1767083845.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "长期把喜欢的人当做倾诉对象，是高危行为（轻情感）",
-        "author": "我要WhatYouNeed 仙草",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/19/cpplatform_mrlr114vzwhw5rz4nc4mfh/t6_cpplatform_mrlr114vzwhw5rz4nc4mfh1785925838.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "为什么没人早点告诉我？",
-        "author": "朱莉·史密斯",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/92/YueWen_24434445801906206/t6_YueWen_24434445801906206.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "人性的优点(卡耐基励志经典·英文原版)",
-        "author": "[美]戴尔·卡耐基",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/47/3300012247/t6_3300012247.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "活出生命的意义",
-        "author": "[奥]维克多·弗兰克尔",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/22/cpplatform_hsl2ccpugksluxgua2xm52/t6_cpplatform_hsl2ccpugksluxgua2xm521788261188.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "亲密关系（第8版）",
-        "author": "[美]罗兰·米勒",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/29/cpplatform_fajupe6tastyjcbfydk4sx/t6_cpplatform_fajupe6tastyjcbfydk4sx1722240377.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "活出生命的意义",
-        "author": "[奥]阿尔弗雷德·阿德勒",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/35/cpplatform_gw8jpyeab7j8xyhmh3yqsh/t6_cpplatform_gw8jpyeab7j8xyhmh3yqsh1778557294.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "精力管理",
-        "author": "吉姆·洛尔 托尼·施瓦茨　",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/654/33091654/t6_33091654.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "人性的优点",
-        "author": "卡耐基",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/57/YueWen_26188277/t6_YueWen_26188277.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "别让怕丢脸的社交监控器，偷走你的人生选择权",
-        "author": "叶承安",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/32/cpplatform_kptcz9m6f8bivwcdx3x5tn/t6_cpplatform_kptcz9m6f8bivwcdx3x5tn1780570260.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "钝感力（典藏版）",
-        "author": "[日]渡边淳一",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/485/32765485/t6_32765485.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "真高潮如何帮女性建立主体性？（轻心理）",
-        "author": "简单心理",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/28/cpplatform_h3pabrwyvd5grluj9h6ieg/t6_cpplatform_h3pabrwyvd5grluj9h6ieg1781161016.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "反本能：如何对抗你的习以为常",
-        "author": "卫蓝　著",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/81/3300020681/t6_3300020681.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "蛤蟆先生去看心理医生",
-        "author": "罗伯特·戴博德",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/81/YueWen_35551088/t6_YueWen_35551088.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "不计较的勇气：“自我启发之父”阿德勒的生活哲学课",
-        "author": "岸见一郎",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/65/cpplatform_ot2vcab816brnd3ymwwf4c/t6_cpplatform_ot2vcab816brnd3ymwwf4c1688043207.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "不教养的勇气：“自我启发之父”阿德勒的育儿心理学",
-        "author": "岸见一郎",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/38/cpPlatform_hFYL9MRdUpFUqXs1Z4uf1w/t6_cpPlatform_hFYL9MRdUpFUqXs1Z4uf1w.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "人一旦染上这个习惯，日子只会越过越带劲（轻心理）",
-        "author": "KnowYourself知我心理",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/14/cpplatform_tkjvqcpcpw2odsmw4ojbj9/t6_cpplatform_tkjvqcpcpw2odsmw4ojbj91791773547.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "活出自己的勇气（阿德勒心理学精要）",
-        "author": "[奥]阿尔弗雷德·阿德勒",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/84/cpplatform_x3mbjxmtewpeohjn1dqryi/t6_cpplatform_x3mbjxmtewpeohjn1dqryi1768534652.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "男性性责任",
-        "author": "[美]加布丽埃勒·布莱尔",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/65/cpplatform_kkqtg8wjvfukjmxbn2ero2/t6_cpplatform_kkqtg8wjvfukjmxbn2ero21745403379.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "性格修正：如何突破你的原生性格",
-        "author": "本杰明·哈迪",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/61/3300015161/t6_3300015161.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "焦虑症的自救：从神经系统角度出发治愈焦虑症",
-        "author": "克莱尔·威克斯 ",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/83/3300015083/t6_3300015083.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "活在此时此刻",
-        "author": "[法]一行禅师",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/914/24282914/t6_24282914.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "内在动机：自主掌控人生的力量",
-        "author": "爱德华·L.德西 理查德·弗拉斯特",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/226/33357226/t6_33357226.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "男人四十：以自在的心态善待自我",
-        "author": "孙郡锴",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/52/YueWen_584654/t6_YueWen_584654.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "学会去爱：给新人类的恋爱成长课",
-        "author": "满堂",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/20/cpplatform_vunpsevp7tqjfrcddzuscx/t6_cpplatform_vunpsevp7tqjfrcddzuscx1770087301.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "为什么我们总是在防御",
-        "author": "约瑟夫·布尔戈",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/73/cpplatform_333k5xdpfqutmr9xflkf7w/t6_cpplatform_333k5xdpfqutmr9xflkf7w1681817760.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "冥想：唤醒内心强大的力量",
-        "author": "肖文键",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/1/cpPlatform_3300003214/t6_cpPlatform_3300003214.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "人性的优点：如何停止忧虑，开创人生（果麦经典）",
-        "author": "卡耐基",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/732/908732/t6_908732.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "无畏的勇气：“自我启发之父”阿德勒的生命哲学课",
-        "author": "[日]岸见一郎",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/85/cpPlatform_rQFXdAvYGNkbSnWYkDiMgT/t6_cpPlatform_rQFXdAvYGNkbSnWYkDiMgT.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "幸福的勇气：“自我启发之父”阿德勒的哲学课2",
-        "author": "岸见一郎 古贺史健",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/647/32486647/t6_32486647.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "长期关系中最令人下头的伴侣特质，却经常被误以为是优点（轻心理）",
-        "author": "KnowYourself知我心理",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/55/cpplatform_gai7jzk5vsgdphzkxrjgtd/t6_cpplatform_gai7jzk5vsgdphzkxrjgtd1790669162.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "阿德勒女性心理学",
-        "author": "[奥]阿尔弗雷德·阿德勒",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/92/cpplatform_eaebcaom7rcmhdmax3hyoj/t6_cpplatform_eaebcaom7rcmhdmax3hyoj1792048983.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "成瘾：在放纵中寻找平衡",
-        "author": "安娜·伦布克",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/48/cpplatform_2snyvh3uqxd5ppjq1txyyk/t6_cpplatform_2snyvh3uqxd5ppjq1txyyk1681110456.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "亲密关系（第6版）",
-        "author": "[美]罗兰·米勒",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/24/3300014124/t6_3300014124.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "不原谅也没关系",
-        "author": "[美]皮特·沃克",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/89/cpplatform_5m7j6mw2t6q8xamtgbr4eh/t6_cpplatform_5m7j6mw2t6q8xamtgbr4eh1675067330.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "坚持，一种可以养成的习惯",
-        "author": "古川武士",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/52/YueWen_909886/t6_YueWen_909886.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "早安，怪物",
-        "author": "[加]凯瑟琳·吉尔迪纳",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/97/cpplatform_hre43m7tloyfetmcyqwrgu/t6_cpplatform_hre43m7tloyfetmcyqwrgu1714270637.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "创伤与解离",
-        "author": "利奈特·S. 丹尼恰克 凯文·J. 康纳斯",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/61/cpplatform_7fxtk4e2sqsekkjfp51su3/t6_cpplatform_7fxtk4e2sqsekkjfp51su31775184725.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "内驱式学习",
-        "author": "张文渊",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/87/cpplatform_7zoytctrba9utxmkum3tvj/t6_cpplatform_7zoytctrba9utxmkum3tvj1786615182.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "清醒地活：超越自我的生命之旅",
-        "author": "[美]迈克尔·辛格",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/84/YueWen_40381455/t6_YueWen_40381455.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "正义之心：为什么人们总是坚持“我对你错”",
-        "author": "乔纳森·海特",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/363/713363/t6_713363.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "变态心理学（第11版）",
-        "author": "[美]杰弗里·S. 尼维德  [美]斯潘塞·A. 拉瑟斯  [美]贝弗利·格林",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/24/cpplatform_uj6sfrz6qdowpr7nlqbvlf/t6_cpplatform_uj6sfrz6qdowpr7nlqbvlf1777017099.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "走出人格陷阱",
-        "author": "武志红",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/58/YueWen_29998638/t6_YueWen_29998638.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "4点起床：最养生和高效的时间管理",
-        "author": "中岛孝志",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/52/YueWen_31595333/t6_YueWen_31595333.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "心流：最优体验心理学",
-        "author": "米哈里·契克森米哈赖",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/826/921826/t6_921826.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "认知觉醒：开启自我改变的原动力",
-        "author": "周岭",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/86/YueWen_33628204/t6_YueWen_33628204.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "福格行为模型：你会越来越有能量",
-        "author": "B.J.福格",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/39/YueWen_41147996/t6_YueWen_41147996.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "刻意练习：如何从新手到大师",
-        "author": "[美]安德斯·艾利克森 [英]罗伯特·普尔",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/95/YueWen_843464/t6_YueWen_843464.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "深度关系",
-        "author": "武志红",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/87/cpplatform_43qcgdhifxnzixexv7bekp/t6_cpplatform_43qcgdhifxnzixexv7bekp1698825144.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "简单的逻辑学：清晰思考的起点",
-        "author": "D.Q.麦克伦尼",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/45/cpplatform_ktzrcrwh9ftrdgiu2sxkrm/t6_cpplatform_ktzrcrwh9ftrdgiu2sxkrm1684812979.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "稀缺：我们是如何陷入贫穷与忙碌的",
-        "author": "塞德希尔·穆来纳森",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/46/YueWen_853426/t6_YueWen_853426.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "禅与摩托车维修艺术",
-        "author": "罗伯特·M.波西格",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/1/yuewen_33810356/t6_yuewen_338103561689835422.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "人性的弱点",
-        "author": "[美]戴尔·卡耐基",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/28/cpplatform_ipiqxlasqypwwbdptqa163/t6_cpplatform_ipiqxlasqypwwbdptqa1631789382231.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "找不到答案时就去找自己",
-        "author": "崔璀",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/26/cpplatform_kv67gltzsw3qz2h8dxzkub/t6_cpplatform_kv67gltzsw3qz2h8dxzkub1783678254.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "重塑杏仁核：情绪修复脑科学",
-        "author": "[美]凯瑟琳·M. 皮特曼",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/75/cpplatform_f8nqyjadruqecj4euuj6jj/t6_cpplatform_f8nqyjadruqecj4euuj6jj1727434091.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "数学觉醒：学会更清晰地思考",
-        "author": "[法]戴维·贝西",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/78/cpplatform_w9dbcslensnfpwn7jdupam/t6_cpplatform_w9dbcslensnfpwn7jdupam1773398615.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "允许爱情消失",
-        "author": "杜素娟",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/71/cpplatform_hdfhq8fukgwdmrzldfodxy/t6_cpplatform_hdfhq8fukgwdmrzldfodxy1748574405.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "思考，快与慢（第二版）",
-        "author": "[美]丹尼尔·卡尼曼",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/33/cpplatform_wr55yrqcgu1th4myjwezqj/t6_cpplatform_wr55yrqcgu1th4myjwezqj1745822239.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "谈谈方法",
-        "author": "[法]勒内·笛卡尔",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/57/cpplatform_skgwdem4u6rrqkwmg4u5mm/t6_cpplatform_skgwdem4u6rrqkwmg4u5mm1720598151.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "被讨厌的勇气：“自我启发之父”阿德勒的哲学课",
-        "author": "岸见一郎 古贺史健",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/385/25615385/t6_25615385.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "科学脱单指南：如何让你爱的人爱上你",
-        "author": "陈思逸 高巧雨",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/61/cpplatform_2srscu2rajqzibmbrlshgj/t6_cpplatform_2srscu2rajqzibmbrlshgj1743070414.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "认知驱动：做成一件对他人很有用的事",
-        "author": "周岭",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/88/YueWen_40649986/t6_YueWen_40649986.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "我们如何面对痛苦、疾病与死亡：雷曼医生的治愈故事",
-        "author": "瑞秋·娜奥米·雷曼",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/90/cpplatform_ktjcexperx3ccteqesodza/t6_cpplatform_ktjcexperx3ccteqesodza1725000343.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "美好的人生",
-        "author": "卡耐基",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/765/791765/t6_791765.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "羞耻感",
-        "author": "Ronald Potter-Efron  Patricia Potter-Efron",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/18/yuewen_933131/t6_yuewen_9331311737447302.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "一年顶十年",
-        "author": "剽悍一只猫",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/7/YueWen_30182760/t6_YueWen_30182760.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "活到30岁还觉得自己像小孩？成不成熟其实要看这一点（轻心理）",
-        "author": "KnowYourself知我心理",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/94/cpplatform_r5lw8ns6vhzl8ux1zfebty/t6_cpplatform_r5lw8ns6vhzl8ux1zfebty1763968275.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "父母：挑战（果麦经典）",
-        "author": "[美]鲁道夫·德雷克斯",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/65/cpplatform_xtzvabpuzprspsel5rhwsv/t6_cpplatform_xtzvabpuzprspsel5rhwsv1742457924.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "超越自卑",
-        "author": "阿尔弗雷德·阿德勒",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/83/YueWen_918887/t6_YueWen_918887.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "性心理学：亲密关系",
-        "author": "[英]霭理士 著 潘光旦 译",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/29/cpplatform_bmyrqgcb6qqbuhamhc8p5t/t6_cpplatform_bmyrqgcb6qqbuhamhc8p5t1724235505.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "思维的囚徒",
-        "author": "亚历克斯·佩塔克斯 伊莱恩·丹顿",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/813/25995813/t6_25995813.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "非暴力沟通（全新版）",
-        "author": "[美]马歇尔·卢森堡",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/31/cpplatform_5uebpb4fjbs3ftaxrhx9j5/t6_cpplatform_5uebpb4fjbs3ftaxrhx9j51793848405.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "高敏感是种天赋（套装共3册）",
-        "author": "[丹]伊尔斯·桑德",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/61/YueWen_40425664/t6_YueWen_40425664.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "掌控习惯：如何养成好习惯并戒除坏习惯（《原子习惯》中文版）（新版）",
-        "author": "詹姆斯·克利尔",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/25/yuewen_26934843/t6_yuewen_269348431702464198.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "她的过去为什么会刺痛你",
-        "author": "淼淼",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/67/cpplatform_pdsmei559zzjejfcf4mxrx/t6_cpplatform_pdsmei559zzjejfcf4mxrx1781771728.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "噪声：《思考快与慢》作者全新力作",
-        "author": "[美]丹尼尔·卡尼曼 [法]奥利维耶·西博尼 [美]卡斯·R.桑斯坦",
-        "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/633/40638633/t6_40638633.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "回避型依恋：“越爱越想逃”的人（轻心理）",
-        "author": "远叔 弈文文化",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/53/cpplatform_irgrtkynwcukmih84axaac/t6_cpplatform_irgrtkynwcukmih84axaac1780373053.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "停止你的内在战争",
-        "author": "黄仕明",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/3/3300018303/t6_3300018303.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "自控力",
-        "author": "凯利·麦格尼格尔",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/9/YueWen_837618/t6_YueWen_837618.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "有这种特质的伴侣，会永远令人「上头」（轻心理）",
-        "author": "KnowYourself知我心理",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/22/cpplatform_834tx24emxahjydlhtcl1x/t6_cpplatform_834tx24emxahjydlhtcl1x1770119347.jpg",
-        "isbn": "",
-        "source": "weread"
-      },
-      {
-        "title": "被爱是一种能力：6堂课，创造你想要的关系",
-        "author": "丛非从",
-        "coverUrl": "https://cdn.weread.qq.com/weread/cover/81/cpplatform_sgszk5qausolgxrvwfb92e/t6_cpplatform_sgszk5qausolgxrvwfb92e1769763570.jpg",
         "isbn": "",
         "source": "weread"
       },
@@ -1453,7 +1460,7 @@
       },
       {
         "title": "无人生还（同名英剧原著）",
-        "author": "阿加莎·克里斯蒂",
+        "author": "[英]阿加莎·克里斯蒂",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/63/yuewen_728514/t6_yuewen_7285141680854106.jpg",
         "isbn": "",
         "source": "weread"
@@ -1474,7 +1481,7 @@
       },
       {
         "title": "东方快车谋杀案（图像小说版）",
-        "author": "阿加莎·克里斯蒂 蔡峰",
+        "author": "[英]阿加莎·克里斯蒂 蔡峰",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/71/3300010571/t6_3300010571.jpg",
         "isbn": "",
         "source": "weread"
