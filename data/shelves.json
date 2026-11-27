@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T07:29:48.294Z",
+  "updatedAt": "2026-11-27T20:52:39.364Z",
   "H": {
     "books": [
       {
@@ -732,7 +732,7 @@
       },
       {
         "title": "爱的饥渴",
-        "author": "三岛由纪夫",
+        "author": "[日]三岛由纪夫",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/79/cpPlatform_3300003465/t6_cpPlatform_3300003465.jpg",
         "isbn": "",
         "source": "weread"
@@ -753,7 +753,7 @@
       },
       {
         "title": "潮骚",
-        "author": "三岛由纪夫",
+        "author": "[日]三岛由纪夫",
         "coverUrl": "https://wfqqreader-1252317822.image.myqcloud.com/cover/626/35523626/t6_35523626.jpg",
         "isbn": "",
         "source": "weread"
@@ -1721,6 +1721,27 @@
         "title": "中国通史（上下册）",
         "author": "傅乐成",
         "coverUrl": "https://cdn.weread.qq.com/weread/cover/62/yuewen_25031485/t6_yuewen_250314851679552147.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "卡耐基人际沟通与为人处事",
+        "author": "[美]戴尔·卡耐基",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/2/cpplatform_bif3ptartkuddbuj32bb7m/t6_cpplatform_bif3ptartkuddbuj32bb7m1745835445.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "要么孤独要么庸俗",
+        "author": "[德]叔本华",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/48/cpplatform_bxripgsmchfc2hwuxk5wsg/t6_cpplatform_bxripgsmchfc2hwuxk5wsg1751535923.jpg",
+        "isbn": "",
+        "source": "weread"
+      },
+      {
+        "title": "福尔摩斯探案集（套装共8册）",
+        "author": "柯南·道尔",
+        "coverUrl": "https://cdn.weread.qq.com/weread/cover/50/yuewen_41077357/t6_yuewen_410773571690969189.jpg",
         "isbn": "",
         "source": "weread"
       },
